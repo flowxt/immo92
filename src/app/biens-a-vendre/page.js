@@ -1,15 +1,12 @@
+"use client";
+
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
 import FadeIn from "@/components/FadeIn";
 import StaggerChildren, { StaggerItem } from "@/components/StaggerChildren";
-
-export const metadata = {
-  title: "Biens à vendre | eXp France - Mont-Valérien",
-  description:
-    "Découvrez nos biens à vendre autour du Mont-Valérien : maisons et appartements à Nanterre, Puteaux, Suresnes et Rueil-Malmaison.",
-};
+import { motion } from "framer-motion";
 
 export default function BiensAVendre() {
   return (
@@ -90,12 +87,20 @@ export default function BiensAVendre() {
             },
           ].map((zone) => (
             <StaggerItem key={zone.name}>
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <motion.div
+                className="bg-white rounded-xl p-6 shadow-sm cursor-pointer h-full"
+                whileHover={{
+                  y: -8,
+                  boxShadow:
+                    "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                  transition: { duration: 0.3 },
+                }}
+              >
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {zone.name}
                 </h3>
                 <p className="text-base text-gray-600">{zone.description}</p>
-              </div>
+              </motion.div>
             </StaggerItem>
           ))}
         </StaggerChildren>

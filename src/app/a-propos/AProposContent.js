@@ -1,13 +1,12 @@
 "use client";
 
-import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import SectionHeading from "@/components/SectionHeading";
 import FadeIn from "@/components/FadeIn";
 import StaggerChildren, { StaggerItem } from "@/components/StaggerChildren";
 import { motion } from "framer-motion";
 
-export default function APropos() {
+export default function AProposContent() {
   const values = [
     {
       name: "Transparence",
@@ -95,12 +94,6 @@ export default function APropos() {
 
   return (
     <>
-      <Hero
-        title="Une équipe locale, passionnée par l'immobilier et attachée au Mont-Valérien"
-        imageSrc="/photos/mont-valerien.jpg"
-        fullHeight={false}
-      />
-
       {/* Notre histoire */}
       <Section background="white">
         <FadeIn>
@@ -161,12 +154,12 @@ export default function APropos() {
           {values.map((value) => (
             <StaggerItem key={value.name}>
               <div className="text-center">
-                <motion.div 
-                  className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 text-white mb-4"
-                  whileHover={{ 
+                <motion.div
+                  className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 text-white mb-4 cursor-pointer"
+                  whileHover={{
                     scale: 1.15,
                     rotate: 10,
-                    transition: { duration: 0.3 }
+                    transition: { duration: 0.3 },
                   }}
                 >
                   {value.icon}

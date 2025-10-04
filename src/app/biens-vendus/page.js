@@ -1,15 +1,12 @@
+"use client";
+
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
 import FadeIn from "@/components/FadeIn";
 import StaggerChildren, { StaggerItem } from "@/components/StaggerChildren";
-
-export const metadata = {
-  title: "Biens vendus | eXp France - Mont-Valérien",
-  description:
-    "Découvrez nos ventes récentes autour du Mont-Valérien. Ils nous ont fait confiance pour leur projet immobilier.",
-};
+import { motion } from "framer-motion";
 
 export default function BiensVendus() {
   return (
@@ -78,39 +75,85 @@ export default function BiensVendus() {
           </FadeIn>
           <StaggerChildren className="grid gap-8 md:grid-cols-3 mt-12">
             <StaggerItem>
-              <div className="bg-white rounded-xl p-8 shadow-sm">
-                <div className="text-5xl font-bold text-blue-600 mb-2">10+</div>
+              <motion.div
+                className="bg-white rounded-xl p-8 shadow-sm cursor-pointer h-full"
+                whileHover={{
+                  y: -8,
+                  boxShadow:
+                    "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                  transition: { duration: 0.3 },
+                }}
+              >
+                <motion.div
+                  className="text-5xl font-bold text-blue-600 mb-2"
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.2 },
+                  }}
+                >
+                  10+
+                </motion.div>
                 <div className="text-lg font-semibold text-gray-900 mb-2">
                   Années d'expérience
                 </div>
                 <p className="text-base text-gray-600">
                   Une expertise approfondie du marché immobilier local
                 </p>
-              </div>
+              </motion.div>
             </StaggerItem>
             <StaggerItem>
-              <div className="bg-white rounded-xl p-8 shadow-sm">
-                <div className="text-5xl font-bold text-blue-600 mb-2">
+              <motion.div
+                className="bg-white rounded-xl p-8 shadow-sm cursor-pointer h-full"
+                whileHover={{
+                  y: -8,
+                  boxShadow:
+                    "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                  transition: { duration: 0.3 },
+                }}
+              >
+                <motion.div
+                  className="text-5xl font-bold text-blue-600 mb-2"
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.2 },
+                  }}
+                >
                   100%
-                </div>
+                </motion.div>
                 <div className="text-lg font-semibold text-gray-900 mb-2">
                   Accompagnement personnalisé
                 </div>
                 <p className="text-base text-gray-600">
                   Chaque projet est unique et mérite une attention particulière
                 </p>
-              </div>
+              </motion.div>
             </StaggerItem>
             <StaggerItem>
-              <div className="bg-white rounded-xl p-8 shadow-sm">
-                <div className="text-5xl font-bold text-blue-600 mb-2">4</div>
+              <motion.div
+                className="bg-white rounded-xl p-8 shadow-sm cursor-pointer h-full"
+                whileHover={{
+                  y: -8,
+                  boxShadow:
+                    "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                  transition: { duration: 0.3 },
+                }}
+              >
+                <motion.div
+                  className="text-5xl font-bold text-blue-600 mb-2"
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.2 },
+                  }}
+                >
+                  4
+                </motion.div>
                 <div className="text-lg font-semibold text-gray-900 mb-2">
                   Communes d'expertise
                 </div>
                 <p className="text-base text-gray-600">
                   Nanterre, Puteaux, Suresnes, Rueil-Malmaison
                 </p>
-              </div>
+              </motion.div>
             </StaggerItem>
           </StaggerChildren>
         </div>
