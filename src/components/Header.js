@@ -31,8 +31,8 @@ export default function Header() {
 
   return (
     <motion.header 
-      className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${
-        scrolled ? 'shadow-md' : 'shadow-sm'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
       }`}
       style={{ opacity: headerOpacity }}
     >
@@ -71,7 +71,9 @@ export default function Header() {
           <motion.div key={item.name} whileHover={{ scale: 1.05 }}>
             <Link
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600 transition-colors"
+              className={`text-sm font-semibold leading-6 transition-colors ${
+                scrolled ? 'text-gray-900 hover:text-blue-600' : 'text-gray-900 hover:text-blue-600'
+              }`}
             >
               {item.name}
             </Link>

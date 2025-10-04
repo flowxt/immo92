@@ -17,6 +17,7 @@ export default function Contact() {
         title="Parlons de votre projet immobilier dès aujourd'hui"
         description="Vous avez un projet de vente, d'achat ou simplement besoin d'un conseil ? Contactez-nous pour échanger sur vos besoins. Nous serons ravis de vous accompagner."
         imageSrc="/photos/mont-valerien.jpg"
+        fullHeight={false}
       />
 
       <Section background="white">

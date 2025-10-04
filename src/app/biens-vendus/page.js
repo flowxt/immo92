@@ -18,6 +18,7 @@ export default function BiensVendus() {
         title="Ils nous ont fait confiance — découvrez nos ventes récentes"
         description="Chaque transaction est une histoire unique. Découvrez les biens que nous avons vendus, les familles que nous avons accompagnées, et les projets que nous avons contribué à réaliser autour du Mont-Valérien."
         imageSrc="/photos/mont-valerien.jpg"
+        fullHeight={false}
       />
 
       <Section background="white">

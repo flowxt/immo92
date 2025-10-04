@@ -1,13 +1,14 @@
-import Hero from '@/components/Hero';
-import Section from '@/components/Section';
-import SectionHeading from '@/components/SectionHeading';
-import Button from '@/components/Button';
-import FadeIn from '@/components/FadeIn';
-import StaggerChildren, { StaggerItem } from '@/components/StaggerChildren';
+import Hero from "@/components/Hero";
+import Section from "@/components/Section";
+import SectionHeading from "@/components/SectionHeading";
+import Button from "@/components/Button";
+import FadeIn from "@/components/FadeIn";
+import StaggerChildren, { StaggerItem } from "@/components/StaggerChildren";
 
 export const metadata = {
   title: "Biens à vendre | eXp France - Mont-Valérien",
-  description: "Découvrez nos biens à vendre autour du Mont-Valérien : maisons et appartements à Nanterre, Puteaux, Suresnes et Rueil-Malmaison.",
+  description:
+    "Découvrez nos biens à vendre autour du Mont-Valérien : maisons et appartements à Nanterre, Puteaux, Suresnes et Rueil-Malmaison.",
 };
 
 export default function BiensAVendre() {
@@ -17,16 +18,17 @@ export default function BiensAVendre() {
         title="Découvrez nos biens à vendre autour du Mont-Valérien"
         description="Nous sélectionnons avec soin chaque maison et appartement pour leur qualité, leur potentiel et leur emplacement privilégié. Explorez nos annonces à Nanterre, Puteaux, Suresnes et Rueil-Malmaison, et trouvez le bien qui correspond à vos attentes."
         imageSrc="/photos/mont-valerien.jpg"
+        fullHeight={false}
       />
 
       <Section background="white">
         <FadeIn>
-          <SectionHeading 
-            title="Nos biens disponibles" 
+          <SectionHeading
+            title="Nos biens disponibles"
             subtitle="Sélection de propriétés d'exception"
           />
         </FadeIn>
-        
+
         {/* Placeholder pour les annonces */}
         <FadeIn delay={0.2}>
           <div className="text-center py-16">
@@ -47,8 +49,9 @@ export default function BiensAVendre() {
               Biens disponibles prochainement
             </h3>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Nous mettons régulièrement à jour notre sélection de biens d'exception autour du Mont-Valérien. 
-              Contactez-nous pour être informé en priorité de nos nouvelles annonces.
+              Nous mettons régulièrement à jour notre sélection de biens
+              d'exception autour du Mont-Valérien. Contactez-nous pour être
+              informé en priorité de nos nouvelles annonces.
             </p>
             <div className="mt-8">
               <Button href="/contact" variant="primary">
@@ -62,21 +65,35 @@ export default function BiensAVendre() {
       {/* Zones de recherche */}
       <Section background="gray">
         <FadeIn>
-          <SectionHeading 
-            title="Nos secteurs d'intervention" 
+          <SectionHeading
+            title="Nos secteurs d'intervention"
             subtitle="Des communes dynamiques et recherchées"
           />
         </FadeIn>
         <StaggerChildren className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {[
-            { name: 'Nanterre', description: 'Proche de La Défense, dynamique et bien desservie' },
-            { name: 'Puteaux', description: 'Au cœur du quartier d\'affaires de La Défense' },
-            { name: 'Suresnes', description: 'Cadre de vie privilégié avec vue sur Paris' },
-            { name: 'Rueil-Malmaison', description: 'Ville verte et résidentielle recherchée' },
+            {
+              name: "Nanterre",
+              description: "Proche de La Défense, dynamique et bien desservie",
+            },
+            {
+              name: "Puteaux",
+              description: "Au cœur du quartier d'affaires de La Défense",
+            },
+            {
+              name: "Suresnes",
+              description: "Cadre de vie privilégié avec vue sur Paris",
+            },
+            {
+              name: "Rueil-Malmaison",
+              description: "Ville verte et résidentielle recherchée",
+            },
           ].map((zone) => (
             <StaggerItem key={zone.name}>
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{zone.name}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {zone.name}
+                </h3>
                 <p className="text-base text-gray-600">{zone.description}</p>
               </div>
             </StaggerItem>
@@ -86,4 +103,3 @@ export default function BiensAVendre() {
     </>
   );
 }
-

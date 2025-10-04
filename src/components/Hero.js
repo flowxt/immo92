@@ -1,18 +1,23 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-export default function Hero({ 
-  title, 
-  subtitle, 
+export default function Hero({
+  title,
+  subtitle,
   description,
   imageSrc,
   cta,
-  overlay = true 
+  overlay = true,
+  fullHeight = true,
 }) {
   return (
-    <div className="relative isolate overflow-hidden">
+    <div
+      className={`relative isolate overflow-hidden ${
+        fullHeight ? "min-h-[calc(100vh-5rem)] lg:h-screen" : "pt-20"
+      }`}
+    >
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <motion.div
@@ -34,10 +39,16 @@ export default function Hero({
       </div>
 
       {/* Content */}
-      <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+      <div
+        className={`mx-auto max-w-7xl px-6 lg:px-8 ${
+          fullHeight
+            ? "min-h-[calc(100vh-5rem)] lg:h-screen flex items-center justify-center pt-24 pb-16 lg:pt-0 lg:pb-0"
+            : "py-32 sm:py-40"
+        }`}
+      >
+        <div className="mx-auto max-w-3xl text-center w-full">
           {subtitle && (
-            <motion.p 
+            <motion.p
               className="text-lg font-semibold leading-8 text-blue-400 mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -46,7 +57,7 @@ export default function Hero({
               {subtitle}
             </motion.p>
           )}
-          <motion.h1 
+          <motion.h1
             className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,7 +66,7 @@ export default function Hero({
             {title}
           </motion.h1>
           {description && (
-            <motion.p 
+            <motion.p
               className="mt-6 text-lg leading-8 text-gray-200"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -65,7 +76,7 @@ export default function Hero({
             </motion.p>
           )}
           {cta && (
-            <motion.div 
+            <motion.div
               className="mt-10 flex items-center justify-center gap-x-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -76,7 +87,37 @@ export default function Hero({
           )}
         </div>
       </div>
+
+      {/* Scroll Indicator - only show on fullHeight and desktop */}
+      {fullHeight && (
+        <motion.div
+          className="hidden lg:block absolute bottom-12 left-1/2 -translate-x-1/2 cursor-pointer"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 1.2,
+            repeat: Infinity,
+            repeatType: "reverse",
+            repeatDelay: 0.5,
+          }}
+          onClick={() =>
+            window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
+          }
+        >
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </motion.div>
+      )}
     </div>
   );
 }
-
