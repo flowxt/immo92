@@ -40,6 +40,23 @@ export default function Footer() {
         </nav>
         
         <div className="mt-10 border-t border-gray-700 pt-8">
+          <div className="mb-6 text-center">
+            <p className="text-sm font-semibold text-amber-400 mb-2">Membre du réseau</p>
+            <a 
+              href="https://www.expfrance.fr/fr/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors group"
+            >
+              <span className="text-lg font-bold">eXp France</span>
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+            <p className="text-xs text-gray-500 mt-2 max-w-2xl mx-auto">
+              Cellule indépendante du réseau eXp France spécialisée dans le secteur du Mont-Valérien (92)
+            </p>
+          </div>
           <p className="text-center text-sm leading-5 text-gray-400">
             Secteur d'expertise : Mont-Valérien, Nanterre, Puteaux, Suresnes, Rueil-Malmaison
           </p>

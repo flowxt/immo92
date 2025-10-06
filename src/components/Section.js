@@ -10,8 +10,10 @@ export default function Section({
     dark: 'bg-gray-900 text-white',
   };
 
+  const backgroundClass = bgColors[background] || '';
+
   return (
-    <section className={`py-16 sm:py-24 ${bgColors[background]} ${className}`}>
+    <section className={`py-16 sm:py-24 ${backgroundClass} ${className}`}>
       {contained ? (
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           {children}

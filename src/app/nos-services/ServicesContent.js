@@ -1,17 +1,102 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Section from "@/components/Section";
 import FadeIn from "@/components/FadeIn";
+import Modal from "@/components/Modal";
+import Button from "@/components/Button";
 import { motion } from "framer-motion";
 
 export default function ServicesContent() {
+  const [openModal, setOpenModal] = useState(null);
+
+  const servicesDetails = {
+    estimation: {
+      sections: [
+        {
+          title: "Une analyse complète du marché",
+          content: "Notre estimation repose sur une analyse approfondie des transactions récentes dans le secteur du Mont-Valérien. Nous prenons en compte les spécificités de chaque quartier (Nanterre, Puteaux, Suresnes, Rueil-Malmaison) pour vous donner une valorisation précise et réaliste."
+        },
+        {
+          title: "Les critères étudiés",
+          content: "Surface habitable et annexes, état général du bien, luminosité et orientation, prestations et équipements, emplacement et environnement, potentiel d'amélioration, comparaison avec les biens similaires vendus récemment."
+        },
+        {
+          title: "Un prix juste pour vendre rapidement",
+          content: "Un bien correctement estimé se vend en moyenne 30% plus vite qu'un bien surévalué. Notre objectif : vous proposer un prix attractif qui correspond au marché actuel, pour maximiser vos chances de vente dans les meilleures conditions."
+        }
+      ]
+    },
+    renovation: {
+      sections: [
+        {
+          title: "Le saut de classe énergétique : un atout majeur",
+          content: "Depuis les nouvelles réglementations, la performance énergétique est devenue un critère déterminant pour les acheteurs. Passer d'une classe F ou G à une classe D ou C peut augmenter la valeur de votre bien de 10 à 20% et accélérer considérablement sa vente."
+        },
+        {
+          title: "Les aides financières disponibles",
+          content: "MaPrimeRénov', Éco-PTZ (prêt à taux zéro), CEE (Certificats d'Économies d'Énergie), TVA réduite à 5,5% pour les travaux de rénovation énergétique. Nous vous guidons dans l'identification et l'obtention de ces aides qui peuvent couvrir jusqu'à 70% du coût des travaux."
+        },
+        {
+          title: "Les travaux les plus rentables",
+          content: "Isolation des combles et toiture (ROI rapide), remplacement des fenêtres par du double ou triple vitrage, installation d'une pompe à chaleur ou chaudière à condensation, isolation des murs par l'extérieur, installation de panneaux solaires."
+        },
+        {
+          title: "Notre accompagnement",
+          content: "Audit énergétique pour identifier les priorités, recommandations de professionnels RGE (Reconnus Garants de l'Environnement), aide au montage des dossiers de financement, suivi des travaux et validation du nouveau DPE."
+        }
+      ]
+    },
+    division: {
+      sections: [
+        {
+          title: "Pourquoi diviser votre terrain ?",
+          content: "Si vous possédez un grand terrain, la division peut multiplier sa valeur. Au lieu de vendre un bien unique, vous pouvez créer plusieurs lots constructibles et ainsi optimiser significativement votre retour sur investissement."
+        },
+        {
+          title: "Étude de faisabilité",
+          content: "Analyse du Plan Local d'Urbanisme (PLU), vérification de la constructibilité et des règles de division, étude de la viabilisation (accès, réseaux), évaluation du potentiel de chaque lot créé."
+        },
+        {
+          title: "Les démarches administratives",
+          content: "Demande de certificat d'urbanisme, dépôt d'une déclaration préalable ou permis d'aménager, division parcellaire auprès du géomètre, mise à jour cadastrale. Nous vous accompagnons à chaque étape pour sécuriser votre projet."
+        },
+        {
+          title: "Stratégie de commercialisation",
+          content: "Une fois la division réalisée, nous élaborons une stratégie adaptée : vente en bloc, vente lot par lot, ou vente après construction. Notre connaissance du marché local nous permet de vous conseiller la meilleure approche."
+        }
+      ]
+    },
+    communication: {
+      sections: [
+        {
+          title: "Reportage photo professionnel",
+          content: "Les premières photos sont décisives : 90% des acheteurs commencent leur recherche en ligne. Nous faisons appel à des photographes immobiliers spécialisés qui savent mettre en valeur chaque espace, jouer avec la lumière et créer un véritable coup de cœur visuel."
+        },
+        {
+          title: "Visite virtuelle et vidéo",
+          content: "Pour les biens d'exception, nous proposons des visites virtuelles 360° et des vidéos cinématographiques avec drone. Ces outils permettent aux acheteurs de se projeter et génèrent jusqu'à 3 fois plus de demandes de visite."
+        },
+        {
+          title: "Diffusion multi-canal optimisée",
+          content: "Publication sur les portails immobiliers majeurs (SeLoger, Le Bon Coin, PAP), mise en avant sur le réseau national eXp France, campagnes ciblées sur les réseaux sociaux, newsletter aux acheteurs qualifiés de notre base de données, vitrine locale dans le secteur du Mont-Valérien."
+        },
+        {
+          title: "Home staging et conseils déco",
+          content: "Avant le reportage photo et les visites, nous vous conseillons sur la mise en scène de votre bien : désencombrement, réagencement des meubles, petites réparations prioritaires, choix des couleurs neutres. Un bien bien présenté se vend 15% plus cher et 2 fois plus vite."
+        }
+      ]
+    }
+  };
+
   const services = [
     {
       title: "Estimation immobilière",
       description:
         "Une estimation fiable et objective basée sur notre connaissance du marché local, de ses tendances et des spécificités du Mont-Valérien. Nous analysons les ventes récentes, le potentiel du bien, et ses atouts pour en déterminer le juste prix.",
       image: "/photos/interieur.png",
+      modalKey: "estimation",
       icon: (
         <svg
           className="h-8 w-8"
@@ -33,6 +118,7 @@ export default function ServicesContent() {
       description:
         "Vous souhaitez améliorer la performance énergétique de votre logement ? Nous vous accompagnons dans le saut de classe énergétique, la mise aux normes et la valorisation énergétique de votre bien, afin d'attirer davantage d'acheteurs et de vendre plus vite.",
       image: "/photos/maison-energie.png",
+      modalKey: "renovation",
       icon: (
         <svg
           className="h-8 w-8"
@@ -54,6 +140,7 @@ export default function ServicesContent() {
       description:
         "Vous disposez d'un terrain divisible ? Nous étudions sa faisabilité, vous guidons dans les démarches administratives et vous aidons à optimiser la valeur globale de votre propriété.",
       image: "/photos/mont-valerien.jpg",
+      modalKey: "division",
       icon: (
         <svg
           className="h-8 w-8"
@@ -75,6 +162,7 @@ export default function ServicesContent() {
       description:
         "Chaque bien mérite une stratégie adaptée : reportage photo professionnel, diffusion sur les portails majeurs, mise en avant sur le réseau eXp France et sur nos supports locaux. Notre priorité : présenter votre bien sous son meilleur jour à des acheteurs déjà qualifiés.",
       image: "/photos/interieur.png",
+      modalKey: "communication",
       icon: (
         <svg
           className="h-8 w-8"
@@ -100,6 +188,52 @@ export default function ServicesContent() {
 
   return (
     <>
+      {/* Modales pour chaque service */}
+      {Object.keys(servicesDetails).map((key) => (
+        <Modal
+          key={key}
+          isOpen={openModal === key}
+          onClose={() => setOpenModal(null)}
+          title={services.find(s => s.modalKey === key)?.title}
+        >
+          <div className="space-y-6">
+            {servicesDetails[key].sections.map((section, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.1 }}
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 text-sm font-bold mr-3">
+                    {idx + 1}
+                  </span>
+                  {section.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed pl-11">
+                  {section.content}
+                </p>
+              </motion.div>
+            ))}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: servicesDetails[key].sections.length * 0.1 }}
+              className="pt-6 border-t border-gray-200"
+            >
+              <Button 
+                href="/contact" 
+                variant="primary"
+                className="w-full justify-center"
+              >
+                Discutons de votre projet
+              </Button>
+            </motion.div>
+          </div>
+        </Modal>
+      ))}
+
+      {/* Services */}
       {services.map((service, index) => (
         <Section
           key={service.title}
@@ -125,9 +259,28 @@ export default function ServicesContent() {
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">
                   {service.title}
                 </h2>
-                <p className="text-lg leading-8 text-gray-600">
+                <p className="text-lg leading-8 text-gray-600 mb-8">
                   {service.description}
                 </p>
+                <Button 
+                  variant="secondary" 
+                  onClick={() => setOpenModal(service.modalKey)}
+                >
+                  En savoir plus
+                  <svg 
+                    className="ml-2 w-4 h-4 inline-block" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M9 5l7 7-7 7" 
+                    />
+                  </svg>
+                </Button>
               </div>
             </FadeIn>
             <FadeIn direction={index % 2 === 0 ? "right" : "left"} delay={0.2}>
