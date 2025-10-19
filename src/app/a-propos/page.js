@@ -96,7 +96,7 @@ export default function APropos() {
   return (
     <>
       <Hero
-        title="Une équipe locale, passionnée par l'immobilier et attachée au Mont-Valérien"
+        title="Une équipe locale, passionnée par l&apos;immobilier et attachée au Mont-Valérien"
         imageSrc="/photos/mont-valerien.jpg"
         fullHeight={false}
       />
@@ -122,7 +122,7 @@ export default function APropos() {
               <strong className="text-gray-900">
                 moderne, digitale et réactive
               </strong>
-              , tout en conservant la proximité et la disponibilité d'une agence
+              , tout en conservant la proximité et la disponibilité d&apos;une agence
               locale.
             </p>
           </div>

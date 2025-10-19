@@ -52,7 +52,7 @@ export default function BiensVendus() {
             </p>
             <p className="mt-4 text-base text-gray-600 max-w-2xl mx-auto">
               Nos références seront bientôt disponibles sur cette page. En
-              attendant, n'hésitez pas à nous contacter pour en savoir plus sur
+              attendant, n&apos;hésitez pas à nous contacter pour en savoir plus sur
               nos réalisations.
             </p>
             <div className="mt-8">
@@ -94,7 +94,7 @@ export default function BiensVendus() {
                   10+
                 </motion.div>
                 <div className="text-lg font-semibold text-gray-900 mb-2">
-                  Années d'expérience
+                  Années d&apos;expérience
                 </div>
                 <p className="text-base text-gray-600">
                   Une expertise approfondie du marché immobilier local
@@ -148,7 +148,7 @@ export default function BiensVendus() {
                   4
                 </motion.div>
                 <div className="text-lg font-semibold text-gray-900 mb-2">
-                  Communes d'expertise
+                  Communes d&apos;expertise
                 </div>
                 <p className="text-base text-gray-600">
                   Nanterre, Puteaux, Suresnes, Rueil-Malmaison

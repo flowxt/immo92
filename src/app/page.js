@@ -13,7 +13,7 @@ export default function Home() {
       {/* Hero Section */}
       <Hero
         title="Votre partenaire immobilier de confiance au Mont-Valérien"
-        description="Spécialistes du secteur du Mont-Valérien, à Nanterre, Puteaux, Suresnes et Rueil-Malmaison, nous vous accompagnons dans la vente, l'achat et la valorisation de votre bien immobilier. Grâce à notre expertise locale et aux outils innovants du réseau eXp France, nous offrons un accompagnement complet, humain et sur mesure."
+        description="Spécialistes du secteur du Mont-Valérien, à Nanterre, Puteaux, Suresnes et Rueil-Malmaison, nous vous accompagnons dans la vente, l&apos;achat et la valorisation de votre bien immobilier. Grâce à notre expertise locale et aux outils innovants du réseau eXp France, nous offrons un accompagnement complet, humain et sur mesure."
         imageSrc="/photos/mont-valerien.jpg"
         cta={
           <>
@@ -38,7 +38,7 @@ export default function Home() {
         <FadeIn delay={0.2}>
           <div className="prose prose-lg mx-auto text-gray-600">
             <p className="text-lg leading-8">
-              Avec plus de 10 ans d'expérience chacun, acquise au sein d'agences
+              Avec plus de 10 ans d&apos;expérience chacun, acquise au sein d&apos;agences
               immobilières réputées, nous avons choisi de mettre notre
               savoir-faire au service des habitants du Mont-Valérien.
             </p>
@@ -51,7 +51,7 @@ export default function Home() {
             </p>
             <p className="text-lg leading-8 mt-6">
               En rejoignant le groupe eXp France, nous avons allié notre
-              expertise locale à la puissance d'un réseau international, pour
+              expertise locale à la puissance d&apos;un réseau international, pour
               vous garantir la meilleure visibilité et des outils modernes.
             </p>
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
                 </svg>
               }
               title="Accompagnement à la rénovation énergétique"
-              description="Améliorez le classement DPE de votre bien pour le valoriser et attirer davantage d'acheteurs. Nous vous guidons dans toutes les démarches."
+              description="Améliorez le classement DPE de votre bien pour le valoriser et attirer davantage d&apos;acheteurs. Nous vous guidons dans toutes les démarches."
             />
           </StaggerItem>
           <StaggerItem>
@@ -168,7 +168,7 @@ export default function Home() {
               eXp France
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Cellule indépendante du réseau <strong>eXp France</strong>, nous avons choisi de nous spécialiser dans le secteur du Mont-Valérien (92) pour vous offrir une expertise locale pointue, tout en bénéficiant de la puissance d'un réseau international.
+              Cellule indépendante du réseau <strong>eXp France</strong>, nous avons choisi de nous spécialiser dans le secteur du Mont-Valérien (92) pour vous offrir une expertise locale pointue, tout en bénéficiant de la puissance d&apos;un réseau international.
             </p>
           </div>
         </FadeIn>
@@ -280,7 +280,7 @@ export default function Home() {
               Vous souhaitez connaître la valeur de votre bien ?
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Faites une estimation gratuite dès aujourd'hui.
+              Faites une estimation gratuite dès aujourd&apos;hui.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button href="/contact" variant="primary">

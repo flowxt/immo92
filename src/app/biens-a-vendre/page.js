@@ -22,7 +22,7 @@ export default function BiensAVendre() {
         <FadeIn>
           <SectionHeading
             title="Nos biens disponibles"
-            subtitle="Sélection de propriétés d'exception"
+            subtitle="Sélection de propriétés d&apos;exception"
           />
         </FadeIn>
 
@@ -47,7 +47,7 @@ export default function BiensAVendre() {
             </h3>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               Nous mettons régulièrement à jour notre sélection de biens
-              d'exception autour du Mont-Valérien. Contactez-nous pour être
+              d&apos;exception autour du Mont-Valérien. Contactez-nous pour être
               informé en priorité de nos nouvelles annonces.
             </p>
             <div className="mt-8">

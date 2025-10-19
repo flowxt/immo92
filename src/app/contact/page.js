@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <>
       <Hero
-        title="Parlons de votre projet immobilier dès aujourd'hui"
+        title="Parlons de votre projet immobilier dès aujourd&apos;hui"
         description="Vous avez un projet de vente, d'achat ou simplement besoin d'un conseil ? Contactez-nous pour échanger sur vos besoins. Nous serons ravis de vous accompagner."
         imageSrc="/photos/mont-valerien.jpg"
         fullHeight={false}
@@ -146,7 +146,7 @@ export default function Contact() {
                   </div>
                   <div className="ml-4">
                     <p className="text-lg font-semibold text-gray-900">
-                      Secteur d'intervention
+                      Secteur d&apos;intervention
                     </p>
                     <p className="mt-2 text-base text-gray-600">
                       Mont-Valérien, Nanterre, Suresnes, Puteaux,
@@ -163,7 +163,7 @@ export default function Contact() {
                 </h3>
                 <p className="text-base text-gray-600">
                   En tant que membres du réseau eXp France, nous bénéficions
-                  d'outils digitaux performants et d'une visibilité nationale
+                  d&apos;outils digitaux performants et d&apos;une visibilité nationale
                   pour vous offrir le meilleur accompagnement.
                 </p>
               </div>
