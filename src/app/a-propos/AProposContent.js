@@ -115,8 +115,8 @@ export default function AProposContent() {
               <strong className="text-gray-900">
                 moderne, digitale et réactive
               </strong>
-              , tout en conservant la proximité et la disponibilité d'une agence
-              locale.
+              , tout en conservant la proximité et la disponibilité d&apos;une
+              agence locale.
             </p>
           </div>
         </FadeIn>
@@ -176,5 +176,3 @@ export default function AProposContent() {
     </>
   );
 }
-
-
