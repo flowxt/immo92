@@ -11,8 +11,9 @@ export default function Contact() {
   return (
     <>
       <Hero
-        title="Parlons de votre projet immobilier dès aujourd&apos;hui"
-        description="Vous avez un projet de vente, d'achat ou simplement besoin d'un conseil ? Contactez-nous pour échanger sur vos besoins. Nous serons ravis de vous accompagner."
+        subtitle="Contactez-nous"
+        title="Parlons de votre projet immobilier"
+        description="Une question, un projet, besoin d'un conseil ? Notre équipe est à votre écoute pour vous accompagner."
         imageSrc="/photos/mont-valerien.jpg"
         fullHeight={false}
       />
@@ -23,7 +24,13 @@ export default function Contact() {
           <FadeIn direction="left">
             <div>
               <SectionHeading
-                title="Envoyez-nous un message"
+                label="Formulaire de contact"
+                title={
+                  <>
+                    Envoyez-nous un{" "}
+                    <span className="text-blue-600">message</span>
+                  </>
+                }
                 subtitle="Nous vous répondons rapidement"
                 centered={false}
               />
@@ -35,7 +42,13 @@ export default function Contact() {
           <FadeIn direction="right" delay={0.2}>
             <div>
               <SectionHeading
-                title="Contactez-nous directement"
+                label="Coordonnées"
+                title={
+                  <>
+                    Contactez-nous{" "}
+                    <span className="text-blue-600">directement</span>
+                  </>
+                }
                 subtitle="Nous sommes à votre écoute"
                 centered={false}
               />
@@ -163,8 +176,8 @@ export default function Contact() {
                 </h3>
                 <p className="text-base text-gray-600">
                   En tant que membres du réseau eXp France, nous bénéficions
-                  d&apos;outils digitaux performants et d&apos;une visibilité nationale
-                  pour vous offrir le meilleur accompagnement.
+                  d&apos;outils digitaux performants et d&apos;une visibilité
+                  nationale pour vous offrir le meilleur accompagnement.
                 </p>
               </div>
             </div>

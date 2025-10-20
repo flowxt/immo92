@@ -98,5 +98,3 @@ Ce document décrit toutes les animations intégrées au site avec **Framer Moti
 ## 📚 Documentation Framer Motion
 
 https://www.framer.com/motion/
-
-

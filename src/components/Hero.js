@@ -46,10 +46,10 @@ export default function Hero({
             : "py-32 sm:py-40"
         }`}
       >
-        <div className="mx-auto max-w-3xl text-center w-full">
+        <div className="mx-auto max-w-4xl text-center w-full">
           {subtitle && (
             <motion.p
-              className="text-lg font-semibold leading-8 text-blue-400 mb-4"
+              className="text-sm sm:text-base font-semibold leading-7 text-amber-400 mb-3 sm:mb-4 uppercase tracking-wide"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -58,7 +58,7 @@ export default function Hero({
             </motion.p>
           )}
           <motion.h1
-            className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+            className="text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -67,7 +67,7 @@ export default function Hero({
           </motion.h1>
           {description && (
             <motion.p
-              className="mt-6 text-lg leading-8 text-gray-200"
+              className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-300 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -77,7 +77,7 @@ export default function Hero({
           )}
           {cta && (
             <motion.div
-              className="mt-10 flex items-center justify-center gap-x-6"
+              className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}

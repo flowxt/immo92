@@ -3,6 +3,7 @@ import Section from "@/components/Section";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 import Button from "@/components/Button";
+import CTASection from "@/components/CTASection";
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import StaggerChildren, { StaggerItem } from "@/components/StaggerChildren";
@@ -12,35 +13,50 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <Hero
-        title="Votre partenaire immobilier de confiance au Mont-Valérien"
-        description="Spécialistes du secteur du Mont-Valérien, à Nanterre, Puteaux, Suresnes et Rueil-Malmaison, nous vous accompagnons dans la vente, l&apos;achat et la valorisation de votre bien immobilier. Grâce à notre expertise locale et aux outils innovants du réseau eXp France, nous offrons un accompagnement complet, humain et sur mesure."
+        subtitle="eXp France - Spécialiste Mont-Valérien"
+        title="Valorisez et vendez votre bien au meilleur prix"
+        description="Expertise locale, accompagnement personnalisé et outils innovants pour réussir votre projet immobilier dans les Hauts-de-Seine."
         imageSrc="/photos/mont-valerien.jpg"
         cta={
           <>
-            <Button href="/contact" variant="accent">
-              Estimer mon bien gratuitement
+            <Button
+              href="/contact"
+              variant="accent"
+              className="w-full sm:w-auto"
+            >
+              Estimation gratuite
             </Button>
-            <Button href="/nos-services" variant="outline">
-              Découvrir nos services
+            <Button
+              href="/nos-services"
+              variant="outline"
+              className="w-full sm:w-auto"
+            >
+              Nos services
             </Button>
           </>
         }
       />
 
-      {/* Notre histoire */}
+      {/* Pourquoi nous choisir */}
       <Section background="white">
         <FadeIn>
           <SectionHeading
-            title="Notre histoire"
-            subtitle="Une expertise locale au service de vos projets"
+            label="Notre différence"
+            title={
+              <>
+                Pourquoi <span className="text-blue-600">nous choisir</span> ?
+              </>
+            }
+            subtitle="Expertise, proximité et outils innovants"
+            showLine={true}
           />
         </FadeIn>
         <FadeIn delay={0.2}>
           <div className="prose prose-lg mx-auto text-gray-600">
             <p className="text-lg leading-8">
-              Avec plus de 10 ans d&apos;expérience chacun, acquise au sein d&apos;agences
-              immobilières réputées, nous avons choisi de mettre notre
-              savoir-faire au service des habitants du Mont-Valérien.
+              Avec plus de 10 ans d&apos;expérience chacun, acquise au sein
+              d&apos;agences immobilières réputées, nous avons choisi de mettre
+              notre savoir-faire au service des habitants du Mont-Valérien.
             </p>
             <p className="text-lg leading-8 mt-6">
               Notre objectif :{" "}
@@ -51,8 +67,8 @@ export default function Home() {
             </p>
             <p className="text-lg leading-8 mt-6">
               En rejoignant le groupe eXp France, nous avons allié notre
-              expertise locale à la puissance d&apos;un réseau international, pour
-              vous garantir la meilleure visibilité et des outils modernes.
+              expertise locale à la puissance d&apos;un réseau international,
+              pour vous garantir la meilleure visibilité et des outils modernes.
             </p>
           </div>
         </FadeIn>
@@ -62,8 +78,14 @@ export default function Home() {
       <Section background="gray">
         <FadeIn>
           <SectionHeading
-            title="Nos services"
+            label="Notre expertise"
+            title={
+              <>
+                Nos <span className="text-blue-600">services</span>
+              </>
+            }
             subtitle="Nous vous accompagnons dans tous vos projets"
+            showLine={true}
           />
         </FadeIn>
         <StaggerChildren className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
@@ -106,7 +128,7 @@ export default function Home() {
                 </svg>
               }
               title="Accompagnement à la rénovation énergétique"
-              description="Améliorez le classement DPE de votre bien pour le valoriser et attirer davantage d&apos;acheteurs. Nous vous guidons dans toutes les démarches."
+              description="Améliorez le classement DPE de votre bien pour le valoriser et attirer davantage d'acheteurs. Nous vous guidons dans toutes les démarches."
             />
           </StaggerItem>
           <StaggerItem>
@@ -160,15 +182,23 @@ export default function Home() {
       </Section>
 
       {/* eXp France Network */}
-      <Section background="white" className="bg-gradient-to-br from-blue-50 via-white to-amber-50">
+      <Section
+        background="white"
+        className="bg-gradient-to-br from-blue-50 via-white to-amber-50"
+      >
         <FadeIn>
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-amber-600 mb-2">MEMBRE DU RÉSEAU</p>
+            <p className="text-sm font-semibold text-amber-600 mb-2">
+              MEMBRE DU RÉSEAU
+            </p>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
               eXp France
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Cellule indépendante du réseau <strong>eXp France</strong>, nous avons choisi de nous spécialiser dans le secteur du Mont-Valérien (92) pour vous offrir une expertise locale pointue, tout en bénéficiant de la puissance d&apos;un réseau international.
+              Cellule indépendante du réseau <strong>eXp France</strong>, nous
+              avons choisi de nous spécialiser dans le secteur du Mont-Valérien
+              (92) pour vous offrir une expertise locale pointue, tout en
+              bénéficiant de la puissance d&apos;un réseau international.
             </p>
           </div>
         </FadeIn>
@@ -176,48 +206,105 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="w-8 h-8 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Réseau International</h3>
-              <p className="text-sm text-gray-600">Présent dans 24 pays avec des milliers de conseillers</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Réseau International
+              </h3>
+              <p className="text-sm text-gray-600">
+                Présent dans 24 pays avec des milliers de conseillers
+              </p>
             </div>
           </FadeIn>
           <FadeIn delay={0.2}>
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="w-16 h-16 mx-auto mb-4 bg-amber-100 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                <svg
+                  className="w-8 h-8 text-amber-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Outils Innovants</h3>
-              <p className="text-sm text-gray-600">Technologies de pointe et métavers immobilier</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Outils Innovants
+              </h3>
+              <p className="text-sm text-gray-600">
+                Technologies de pointe et métavers immobilier
+              </p>
             </div>
           </FadeIn>
           <FadeIn delay={0.3}>
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                <svg
+                  className="w-8 h-8 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Expertise Locale</h3>
-              <p className="text-sm text-gray-600">Connaissance approfondie du secteur 92</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Expertise Locale
+              </h3>
+              <p className="text-sm text-gray-600">
+                Connaissance approfondie du secteur 92
+              </p>
             </div>
           </FadeIn>
         </div>
         <div className="text-center mt-10">
-          <a 
-            href="https://www.expfrance.fr/fr/" 
+          <a
+            href="https://www.expfrance.fr/fr/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold group"
           >
             Découvrir le réseau eXp France
-            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </a>
         </div>
@@ -229,7 +316,12 @@ export default function Home() {
           <FadeIn direction="left">
             <div>
               <SectionHeading
-                title="Zone d'expertise"
+                label="Notre territoire"
+                title={
+                  <>
+                    Zone <span className="text-blue-600">d&apos;expertise</span>
+                  </>
+                }
                 subtitle="Un secteur stratégique entre Paris et La Défense"
                 centered={false}
               />
@@ -261,7 +353,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn direction="right" delay={0.2}>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
-          <Image
+              <Image
                 src="/photos/mont-valerien.jpg"
                 alt="Mont-Valérien"
                 fill
@@ -273,26 +365,16 @@ export default function Home() {
       </Section>
 
       {/* CTA Final */}
-      <Section background="dark">
-        <FadeIn>
-          <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Vous souhaitez connaître la valeur de votre bien ?
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Faites une estimation gratuite dès aujourd&apos;hui.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button href="/contact" variant="primary">
-                Estimation gratuite
-              </Button>
-              <Button href="/nos-services" variant="outline">
-                En savoir plus
-              </Button>
-            </div>
-    </div>
-        </FadeIn>
-      </Section>
+      <CTASection
+        title="Vous souhaitez connaître la valeur de votre bien ?"
+        subtitle="Obtenez une estimation précise et gratuite de votre propriété par nos experts locaux."
+        primaryButton={{ text: "Estimation gratuite", href: "/contact" }}
+        secondaryButton={{
+          text: "Découvrir nos services",
+          href: "/nos-services",
+        }}
+        variant="light"
+      />
     </>
   );
 }

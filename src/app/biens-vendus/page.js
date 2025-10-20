@@ -12,8 +12,9 @@ export default function BiensVendus() {
   return (
     <>
       <Hero
-        title="Ils nous ont fait confiance — découvrez nos ventes récentes"
-        description="Chaque transaction est une histoire unique. Découvrez les biens que nous avons vendus, les familles que nous avons accompagnées, et les projets que nous avons contribué à réaliser autour du Mont-Valérien."
+        subtitle="Nos réussites"
+        title="Des ventes réussies, des clients satisfaits"
+        description="Découvrez notre expertise à travers les transactions que nous avons menées avec succès autour du Mont-Valérien."
         imageSrc="/photos/mont-valerien.jpg"
         fullHeight={false}
       />
@@ -21,8 +22,14 @@ export default function BiensVendus() {
       <Section background="white">
         <FadeIn>
           <SectionHeading
-            title="Nos réussites"
+            label="Notre expérience"
+            title={
+              <>
+                Nos <span className="text-blue-600">réussites</span>
+              </>
+            }
             subtitle="Des projets menés avec succès"
+            showLine={true}
           />
         </FadeIn>
 
@@ -52,8 +59,8 @@ export default function BiensVendus() {
             </p>
             <p className="mt-4 text-base text-gray-600 max-w-2xl mx-auto">
               Nos références seront bientôt disponibles sur cette page. En
-              attendant, n&apos;hésitez pas à nous contacter pour en savoir plus sur
-              nos réalisations.
+              attendant, n&apos;hésitez pas à nous contacter pour en savoir plus
+              sur nos réalisations.
             </p>
             <div className="mt-8">
               <Button href="/contact" variant="primary">
@@ -69,8 +76,14 @@ export default function BiensVendus() {
         <div className="text-center">
           <FadeIn>
             <SectionHeading
-              title="Pourquoi nous choisir ?"
+              label="Nos atouts"
+              title={
+                <>
+                  Pourquoi <span className="text-blue-600">nous choisir</span> ?
+                </>
+              }
               subtitle="Une expertise qui fait la différence"
+              showLine={true}
             />
           </FadeIn>
           <StaggerChildren className="grid gap-8 md:grid-cols-3 mt-12">

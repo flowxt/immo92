@@ -96,7 +96,9 @@ export default function APropos() {
   return (
     <>
       <Hero
-        title="Une équipe locale, passionnée par l&apos;immobilier et attachée au Mont-Valérien"
+        subtitle="À propos de nous"
+        title="Experts du Mont-Valérien, passionnés par votre réussite"
+        description="Une équipe locale avec plus de 10 ans d'expérience, au service de vos projets immobiliers."
         imageSrc="/photos/mont-valerien.jpg"
         fullHeight={false}
       />
@@ -105,8 +107,14 @@ export default function APropos() {
       <Section background="white">
         <FadeIn>
           <SectionHeading
-            title="Notre histoire"
+            label="Qui sommes-nous"
+            title={
+              <>
+                Notre <span className="text-blue-600">histoire</span>
+              </>
+            }
             subtitle="Une expertise au service de votre projet"
+            showLine={true}
           />
         </FadeIn>
         <FadeIn delay={0.2}>
@@ -122,8 +130,8 @@ export default function APropos() {
               <strong className="text-gray-900">
                 moderne, digitale et réactive
               </strong>
-              , tout en conservant la proximité et la disponibilité d&apos;une agence
-              locale.
+              , tout en conservant la proximité et la disponibilité d&apos;une
+              agence locale.
             </p>
           </div>
         </FadeIn>
@@ -133,10 +141,16 @@ export default function APropos() {
       <Section background="gray">
         <FadeIn>
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Notre mission
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <SectionHeading
+              label="Notre engagement"
+              title={
+                <>
+                  Notre <span className="text-blue-600">mission</span>
+                </>
+              }
+              showLine={true}
+            />
+            <p className="text-lg leading-8 text-gray-600">
               Offrir à chaque client un accompagnement personnalisé à chaque
               étape de son projet : estimation, conseil, mise en valeur,
               accompagnement technique et suivi administratif.
@@ -153,20 +167,26 @@ export default function APropos() {
       <Section background="white">
         <FadeIn>
           <SectionHeading
-            title="Nos valeurs"
+            label="Nos engagements"
+            title={
+              <>
+                Nos <span className="text-blue-600">valeurs</span>
+              </>
+            }
             subtitle="Ce qui guide notre action au quotidien"
+            showLine={true}
           />
         </FadeIn>
         <StaggerChildren className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {values.map((value) => (
             <StaggerItem key={value.name}>
               <div className="text-center">
-                <motion.div 
+                <motion.div
                   className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 text-white mb-4"
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.15,
                     rotate: 10,
-                    transition: { duration: 0.3 }
+                    transition: { duration: 0.3 },
                   }}
                 >
                   {value.icon}
