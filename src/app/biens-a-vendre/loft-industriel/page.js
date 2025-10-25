@@ -5,6 +5,7 @@ import Section from "@/components/Section";
 import Button from "@/components/Button";
 import MortgageCalculator from "@/components/MortgageCalculator";
 import ImageGallery from "@/components/ImageGallery";
+import InteractiveMap from "@/components/InteractiveMap";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -170,11 +171,19 @@ export default function LoftIndustriel() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Emplacement idéal
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 Idéalement situé dans un quartier calme & résidentiel, rue à
                 sens unique, à mi-chemin entre le Mont Valérien et la place de
                 la Boule. Écoles et commerces à proximité.
               </p>
+              
+              {/* Carte interactive */}
+              <InteractiveMap 
+                latitude={48.8915}
+                longitude={2.2140}
+                zoom={15}
+                height="450px"
+              />
             </div>
 
             {/* Calculateur de prêt */}

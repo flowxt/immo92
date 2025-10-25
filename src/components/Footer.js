@@ -12,6 +12,8 @@ export default function Footer() {
     pages: [
       { name: "À propos", href: "/a-propos" },
       { name: "Biens à vendre", href: "/biens-a-vendre" },
+      { name: "Carte des biens", href: "/carte-biens" },
+      { name: "Calculateur de prêt", href: "/calculateur" },
       { name: "Biens vendus", href: "/biens-vendus" },
       { name: "Contact", href: "/contact" },
     ],
