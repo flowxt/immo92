@@ -3,10 +3,21 @@
 import Image from "next/image";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
+import MortgageCalculator from "@/components/MortgageCalculator";
+import ImageGallery from "@/components/ImageGallery";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function LoftIndustriel() {
+  // Images de la galerie
+  const propertyImages = [
+    "/photos/annonce1.png",
+    "/photos/annonce2.png",
+    "/photos/annonce3.png",
+    "/photos/interieur.png",
+    "/photos/moitie-renov.png",
+  ];
+
   return (
     <>
       {/* Breadcrumb */}
@@ -61,49 +72,9 @@ export default function LoftIndustriel() {
 
       <Section background="white">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          {/* Galerie photos */}
-          <div className="grid md:grid-cols-3 gap-2">
-            <motion.div
-              className="md:col-span-2 relative h-96 md:h-[500px] overflow-hidden group cursor-pointer"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Image
-                src="/photos/annonce1.png"
-                alt="Loft Industriel - Vue principale"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </motion.div>
-            <div className="grid grid-rows-2 gap-2">
-              <motion.div
-                className="relative h-48 md:h-auto overflow-hidden group cursor-pointer"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  src="/photos/annonce2.png"
-                  alt="Loft Industriel - Vue 2"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </motion.div>
-              <motion.div
-                className="relative h-48 md:h-auto overflow-hidden group cursor-pointer"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  src="/photos/annonce3.png"
-                  alt="Loft Industriel - Vue 3"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </motion.div>
-            </div>
+          {/* Galerie photos interactive */}
+          <div className="p-4">
+            <ImageGallery images={propertyImages} />
           </div>
 
           {/* Contenu */}
@@ -204,6 +175,11 @@ export default function LoftIndustriel() {
                 sens unique, à mi-chemin entre le Mont Valérien et la place de
                 la Boule. Écoles et commerces à proximité.
               </p>
+            </div>
+
+            {/* Calculateur de prêt */}
+            <div className="mb-8">
+              <MortgageCalculator propertyPrice={750000} compact={true} />
             </div>
 
             {/* CTA */}

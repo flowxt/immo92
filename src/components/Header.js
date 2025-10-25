@@ -26,6 +26,7 @@ export default function Header() {
     { name: 'Nos services', href: '/nos-services' },
     { name: 'Biens à vendre', href: '/biens-a-vendre' },
     { name: 'Biens vendus', href: '/biens-vendus' },
+    { name: 'Calculateur', href: '/calculateur' },
     { name: 'Contact', href: '/contact' },
   ];
 
