@@ -254,6 +254,71 @@ export default function BiensAVendre() {
             </button>
           </motion.div>
         )}
+
+        {/* CTA Carte interactive */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-10 text-white overflow-hidden relative"
+        >
+          {/* Décorations */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+          
+          <div className="relative z-10 flex flex-col md:flex-row items-center gap-8">
+            {/* Icône */}
+            <div className="flex-shrink-0">
+              <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Contenu */}
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">
+                Visualisez tous les biens sur une carte
+              </h3>
+              <p className="text-blue-100 text-lg">
+                Découvrez l&apos;emplacement exact de chaque bien et explorez le secteur en un coup d&apos;œil
+              </p>
+            </div>
+
+            {/* Bouton */}
+            <div className="flex-shrink-0">
+              <a
+                href="/carte-biens"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition-all hover:scale-105 shadow-xl"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+                Voir la carte
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          {/* Stats rapides */}
+          <div className="relative z-10 mt-8 pt-8 border-t border-white/20 grid grid-cols-3 gap-4 text-center">
+            <div>
+              <div className="text-3xl font-bold mb-1">{filteredProperties.length}</div>
+              <div className="text-blue-100 text-sm">Biens disponibles</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-1">4</div>
+              <div className="text-blue-100 text-sm">Communes</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-1">100%</div>
+              <div className="text-blue-100 text-sm">Géolocalisés</div>
+            </div>
+          </div>
+        </motion.div>
       </Section>
 
       {/* Zones de recherche */}
