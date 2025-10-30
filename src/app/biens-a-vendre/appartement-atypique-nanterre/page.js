@@ -63,9 +63,9 @@ export default function AppartementAtypiqueNanterre() {
               animate={{ opacity: 1, y: 0 }}
               className="bg-white rounded-2xl p-8 shadow-sm"
             >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                <div className="flex-1">
+                  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
                     Appartement Atypique Années 30
                   </h1>
                   <div className="flex items-center gap-2 text-gray-600 mb-2">
@@ -88,14 +88,14 @@ export default function AppartementAtypiqueNanterre() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <span className="text-lg">92000, Nanterre - Centre</span>
+                    <span className="text-base sm:text-lg">92000, Nanterre - Centre</span>
                   </div>
                   <div className="text-sm text-gray-500">
                     Proche RER, université et commerces
                   </div>
                 </div>
-                <div className="flex flex-col items-end">
-                  <div className="text-4xl font-bold text-blue-600">
+                <div className="flex flex-col items-start md:items-end">
+                  <div className="text-3xl sm:text-4xl font-bold text-blue-600 whitespace-nowrap">
                     250 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>

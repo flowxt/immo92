@@ -64,15 +64,15 @@ export default function LoftIndustrielSuresnes() {
               animate={{ opacity: 1, y: 0 }}
               className="bg-white rounded-2xl p-8 shadow-sm"
             >
-              <div className="flex items-start justify-between mb-4">
-                <div>
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                <div className="flex-1">
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-full text-sm font-bold mb-3">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                     </svg>
                     LOFT INDUSTRIEL
                   </div>
-                  <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
+                  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
                     Loft Industriel - Mont Valérien
                   </h1>
                   <div className="flex items-center gap-2 text-gray-600 mb-2">
@@ -95,14 +95,14 @@ export default function LoftIndustrielSuresnes() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <span className="text-lg">92150, Suresnes</span>
+                    <span className="text-base sm:text-lg">92150, Suresnes</span>
                   </div>
                   <div className="text-sm text-gray-500">
                     Découvrez l&apos;élégance urbaine au style New York
                   </div>
                 </div>
-                <div className="flex flex-col items-end">
-                  <div className="text-4xl font-bold text-blue-600">
+                <div className="flex flex-col items-start md:items-end">
+                  <div className="text-3xl sm:text-4xl font-bold text-blue-600 whitespace-nowrap">
                     899 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
