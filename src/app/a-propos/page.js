@@ -6,8 +6,30 @@ import SectionHeading from "@/components/SectionHeading";
 import FadeIn from "@/components/FadeIn";
 import StaggerChildren, { StaggerItem } from "@/components/StaggerChildren";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function APropos() {
+  const team = [
+    {
+      name: "Mhamed El Mamlouk",
+      rsac: "805 060 431 RSAC Nanterre",
+      image: "/photos/Mhamed.jpg",
+      role: "Conseiller Immobilier",
+    },
+    {
+      name: "Vincent Leclerc",
+      rsac: "451 258 438 RSAC Versailles",
+      image: "/photos/vincent.jpg",
+      role: "Conseiller Immobilier",
+    },
+    {
+      name: "Alexandre Naquin",
+      rsac: "830 744 959 RSAC Nanterre",
+      image: "/photos/alexandre.jpg",
+      role: "Conseiller Immobilier",
+    },
+  ];
+
   const values = [
     {
       name: "Transparence",
@@ -137,8 +159,128 @@ export default function APropos() {
         </FadeIn>
       </Section>
 
-      {/* Notre mission */}
+      {/* Notre équipe */}
       <Section background="gray">
+        <FadeIn>
+          <SectionHeading
+            label="Les experts"
+            title={
+              <>
+                Notre <span className="text-blue-600">équipe</span>
+              </>
+            }
+            subtitle="Des professionnels à votre écoute"
+            showLine={true}
+          />
+        </FadeIn>
+        <StaggerChildren className="grid gap-8 md:grid-cols-3 mt-12">
+          {team.map((member, index) => (
+            <StaggerItem key={member.name}>
+              <motion.div
+                className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 h-full flex flex-col items-center text-center"
+                whileHover={{
+                  y: -8,
+                  transition: { duration: 0.3 },
+                }}
+              >
+                {/* Photo circulaire avec effet zoom au hover */}
+                <div className="relative w-40 h-40 mb-6 overflow-hidden rounded-full ring-4 ring-blue-100">
+                  <motion.div
+                    className="w-full h-full"
+                    whileHover={{
+                      scale: 1.1,
+                      transition: { duration: 0.4 },
+                    }}
+                  >
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                      sizes="160px"
+                    />
+                  </motion.div>
+                </div>
+
+                {/* Informations */}
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-blue-600 font-semibold mb-4">
+                    {member.role}
+                  </p>
+                  
+                  {/* Badge RSAC */}
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full">
+                    <svg
+                      className="w-4 h-4 text-gray-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      />
+                    </svg>
+                    <span className="text-sm text-gray-600 font-mono">
+                      {member.rsac}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Décoration */}
+                <div className="mt-6 w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full"></div>
+              </motion.div>
+            </StaggerItem>
+          ))}
+        </StaggerChildren>
+
+        {/* Message d'équipe */}
+        <FadeIn delay={0.4}>
+          <div className="mt-16 max-w-3xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 md:p-10 border border-blue-100">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    Une équipe soudée, une passion commune
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Forts de notre expérience et de notre connaissance approfondie
+                    du secteur, nous mettons notre expertise au service de vos
+                    projets immobiliers. Chaque membre de l&apos;équipe apporte sa
+                    vision unique pour vous garantir un accompagnement
+                    personnalisé et des résultats concrets.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+      </Section>
+
+      {/* Notre mission */}
+      <Section background="white">
         <FadeIn>
           <div className="mx-auto max-w-2xl text-center">
             <SectionHeading
