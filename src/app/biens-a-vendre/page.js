@@ -31,6 +31,63 @@ const allProperties = [
       agent: "Alexandre NAQUIN",
       rsac: "830744959",
     },
+    {
+      id: 2,
+      title: "Appartement - Nanterre Centre",
+      subtitle: "RER A - Nanterre Centre Ville",
+      location: "Nanterre, Centre",
+      surface: "59.89 m²",
+      rooms: 3,
+      roomsLabel: "3 pièces - 2 chambres",
+      image: "/photos/Guerrin/ext.jpeg",
+      price: "346 000 €",
+      priceValue: 346000,
+      slug: "appartement-nanterre-centre",
+      type: "appartement",
+      featured: true,
+      available: true,
+      agent: "Alexandre NAQUIN",
+      rsac: "830744959",
+      exclusive: true,
+    },
+    {
+      id: 3,
+      title: "Appartement Atypique Années 30",
+      subtitle: "Proche RER, université et commerces",
+      location: "Nanterre, Centre",
+      surface: "55.19 m²",
+      rooms: 3,
+      roomsLabel: "3 pièces - 2 chambres",
+      image: "/photos/Gauthier/ext.png",
+      price: "250 000 €",
+      priceValue: 250000,
+      slug: "appartement-atypique-nanterre",
+      type: "appartement",
+      featured: false,
+      available: true,
+      agent: "Alexandre NAQUIN",
+      rsac: "830744959",
+      exclusive: false,
+    },
+    {
+      id: 4,
+      title: "Loft Industriel - Mont Valérien",
+      subtitle: "Découvrez l'élégance urbaine au style New York",
+      location: "Suresnes",
+      surface: "143.05 m²",
+      rooms: 5,
+      roomsLabel: "5 pièces - 3 chambres",
+      image: "/photos/loft/sejour.jpeg",
+      price: "899 000 €",
+      priceValue: 899000,
+      slug: "loft-industriel-suresnes",
+      type: "maison",
+      featured: true,
+      available: true,
+      agent: "Alexandre NAQUIN",
+      rsac: "830744959",
+      exclusive: false,
+    },
 ];
 
 export default function BiensAVendre() {
@@ -124,6 +181,7 @@ export default function BiensAVendre() {
                 slug={property.slug}
                 featured={property.featured}
                 available={property.available}
+                exclusive={property.exclusive}
               />
             ))}
           </motion.div>

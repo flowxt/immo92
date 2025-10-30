@@ -16,8 +16,38 @@ export default function CarteBiensPage() {
       price: "699 000 €",
       image: "/photos/maison_DEBAYE/exterieur.jpg",
       slug: "maison-nanterre-musiciens",
-      lat: 48.8920,
-      lng: 2.2070,
+      lat: 48.892,
+      lng: 2.207,
+    },
+    {
+      id: 2,
+      title: "Appartement - Nanterre Centre",
+      location: "Nanterre, Centre",
+      price: "346 000 €",
+      image: "/photos/Guerrin/ext.jpeg",
+      slug: "appartement-nanterre-centre",
+      lat: 48.8925,
+      lng: 2.2055,
+    },
+    {
+      id: 3,
+      title: "Appartement Atypique Années 30",
+      location: "Nanterre, Centre",
+      price: "250 000 €",
+      image: "/photos/Gauthier/ext.png",
+      slug: "appartement-atypique-nanterre",
+      lat: 48.891,
+      lng: 2.2045,
+    },
+    {
+      id: 4,
+      title: "Loft Industriel - Mont Valérien",
+      location: "Suresnes",
+      price: "899 000 €",
+      image: "/photos/loft/sejour.jpeg",
+      slug: "loft-industriel-suresnes",
+      lat: 48.87,
+      lng: 2.22,
     },
   ];
 
@@ -25,23 +55,23 @@ export default function CarteBiensPage() {
     {
       icon: "📍",
       title: "Localisation précise",
-      description: "Visualisez l'emplacement exact de chaque bien"
+      description: "Visualisez l'emplacement exact de chaque bien",
     },
     {
       icon: "🏘️",
       title: "Vue d'ensemble",
-      description: "Tous nos biens sur une seule carte interactive"
+      description: "Tous nos biens sur une seule carte interactive",
     },
     {
       icon: "🖱️",
       title: "Navigation intuitive",
-      description: "Cliquez sur un marker pour voir les détails"
+      description: "Cliquez sur un marker pour voir les détails",
     },
     {
       icon: "🗺️",
       title: "Zoom et déplacement",
-      description: "Explorez le secteur à votre guise"
-    }
+      description: "Explorez le secteur à votre guise",
+    },
   ];
 
   return (
@@ -68,11 +98,7 @@ export default function CarteBiensPage() {
 
         {/* Carte principale */}
         <div className="mb-12">
-          <InteractiveMap 
-            properties={allProperties}
-            height="600px"
-            zoom={13}
-          />
+          <InteractiveMap properties={allProperties} height="600px" zoom={13} />
         </div>
 
         {/* Liste des biens */}
@@ -143,9 +169,7 @@ export default function CarteBiensPage() {
               <h3 className="text-lg font-bold text-gray-900 mb-2">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 text-sm">
-                {feature.description}
-              </p>
+              <p className="text-gray-600 text-sm">{feature.description}</p>
             </motion.div>
           ))}
         </div>
@@ -158,16 +182,25 @@ export default function CarteBiensPage() {
         >
           <div className="flex gap-4">
             <div className="flex-shrink-0">
-              <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+              <svg
+                className="w-6 h-6 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                  clipRule="evenodd"
+                />
               </svg>
             </div>
             <div>
               <h3 className="font-bold text-blue-900 mb-2">💡 Astuce</h3>
               <p className="text-blue-800 text-sm">
-                Sur la carte, vous pouvez zoomer avec la molette de la souris ou les boutons + / -, 
-                et déplacer la vue en glissant. Cliquez sur un marker bleu pour voir la fiche 
-                complète du bien avec photo et prix.
+                Sur la carte, vous pouvez zoomer avec la molette de la souris ou
+                les boutons + / -, et déplacer la vue en glissant. Cliquez sur
+                un marker bleu pour voir la fiche complète du bien avec photo et
+                prix.
               </p>
             </div>
           </div>
@@ -186,7 +219,7 @@ export default function CarteBiensPage() {
             Besoin d&apos;aide pour trouver le bien idéal ?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Notre équipe connaît parfaitement le secteur et peut vous 
+            Notre équipe connaît parfaitement le secteur et peut vous
             accompagner dans votre recherche
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -195,8 +228,18 @@ export default function CarteBiensPage() {
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-600 rounded-lg font-bold hover:bg-blue-50 transition-colors"
             >
               Voir tous les biens
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
               </svg>
             </a>
             <a
@@ -211,4 +254,3 @@ export default function CarteBiensPage() {
     </>
   );
 }
-

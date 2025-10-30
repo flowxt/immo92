@@ -15,6 +15,7 @@ export default function PropertyCard({
   slug,
   featured = false,
   available = true,
+  exclusive = false,
 }) {
   return (
     <motion.div
@@ -22,10 +23,10 @@ export default function PropertyCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="group"
+      className="group h-full"
     >
       <Link href={`/biens-a-vendre/${slug}`}>
-        <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+        <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
           {/* Image */}
           <div className="relative h-64 overflow-hidden">
             <motion.div
@@ -41,13 +42,18 @@ export default function PropertyCard({
 
             {/* Badges */}
             <div className="absolute top-4 left-4 flex gap-2">
+              {exclusive && (
+                <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-lg">
+                  ⭐ Exclusivité
+                </span>
+              )}
               {featured && (
                 <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-600 text-white shadow-lg">
                   💎 Coup de cœur
                 </span>
               )}
               {available && (
-                <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-500 text-white shadow-lg">
+                <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-green-500 text-white shadow-lg">
                   Disponible
                 </span>
               )}
@@ -85,7 +91,7 @@ export default function PropertyCard({
           </div>
 
           {/* Contenu */}
-          <div className="p-6">
+          <div className="p-6 flex-grow flex flex-col">
             {/* Titre */}
             <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
               {title}
@@ -109,7 +115,7 @@ export default function PropertyCard({
             </div>
 
             {/* Prix et CTA */}
-            <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+            <div className="flex items-center justify-between pt-4 border-t border-gray-200 mt-auto">
               {price ? (
                 <div className="text-2xl font-bold text-blue-600">{price}</div>
               ) : (
