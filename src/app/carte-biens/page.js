@@ -89,6 +89,36 @@ export default function CarteBiensPage() {
       lat: 48.8352,
       lng: 2.2408,
     },
+    {
+      id: 9,
+      title: "Studio - Carrières-sur-Seine",
+      location: "Carrières-sur-Seine",
+      price: "173 000 €",
+      image: "/photos/robert/exterieur.jpeg",
+      slug: "studio-carrieres-sur-seine",
+      lat: 48.9088,
+      lng: 2.1818,
+    },
+    {
+      id: 10,
+      title: "Appartement 3 pièces - Chatou",
+      location: "Chatou",
+      price: "327 000 €",
+      image: "/photos/benjamin/ext.jpeg",
+      slug: "appartement-chatou-3-pieces",
+      lat: 48.8953,
+      lng: 2.1574,
+    },
+    {
+      id: 11,
+      title: "Maison 4 pièces avec jardin - Mont-Valérien",
+      location: "Nanterre",
+      price: "690 000 €",
+      image: "/photos/jardin/jardin.jpeg",
+      slug: "maison-nanterre-mont-valerien-jardin",
+      lat: 48.8895,
+      lng: 2.2095,
+    },
   ];
 
   const features = [
