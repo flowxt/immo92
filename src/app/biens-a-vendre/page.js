@@ -12,82 +12,159 @@ import { motion } from "framer-motion";
 
 // Données des propriétés (à remplacer par Sanity plus tard)
 const allProperties = [
-    {
-      id: 1,
-      title: "Maison - Quartier des Musiciens",
-      subtitle: "Idéalement située dans une rue calme et résidentielle",
-      location: "Nanterre",
-      surface: "116 m²",
-      terrain: "254 m²",
-      rooms: 6,
-      roomsLabel: "6 pièces",
-      image: "/photos/maison_DEBAYE/exterieur.jpg",
-      price: "699 000 €",
-      priceValue: 699000,
-      slug: "maison-nanterre-musiciens",
-      type: "maison",
-      featured: true,
-      available: true,
-      agent: "Alexandre NAQUIN",
-      rsac: "830744959",
-    },
-    {
-      id: 2,
-      title: "Appartement - Nanterre Centre",
-      subtitle: "RER A - Nanterre Centre Ville",
-      location: "Nanterre, Centre",
-      surface: "59.89 m²",
-      rooms: 3,
-      roomsLabel: "3 pièces - 2 chambres",
-      image: "/photos/Guerrin/ext.jpeg",
-      price: "346 000 €",
-      priceValue: 346000,
-      slug: "appartement-nanterre-centre",
-      type: "appartement",
-      featured: true,
-      available: true,
-      agent: "Alexandre NAQUIN",
-      rsac: "830744959",
-      exclusive: true,
-    },
-    {
-      id: 3,
-      title: "Appartement Atypique Années 30",
-      subtitle: "Proche RER, université et commerces",
-      location: "Nanterre, Centre",
-      surface: "55.19 m²",
-      rooms: 3,
-      roomsLabel: "3 pièces - 2 chambres",
-      image: "/photos/Gauthier/ext.png",
-      price: "250 000 €",
-      priceValue: 250000,
-      slug: "appartement-atypique-nanterre",
-      type: "appartement",
-      featured: false,
-      available: true,
-      agent: "Alexandre NAQUIN",
-      rsac: "830744959",
-      exclusive: false,
-    },
-    {
-      id: 4,
-      title: "Loft Industriel - Mont Valérien",
-      subtitle: "Découvrez l'élégance urbaine au style New York",
-      location: "Suresnes",
-      surface: "143.05 m²",
-      rooms: 5,
-      roomsLabel: "5 pièces - 3 chambres",
-      image: "/photos/loft/sejour.jpeg",
-      price: "899 000 €",
-      priceValue: 899000,
-      slug: "loft-industriel-suresnes",
-      type: "maison",
-      featured: true,
-      available: true,
-      agent: "Alexandre NAQUIN",
-      rsac: "830744959",
-      exclusive: false,
-    },
+  {
+    id: 1,
+    title: "Maison - Quartier des Musiciens",
+    subtitle: "Idéalement située dans une rue calme et résidentielle",
+    location: "Nanterre",
+    surface: "116 m²",
+    terrain: "254 m²",
+    rooms: 6,
+    roomsLabel: "6 pièces",
+    image: "/photos/maison_DEBAYE/exterieur.jpg",
+    price: "699 000 €",
+    priceValue: 699000,
+    slug: "maison-nanterre-musiciens",
+    type: "maison",
+    featured: true,
+    available: true,
+    agent: "Alexandre NAQUIN",
+    rsac: "830744959",
+  },
+  {
+    id: 2,
+    title: "Appartement - Nanterre Centre",
+    subtitle: "RER A - Nanterre Centre Ville",
+    location: "Nanterre, Centre",
+    surface: "59.89 m²",
+    rooms: 3,
+    roomsLabel: "3 pièces - 2 chambres",
+    image: "/photos/Guerrin/ext.jpeg",
+    price: "346 000 €",
+    priceValue: 346000,
+    slug: "appartement-nanterre-centre",
+    type: "appartement",
+    featured: true,
+    available: true,
+    agent: "Alexandre NAQUIN",
+    rsac: "830744959",
+    exclusive: true,
+  },
+  {
+    id: 3,
+    title: "Appartement Atypique Années 30",
+    subtitle: "Proche RER, université et commerces",
+    location: "Nanterre, Centre",
+    surface: "55.19 m²",
+    rooms: 3,
+    roomsLabel: "3 pièces - 2 chambres",
+    image: "/photos/Gauthier/ext.png",
+    price: "250 000 €",
+    priceValue: 250000,
+    slug: "appartement-atypique-nanterre",
+    type: "appartement",
+    featured: false,
+    available: true,
+    agent: "Alexandre NAQUIN",
+    rsac: "830744959",
+    exclusive: false,
+  },
+  {
+    id: 4,
+    title: "Loft Industriel - Mont Valérien",
+    subtitle: "Découvrez l'élégance urbaine au style New York",
+    location: "Suresnes",
+    surface: "143.05 m²",
+    rooms: 5,
+    roomsLabel: "5 pièces - 3 chambres",
+    image: "/photos/loft/sejour.jpeg",
+    price: "899 000 €",
+    priceValue: 899000,
+    slug: "loft-industriel-suresnes",
+    type: "maison",
+    featured: true,
+    available: true,
+    agent: "Alexandre NAQUIN",
+    rsac: "830744959",
+    exclusive: false,
+  },
+  {
+    id: 5,
+    title: "Maison - Mont Valérien - La Boule",
+    subtitle: "Quartier résidentiel du Mont Valérien",
+    location: "Rueil-Malmaison",
+    surface: "112 m²",
+    terrain: "625 m²",
+    rooms: 5,
+    roomsLabel: "5 pièces - 3 chambres",
+    image: "/photos/jeff/exterieur.jpeg",
+    price: "639 000 €",
+    priceValue: 639000,
+    slug: "maison-rueil-mont-valerien",
+    type: "maison",
+    featured: true,
+    available: true,
+    agent: "Alexandre NAQUIN",
+    rsac: "830744959",
+    exclusive: false,
+  },
+  {
+    id: 6,
+    title: "Maison rénovée - Mont Valérien",
+    subtitle: "Entièrement rénovée, aucuns travaux à prévoir",
+    location: "Suresnes",
+    surface: "95.95 m²",
+    rooms: 4,
+    roomsLabel: "4 pièces - 3 chambres",
+    image: "/photos/bellin/ext.jpeg",
+    price: "599 000 €",
+    priceValue: 599000,
+    slug: "maison-suresnes-mont-valerien",
+    type: "maison",
+    featured: true,
+    available: true,
+    agent: "Alexandre NAQUIN",
+    rsac: "830744959",
+    exclusive: false,
+  },
+  {
+    id: 7,
+    title: "Appartement Familial - Mazurières",
+    subtitle: "Résidence verdoyante, calme et sécurisée",
+    location: "Rueil-Malmaison",
+    surface: "65.49 m²",
+    rooms: 3,
+    roomsLabel: "3 pièces - 2 chambres",
+    image: "/photos/mazuriere/salon.jpeg",
+    price: "299 000 €",
+    priceValue: 299000,
+    slug: "appartement-rueil-mazurieres",
+    type: "appartement",
+    featured: true,
+    available: true,
+    agent: "Mhamed EL MAMLOUK",
+    rsac: "805 060 431",
+    exclusive: false,
+  },
+  {
+    id: 8,
+    title: "Appartement T1 Bis - Centre-ville",
+    subtitle: "Métro Marcel Sembat ligne 9 à 1 minute",
+    location: "Boulogne-Billancourt",
+    surface: "24.88 m²",
+    rooms: 2,
+    roomsLabel: "2 pièces - 1 chambre",
+    image: "/photos/boulogne/sejour.jpeg",
+    price: "272 000 €",
+    priceValue: 272000,
+    slug: "appartement-boulogne-centre",
+    type: "appartement",
+    featured: true,
+    available: true,
+    agent: "Mhamed EL MAMLOUK",
+    rsac: "805 060 431",
+    exclusive: false,
+  },
 ];
 
 export default function BiensAVendre() {
@@ -117,11 +194,25 @@ export default function BiensAVendre() {
       // Filtre par prix
       if (filters.priceRange !== "all") {
         const priceValue = property.priceValue;
-        if (filters.priceRange === "0-200000" && priceValue >= 200000) return false;
-        if (filters.priceRange === "200000-400000" && (priceValue < 200000 || priceValue >= 400000)) return false;
-        if (filters.priceRange === "400000-600000" && (priceValue < 400000 || priceValue >= 600000)) return false;
-        if (filters.priceRange === "600000-800000" && (priceValue < 600000 || priceValue >= 800000)) return false;
-        if (filters.priceRange === "800000+" && priceValue < 800000) return false;
+        if (filters.priceRange === "0-200000" && priceValue >= 200000)
+          return false;
+        if (
+          filters.priceRange === "200000-400000" &&
+          (priceValue < 200000 || priceValue >= 400000)
+        )
+          return false;
+        if (
+          filters.priceRange === "400000-600000" &&
+          (priceValue < 400000 || priceValue >= 600000)
+        )
+          return false;
+        if (
+          filters.priceRange === "600000-800000" &&
+          (priceValue < 600000 || priceValue >= 800000)
+        )
+          return false;
+        if (filters.priceRange === "800000+" && priceValue < 800000)
+          return false;
       }
 
       return true;
@@ -246,13 +337,23 @@ export default function BiensAVendre() {
           {/* Décorations */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-          
+
           <div className="relative z-10 flex flex-col md:flex-row items-center gap-8">
             {/* Icône */}
             <div className="flex-shrink-0">
               <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                <svg
+                  className="w-10 h-10 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                  />
                 </svg>
               </div>
             </div>
@@ -263,7 +364,8 @@ export default function BiensAVendre() {
                 Visualisez tous les biens sur une carte
               </h3>
               <p className="text-blue-100 text-lg">
-                Découvrez l&apos;emplacement exact de chaque bien et explorez le secteur en un coup d&apos;œil
+                Découvrez l&apos;emplacement exact de chaque bien et explorez le
+                secteur en un coup d&apos;œil
               </p>
             </div>
 
@@ -273,12 +375,32 @@ export default function BiensAVendre() {
                 href="/carte-biens"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition-all hover:scale-105 shadow-xl"
               >
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                  />
                 </svg>
                 Voir la carte
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
                 </svg>
               </a>
             </div>
@@ -287,7 +409,9 @@ export default function BiensAVendre() {
           {/* Stats rapides */}
           <div className="relative z-10 mt-8 pt-8 border-t border-white/20 grid grid-cols-3 gap-4 text-center">
             <div>
-              <div className="text-3xl font-bold mb-1">{filteredProperties.length}</div>
+              <div className="text-3xl font-bold mb-1">
+                {filteredProperties.length}
+              </div>
               <div className="text-blue-100 text-sm">Biens disponibles</div>
             </div>
             <div>
