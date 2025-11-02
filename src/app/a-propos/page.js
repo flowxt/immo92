@@ -118,7 +118,7 @@ export default function APropos() {
   return (
     <>
       <Hero
-        subtitle="À propos de nous"
+        subtitle="Notre histoire"
         title="Experts du Mont-Valérien, passionnés par votre réussite"
         description="Une équipe locale avec plus de 10 ans d'expérience, au service de vos projets immobiliers."
         imageSrc="/photos/mont-valerien.jpg"
@@ -196,7 +196,8 @@ export default function APropos() {
                       src={member.image}
                       alt={member.name}
                       fill
-                      className="object-cover"
+                      className="object-cover object-center"
+                      style={{ objectPosition: 'center 30%' }}
                       sizes="160px"
                     />
                   </motion.div>

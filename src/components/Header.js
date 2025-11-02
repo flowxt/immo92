@@ -22,12 +22,11 @@ export default function Header() {
 
   const navigation = [
     { name: 'Accueil', href: '/' },
-    { name: 'À propos', href: '/a-propos' },
+    { name: 'Notre histoire', href: '/a-propos' },
     { name: 'Nos services', href: '/nos-services' },
     { name: 'Biens à vendre', href: '/biens-a-vendre' },
     { name: 'Biens vendus', href: '/biens-vendus' },
     { name: 'Calculateur', href: '/calculateur' },
-    { name: 'Contact', href: '/contact' },
   ];
 
   return (

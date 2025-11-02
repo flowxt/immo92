@@ -450,7 +450,8 @@ export default function AppartementChatou3Pieces() {
                       alt="Vincent LECLERC"
                       width={80}
                       height={80}
-                      className="rounded-full shadow-md"
+                      className="rounded-full shadow-md object-cover"
+                      style={{ objectPosition: 'center 30%' }}
                     />
                     <div>
                       <div className="font-bold text-gray-900">
@@ -534,3 +535,4 @@ export default function AppartementChatou3Pieces() {
     </div>
   );
 }
+
