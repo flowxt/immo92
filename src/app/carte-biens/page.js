@@ -119,6 +119,16 @@ export default function CarteBiensPage() {
       lat: 48.8895,
       lng: 2.2095,
     },
+    {
+      id: 12,
+      title: "Appartement 4 pièces - Garches centre",
+      location: "Garches",
+      price: "450 000 €",
+      image: "/photos/guimot/ext.jpeg",
+      slug: "appartement-garches-centre",
+      lat: 48.8428,
+      lng: 2.1873,
+    },
   ];
 
   const features = [

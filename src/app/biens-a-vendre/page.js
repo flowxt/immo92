@@ -222,6 +222,25 @@ const allProperties = [
       rsac: "451 258 438",
       exclusive: false,
     },
+    {
+      id: 12,
+      title: "Appartement 4 pièces - Garches centre",
+      subtitle: "Environnement verdoyant - Accès Paris & La Défense",
+      location: "Garches",
+      surface: "84 m²",
+      rooms: 4,
+      roomsLabel: "4 pièces - 3 chambres",
+      image: "/photos/guimot/ext.jpeg",
+      price: "450 000 €",
+      priceValue: 450000,
+      slug: "appartement-garches-centre",
+      type: "appartement",
+      featured: true,
+      available: true,
+      agent: "Vincent LECLERC",
+      rsac: "451 258 438",
+      exclusive: false,
+    },
 ];
 
 export default function BiensAVendre() {

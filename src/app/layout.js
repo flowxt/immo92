@@ -116,6 +116,14 @@ export default function RootLayout({ children }) {
         "@type": "City",
         name: "Chatou",
       },
+      {
+        "@type": "City",
+        name: "Garches",
+      },
+      {
+        "@type": "City",
+        name: "Colombes",
+      },
     ],
     priceRange: "€€",
     openingHoursSpecification: {

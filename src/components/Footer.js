@@ -211,7 +211,7 @@ export default function Footer() {
               Zone d&apos;expertise
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {["Mont-Valérien", "Nanterre", "Puteaux", "Suresnes", "Rueil-Malmaison"].map((ville) => (
+              {["Mont-Valérien", "Nanterre", "Suresnes", "Rueil-Malmaison", "Garches", "Bezons", "Chatou", "Colombes"].map((ville) => (
                 <span
                   key={ville}
                   className="inline-block px-4 py-2 bg-gray-800/50 text-gray-300 text-xs font-medium rounded-full border border-gray-700 hover:border-blue-500 hover:text-white transition-colors"
