@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ener-immo92.fr/sitemap.xml
+
+# Disallow admin or private pages if any
+# Disallow: /admin/
+
