@@ -111,25 +111,32 @@ export default function Home() {
             />
           </StaggerItem>
           <StaggerItem>
-            <ServiceCard
-              icon={
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-                  />
-                </svg>
-              }
-              title="Accompagnement à la rénovation énergétique"
-              description="Améliorez le classement DPE de votre bien pour le valoriser et attirer davantage d'acheteurs. Nous vous guidons dans toutes les démarches."
-            />
+            <div className="relative h-full">
+              <ServiceCard
+                icon={
+                  <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                    />
+                  </svg>
+                }
+                title="Accompagnement à la rénovation énergétique"
+                description="Améliorez le classement DPE de votre bien pour le valoriser et attirer davantage d'acheteurs. Nous vous guidons dans toutes les démarches."
+              />
+              {/* Badge partenaire ENRLUX */}
+              <div className="absolute -top-2 -right-2 bg-gradient-to-r from-green-600 to-green-700 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1">
+                <span>🌿</span>
+                <span>En partenariat avec ENRLUX</span>
+              </div>
+            </div>
           </StaggerItem>
           <StaggerItem>
             <ServiceCard

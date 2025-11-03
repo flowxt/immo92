@@ -39,7 +39,9 @@ export default function Footer() {
               eXp France - Mont-Valérien
             </h3>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Votre partenaire immobilier de confiance pour la vente, l&apos;achat et la valorisation de biens dans le secteur du Mont-Valérien.
+              Votre partenaire immobilier de confiance pour la vente,
+              l&apos;achat et la valorisation de biens dans le secteur du
+              Mont-Valérien.
             </p>
             <div className="pt-2">
               <a
@@ -94,6 +96,50 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Partenaire ENRLUX */}
+            <div className="mt-6 pt-6 border-t border-gray-700">
+              <h4 className="text-sm font-semibold text-white mb-3">
+                Notre partenaire
+              </h4>
+              <a
+                href="https://www.enrlux-france.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors text-sm font-semibold group"
+              >
+                <svg
+                  className="w-4 h-4 text-green-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+                <span>ENRLUX France</span>
+                <svg
+                  className="w-3 h-3 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+              <p className="text-xs text-gray-500 mt-2">
+                Rénovation énergétique
+              </p>
+            </div>
           </div>
 
           {/* Liens rapides */}
@@ -152,7 +198,8 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="text-sm text-gray-400">
-                    Mont-Valérien<br />
+                    Mont-Valérien
+                    <br />
                     Hauts-de-Seine (92)
                   </p>
                 </div>
@@ -172,10 +219,10 @@ export default function Footer() {
                   />
                 </svg>
                 <a
-                  href="/contact"
+                  href="mailto:contact@ener-immo92.fr"
                   className="text-sm text-gray-400 hover:text-white transition-colors"
                 >
-                  Nous contacter
+                  contact@ener-immo92.fr
                 </a>
               </li>
               <li className="flex items-center">
@@ -211,7 +258,16 @@ export default function Footer() {
               Zone d&apos;expertise
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {["Mont-Valérien", "Nanterre", "Suresnes", "Rueil-Malmaison", "Garches", "Bezons", "Chatou", "Colombes"].map((ville) => (
+              {[
+                "Mont-Valérien",
+                "Nanterre",
+                "Suresnes",
+                "Rueil-Malmaison",
+                "Garches",
+                "Bezons",
+                "Chatou",
+                "Colombes",
+              ].map((ville) => (
                 <span
                   key={ville}
                   className="inline-block px-4 py-2 bg-gray-800/50 text-gray-300 text-xs font-medium rounded-full border border-gray-700 hover:border-blue-500 hover:text-white transition-colors"
@@ -225,10 +281,23 @@ export default function Footer() {
           {/* Copyright et mentions */}
           <div className="text-center space-y-2">
             <p className="text-xs text-gray-500">
-              Cellule indépendante du réseau eXp France spécialisée dans le secteur du Mont-Valérien (92)
+              Cellule indépendante du réseau eXp France spécialisée dans le
+              secteur du Mont-Valérien (92)
             </p>
             <p className="text-xs text-gray-500">
-              &copy; {new Date().getFullYear()} eXp France - Mont-Valérien. Tous droits réservés.
+              &copy; {new Date().getFullYear()} eXp France - Mont-Valérien. Tous
+              droits réservés.
+            </p>
+            <p className="text-xs text-gray-500 mt-3">
+              Site créé par{" "}
+              <a
+                href="https://www.atypikcode.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 font-semibold transition-colors"
+              >
+                atypikCode
+              </a>
             </p>
           </div>
         </div>
