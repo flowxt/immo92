@@ -7,6 +7,16 @@ export const metadata = {
   title: "Nos services | eXp France - Mont-Valérien",
   description:
     "Estimation immobilière, rénovation énergétique, division de terrain et mise en valeur : découvrez nos solutions pour valoriser votre bien.",
+  alternates: {
+    canonical: "https://ener-immo92.fr/nos-services",
+  },
+  openGraph: {
+    title: "Nos services | Agent Immobilier Mont-Valérien",
+    description:
+      "Estimation immobilière, rénovation énergétique, division de terrain et mise en valeur : découvrez nos solutions pour valoriser votre bien.",
+    url: "https://ener-immo92.fr/nos-services",
+    type: "website",
+  },
 };
 
 export default function NosServices() {
