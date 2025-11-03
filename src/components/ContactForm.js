@@ -20,16 +20,34 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    
-    // TODO: Implémenter l'envoi du formulaire
-    // Pour l'instant, simulons un envoi
-    setTimeout(() => {
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Erreur lors de l\'envoi');
+      }
+
       setStatus('success');
       setFormData({ name: '', email: '', phone: '', message: '' });
-      
+
       // Réinitialiser le message après 5 secondes
       setTimeout(() => setStatus(''), 5000);
-    }, 1000);
+    } catch (error) {
+      console.error('Erreur:', error);
+      setStatus('error');
+
+      // Réinitialiser le message d'erreur après 5 secondes
+      setTimeout(() => setStatus(''), 5000);
+    }
   };
 
   return (
@@ -116,6 +134,23 @@ export default function ContactForm() {
             <div className="ml-3">
               <p className="text-sm font-medium text-green-800">
                 Message envoyé avec succès ! Nous vous recontacterons rapidement.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {status === 'error' && (
+        <div className="rounded-md bg-red-50 p-4">
+          <div className="flex">
+            <div className="flex-shrink-0">
+              <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <div className="ml-3">
+              <p className="text-sm font-medium text-red-800">
+                Une erreur est survenue. Veuillez réessayer ou nous contacter directement.
               </p>
             </div>
           </div>
