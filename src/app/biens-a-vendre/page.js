@@ -241,6 +241,25 @@ const allProperties = [
       rsac: "451 258 438",
       exclusive: false,
     },
+    {
+      id: 13,
+      title: "Appartement 3 pièces lumineux avec deux terrasses",
+      subtitle: "Résidence récente et sécurisée - Quartier du Plateau",
+      location: "Suresnes",
+      surface: "66.41 m²",
+      rooms: 3,
+      roomsLabel: "3 pièces - 2 chambres",
+      image: "/photos/iouga/salon.jpeg",
+      price: "459 000 €",
+      priceValue: 459000,
+      slug: "appartement-suresnes-plateau-terrasses",
+      type: "appartement",
+      featured: true,
+      available: true,
+      agent: "Vincent LECLERC",
+      rsac: "451 258 438",
+      exclusive: false,
+    },
 ];
 
 export default function BiensAVendre() {

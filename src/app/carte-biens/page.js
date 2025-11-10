@@ -129,6 +129,16 @@ export default function CarteBiensPage() {
       lat: 48.8428,
       lng: 2.1873,
     },
+    {
+      id: 13,
+      title: "Appartement 3 pièces lumineux avec deux terrasses",
+      location: "Suresnes",
+      price: "459 000 €",
+      image: "/photos/iouga/salon.jpeg",
+      slug: "appartement-suresnes-plateau-terrasses",
+      lat: 48.8720,
+      lng: 2.2180,
+    },
   ];
 
   const features = [
