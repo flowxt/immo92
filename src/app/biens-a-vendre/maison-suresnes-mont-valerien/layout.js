@@ -1,12 +1,13 @@
 export const metadata = {
-  title: "Maison rénovée 4 pièces Mont Valérien - Suresnes 599 000€",
+  title: "Maison rénovée 4 pièces Mont Valérien - Suresnes 549 000€",
   description:
     "Maison rénovée 95 m² à vendre à Suresnes, Mont Valérien. 4 pièces, 3 chambres, entièrement rénovée. Aucuns travaux à prévoir, prête à emménager.",
   alternates: {
-    canonical: "https://ener-immo92.fr/biens-a-vendre/maison-suresnes-mont-valerien",
+    canonical:
+      "https://ener-immo92.fr/biens-a-vendre/maison-suresnes-mont-valerien",
   },
   openGraph: {
-    title: "Maison rénovée 4 pièces Mont Valérien - Suresnes 599 000€",
+    title: "Maison rénovée 4 pièces Mont Valérien - Suresnes 549 000€",
     description:
       "Maison rénovée 95 m² à vendre à Suresnes, Mont Valérien. 4 pièces, 3 chambres, entièrement rénovée.",
     url: "https://ener-immo92.fr/biens-a-vendre/maison-suresnes-mont-valerien",
@@ -25,4 +26,3 @@ export const metadata = {
 export default function MaisonSuresnesMontValerienLayout({ children }) {
   return children;
 }
-

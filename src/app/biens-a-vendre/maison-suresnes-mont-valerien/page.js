@@ -30,7 +30,7 @@ export default function MaisonSuresnesMontValerien() {
     id: 6,
     title: "Maison rénovée - Mont Valérien",
     location: "92150, Suresnes",
-    price: "599 000 €",
+    price: "549 000 €",
     lat: 48.8715,
     lng: 2.2195,
     slug: "maison-suresnes-mont-valerien",
@@ -102,12 +102,14 @@ export default function MaisonSuresnesMontValerien() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <span className="text-base sm:text-lg">92150, Suresnes</span>
+                    <span className="text-base sm:text-lg">
+                      92150, Suresnes
+                    </span>
                   </div>
                 </div>
                 <div className="flex flex-col items-start md:items-end">
                   <div className="text-3xl sm:text-4xl font-bold text-blue-600 whitespace-nowrap">
-                    599 000 €
+                    549 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
                 </div>
@@ -156,9 +158,7 @@ export default function MaisonSuresnesMontValerien() {
                   Au premier étage une suite parentale avec grand dressing, un
                   bureau et une véranda qui peut faire office de chambre.
                 </p>
-                <p>
-                  Au deuxième étage une grande chambre sous comble.
-                </p>
+                <p>Au deuxième étage une grande chambre sous comble.</p>
                 <p className="font-semibold text-green-600">
                   ✨ Aucuns travaux à prévoir... à visiter sans tarder !
                 </p>
@@ -275,7 +275,9 @@ export default function MaisonSuresnesMontValerien() {
                   <span className="font-semibold text-gray-900">1 m²</span>
                 </div>
                 <div className="flex justify-between py-3 border-b">
-                  <span className="text-gray-600">Chambre 1 (suite parentale)</span>
+                  <span className="text-gray-600">
+                    Chambre 1 (suite parentale)
+                  </span>
                   <span className="font-semibold text-gray-900">22 m²</span>
                 </div>
                 <div className="flex justify-between py-3 border-b">
@@ -414,14 +416,13 @@ export default function MaisonSuresnesMontValerien() {
                 89071070000018 - 579 000 € honoraires exclus - Honoraires de
                 3.45%TTC à charge acquéreur - Aucune procédure en cours
                 (articles 29-1A/29-1 loi 65-557, L.615-6 du CCH) - Classe
-                énergie 168.6 kWhEP/m².an (C) - Classe climat 29.1 kg
-                CO2/m².an (C) - Montant estimé des dépenses annuelles
-                d&apos;énergie pour un usage standard, établi à partir des prix
-                de l&apos;énergie de l&apos;année 2021 : 1197€ ~ 1621€ - Les
-                informations sur les risques auxquels ce bien est exposé sont
-                disponibles sur le site Géorisques : www.georisques.gouv.fr -
-                Alexandre NAQUIN - Agent commercial - EI - RSAC Nanterre
-                830744959
+                énergie 168.6 kWhEP/m².an (C) - Classe climat 29.1 kg CO2/m².an
+                (C) - Montant estimé des dépenses annuelles d&apos;énergie pour
+                un usage standard, établi à partir des prix de l&apos;énergie de
+                l&apos;année 2021 : 1197€ ~ 1621€ - Les informations sur les
+                risques auxquels ce bien est exposé sont disponibles sur le site
+                Géorisques : www.georisques.gouv.fr - Alexandre NAQUIN - Agent
+                commercial - EI - RSAC Nanterre 830744959
               </p>
             </motion.div>
           </div>
@@ -485,7 +486,7 @@ export default function MaisonSuresnesMontValerien() {
                   exit={{ opacity: 0, y: -20 }}
                   className="space-y-4"
                 >
-                  <MortgageCalculator compact={true} propertyPrice={599000} />
+                  <MortgageCalculator compact={true} propertyPrice={549000} />
 
                   {/* Lien vers calculette complète */}
                   <Link
@@ -531,4 +532,3 @@ export default function MaisonSuresnesMontValerien() {
     </div>
   );
 }
-
