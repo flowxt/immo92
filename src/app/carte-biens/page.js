@@ -63,7 +63,7 @@ export default function CarteBiensPage() {
       id: 6,
       title: "Maison rénovée - Mont Valérien",
       location: "Suresnes",
-      price: "599 000 €",
+      price: "549 000 €",
       image: "/photos/bellin/ext.jpeg",
       slug: "maison-suresnes-mont-valerien",
       lat: 48.8715,
@@ -136,8 +136,8 @@ export default function CarteBiensPage() {
       price: "459 000 €",
       image: "/photos/iouga/salon.jpeg",
       slug: "appartement-suresnes-plateau-terrasses",
-      lat: 48.8720,
-      lng: 2.2180,
+      lat: 48.872,
+      lng: 2.218,
     },
   ];
 
