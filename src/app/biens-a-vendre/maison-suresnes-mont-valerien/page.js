@@ -413,7 +413,7 @@ export default function MaisonSuresnesMontValerien() {
             >
               <p className="text-xs text-gray-600 leading-relaxed">
                 EXP GLOBAL FRANCE - Non-détention de fonds - SIRET
-                89071070000018 - 579 000 € honoraires exclus - Honoraires de
+                89071070000018 - 531 000 € honoraires exclus - Honoraires de
                 3.45%TTC à charge acquéreur - Aucune procédure en cours
                 (articles 29-1A/29-1 loi 65-557, L.615-6 du CCH) - Classe
                 énergie 168.6 kWhEP/m².an (C) - Classe climat 29.1 kg CO2/m².an

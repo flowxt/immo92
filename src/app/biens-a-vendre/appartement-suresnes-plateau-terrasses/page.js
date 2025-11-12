@@ -67,7 +67,11 @@ export default function AppartementSurnesnesPlateauTerrasses() {
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                 <div className="flex-1">
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full text-sm font-bold mb-3">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <svg
+                      className="w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
                       <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                     </svg>
                     APPARTEMENT 3 PIÈCES
@@ -95,10 +99,13 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <span className="text-base sm:text-lg">92150, Suresnes - Quartier du Plateau</span>
+                    <span className="text-base sm:text-lg">
+                      92150, Suresnes - Quartier du Plateau
+                    </span>
                   </div>
                   <div className="text-sm text-gray-500">
-                    Résidence récente et sécurisée, proche du parc et des commerces
+                    Résidence récente et sécurisée, proche du parc et des
+                    commerces
                   </div>
                 </div>
                 <div className="flex flex-col items-start md:items-end">
@@ -113,7 +120,9 @@ export default function AppartementSurnesnesPlateauTerrasses() {
               <div className="grid grid-cols-3 gap-4 pt-6 border-t">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-gray-900">66.41</div>
-                  <div className="text-sm text-gray-500 mt-1">m² Loi Carrez</div>
+                  <div className="text-sm text-gray-500 mt-1">
+                    m² Loi Carrez
+                  </div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-gray-900">3</div>
@@ -138,17 +147,27 @@ export default function AppartementSurnesnesPlateauTerrasses() {
               </h2>
               <div className="prose prose-lg max-w-none text-gray-600 space-y-4">
                 <p className="text-lg leading-relaxed">
-                  Découvrez ce 3 pièces traversant de 66,41 m² (Loi Carrez), situé
-                  dans une résidence récente et sécurisée à la limite de Suresnes,
-                  dans le quartier recherché du Plateau. Proche du parc, des écoles,
-                  commerces et services, et à quelques minutes de la future gare du
-                  métro 15 Mont Valérien.
+                  Découvrez ce 3 pièces traversant de 66,41 m² (Loi Carrez),
+                  situé dans une résidence récente et sécurisée à la limite de
+                  Suresnes, dans le quartier recherché du Plateau. Proche du
+                  parc, des écoles, commerces et services, et à quelques minutes
+                  de la future gare du métro 15 Mont Valérien.
                 </p>
-                
+
                 <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 my-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg
+                      className="w-6 h-6 text-blue-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
                     </svg>
                     Points forts
                   </h3>
@@ -163,7 +182,10 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-blue-600 font-bold">•</span>
-                      <span>Pièce de vie de plus de 31 m² avec cuisine ouverte équipée</span>
+                      <span>
+                        Pièce de vie de plus de 31 m² avec cuisine ouverte
+                        équipée
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-blue-600 font-bold">•</span>
@@ -185,23 +207,25 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                 </div>
 
                 <p className="text-lg leading-relaxed">
-                  En rez-de-jardin, l&apos;appartement offre une pièce de vie lumineuse
-                  de plus de 31 m² avec cuisine ouverte équipée, prolongée par une
-                  terrasse Ouest. La partie nuit comprend deux chambres avec
-                  placards, une salle d&apos;eau avec douche à l&apos;italienne et des toilettes
-                  séparées, donnant sur une seconde terrasse.
+                  En rez-de-jardin, l&apos;appartement offre une pièce de vie
+                  lumineuse de plus de 31 m² avec cuisine ouverte équipée,
+                  prolongée par une terrasse Ouest. La partie nuit comprend deux
+                  chambres avec placards, une salle d&apos;eau avec douche à
+                  l&apos;italienne et des toilettes séparées, donnant sur une
+                  seconde terrasse.
                 </p>
 
                 <p className="text-lg leading-relaxed">
-                  Une cave, un parking en sous-sol et un local à vélos complètent ce
-                  bien.
+                  Une cave, un parking en sous-sol et un local à vélos
+                  complètent ce bien.
                 </p>
 
                 <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg my-6">
                   <p className="text-gray-800 italic font-medium">
-                    Un bien rare avec deux terrasses dans un quartier très recherché, 
-                    idéal pour une famille souhaitant profiter d&apos;espaces extérieurs 
-                    tout en restant à proximité de toutes les commodités.
+                    Un bien rare avec deux terrasses dans un quartier très
+                    recherché, idéal pour une famille souhaitant profiter
+                    d&apos;espaces extérieurs tout en restant à proximité de
+                    toutes les commodités.
                   </p>
                 </div>
               </div>
@@ -227,19 +251,27 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Charges</span>
-                    <span className="font-semibold text-gray-900">611 €/trimestre (2 444 €/an)</span>
+                    <span className="font-semibold text-gray-900">
+                      611 €/trimestre (2 444 €/an)
+                    </span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Surface Loi Carrez</span>
-                    <span className="font-semibold text-gray-900">66.41 m²</span>
+                    <span className="font-semibold text-gray-900">
+                      66.41 m²
+                    </span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Surface totale</span>
-                    <span className="font-semibold text-gray-900">66.41 m²</span>
+                    <span className="font-semibold text-gray-900">
+                      66.41 m²
+                    </span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Étage</span>
-                    <span className="font-semibold text-gray-900">Rez-de-jardin / 3</span>
+                    <span className="font-semibold text-gray-900">
+                      Rez-de-jardin / 3
+                    </span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Exposition</span>
@@ -253,11 +285,15 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                 <div className="space-y-4">
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Type de chauffage</span>
-                    <span className="font-semibold text-gray-900">Convecteur</span>
+                    <span className="font-semibold text-gray-900">
+                      Convecteur
+                    </span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Énergie de chauffage</span>
-                    <span className="font-semibold text-gray-900">Électrique</span>
+                    <span className="font-semibold text-gray-900">
+                      Électrique
+                    </span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Moyen de chauffage</span>
@@ -273,14 +309,18 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Eaux usées</span>
-                    <span className="font-semibold text-gray-900">Tout à l&apos;égout</span>
+                    <span className="font-semibold text-gray-900">
+                      Tout à l&apos;égout
+                    </span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Disponibilité</span>
                     <span className="font-semibold text-gray-900">Libre</span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
-                    <span className="text-gray-600">Lots dans la copropriété</span>
+                    <span className="text-gray-600">
+                      Lots dans la copropriété
+                    </span>
                     <span className="font-semibold text-gray-900">238</span>
                   </div>
                 </div>
@@ -294,11 +334,17 @@ export default function AppartementSurnesnesPlateauTerrasses() {
               transition={{ delay: 0.3 }}
               className="bg-white rounded-2xl p-8 shadow-sm"
             >
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Surfaces</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Surfaces
+              </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {[
                   { name: "Séjour", surface: "23.42 m²", highlight: true },
-                  { name: "Cuisine américaine", surface: "7.97 m²", highlight: true },
+                  {
+                    name: "Cuisine américaine",
+                    surface: "7.97 m²",
+                    highlight: true,
+                  },
                   { name: "Chambre 1", surface: "10.87 m²" },
                   { name: "Chambre 2", surface: "9.56 m²" },
                   { name: "Salle de bains", surface: "4.43 m²" },
@@ -329,19 +375,37 @@ export default function AppartementSurnesnesPlateauTerrasses() {
 
               <div className="mt-6 p-6 bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl">
                 <div className="flex items-center gap-3 mb-2">
-                  <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  <svg
+                    className="w-6 h-6 text-green-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
                   </svg>
-                  <h3 className="text-lg font-bold text-gray-900">Extérieurs</h3>
+                  <h3 className="text-lg font-bold text-gray-900">
+                    Extérieurs
+                  </h3>
                 </div>
                 <div className="grid grid-cols-2 gap-4 mt-4">
                   <div className="p-4 bg-white rounded-lg border border-green-200">
-                    <div className="font-semibold text-gray-900">Terrasse Ouest</div>
-                    <div className="text-sm text-gray-600 mt-1">Depuis le séjour</div>
+                    <div className="font-semibold text-gray-900">
+                      Terrasse Ouest
+                    </div>
+                    <div className="text-sm text-gray-600 mt-1">
+                      Depuis le séjour
+                    </div>
                   </div>
                   <div className="p-4 bg-white rounded-lg border border-green-200">
                     <div className="font-semibold text-gray-900">Terrasse</div>
-                    <div className="text-sm text-gray-600 mt-1">Depuis la partie nuit</div>
+                    <div className="text-sm text-gray-600 mt-1">
+                      Depuis la partie nuit
+                    </div>
                   </div>
                 </div>
                 <div className="mt-3 text-sm text-green-800 font-medium">
@@ -517,16 +581,17 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                   properties={[
                     {
                       id: 13,
-                      title: "Appartement 3 pièces lumineux avec deux terrasses",
+                      title:
+                        "Appartement 3 pièces lumineux avec deux terrasses",
                       location: "Suresnes",
                       price: "459 000 €",
                       image: "/photos/iouga/salon.jpeg",
                       slug: "appartement-suresnes-plateau-terrasses",
-                      lat: 48.8720,
-                      lng: 2.2180,
+                      lat: 48.872,
+                      lng: 2.218,
                     },
                   ]}
-                  center={[48.8720, 2.2180]}
+                  center={[48.872, 2.218]}
                   zoom={15}
                 />
               </div>
@@ -550,7 +615,9 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                     <div className="font-semibold text-gray-900 text-sm mb-1">
                       Résidence récente
                     </div>
-                    <div className="text-xs text-gray-600">Construite en 2011</div>
+                    <div className="text-xs text-gray-600">
+                      Construite en 2011
+                    </div>
                   </div>
                 </div>
 
@@ -572,7 +639,9 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                     <div className="font-semibold text-gray-900 text-sm mb-1">
                       Quartier du Plateau
                     </div>
-                    <div className="text-xs text-gray-600">Verdoyant et recherché</div>
+                    <div className="text-xs text-gray-600">
+                      Verdoyant et recherché
+                    </div>
                   </div>
                 </div>
 
@@ -594,7 +663,9 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                     <div className="font-semibold text-gray-900 text-sm mb-1">
                       Métro 15 à venir
                     </div>
-                    <div className="text-xs text-gray-600">Station Mont Valérien</div>
+                    <div className="text-xs text-gray-600">
+                      Station Mont Valérien
+                    </div>
                   </div>
                 </div>
               </div>
@@ -609,16 +680,17 @@ export default function AppartementSurnesnesPlateauTerrasses() {
             >
               <p className="text-xs text-gray-600 leading-relaxed">
                 EXP GLOBAL FRANCE - Non-détention de fonds - SIRET
-                89071070000018 - Honoraires à la charge du vendeur - Nombre de lots dans la copropriété: 238 - Montant moyen de la
-                quote-part de charges courantes 2 444 €/an - Aucune procédure en cours (articles
-                29-1A/29-1 loi 65-557, L.615-6 du CCH) - Classe énergie 173
-                kWhEP/m².an (C) - Classe climat 5 kg CO2/m².an (A) - Montant
-                estimé des dépenses annuelles d&apos;énergie pour un usage
-                standard, établi à partir des prix de l&apos;énergie de l&apos;année
-                2021 : 760€ ~ 1040€ - Les informations sur les risques auxquels
-                ce bien est exposé sont disponibles sur le site Géorisques :
-                www.georisques.gouv.fr - Vincent LECLERC - Agent commercial - EI
-                - RSAC VERSAILLES 451 258 438
+                89071070000018 - Honoraires à la charge du vendeur - Nombre de
+                lots dans la copropriété: 238 - Montant moyen de la quote-part
+                de charges courantes 2 444 €/an - Aucune procédure en cours
+                (articles 29-1A/29-1 loi 65-557, L.615-6 du CCH) - Classe
+                énergie 173 kWhEP/m².an (C) - Classe climat 5 kg CO2/m².an (A) -
+                Montant estimé des dépenses annuelles d&apos;énergie pour un
+                usage standard, établi à partir des prix de l&apos;énergie de
+                l&apos;année 2021 : 760€ ~ 1040€ - Les informations sur les
+                risques auxquels ce bien est exposé sont disponibles sur le site
+                Géorisques : www.georisques.gouv.fr - Vincent LECLERC - Agent
+                commercial - EI - RSAC VERSAILLES 451 258 438
               </p>
             </motion.div>
           </div>
@@ -731,4 +803,3 @@ export default function AppartementSurnesnesPlateauTerrasses() {
     </div>
   );
 }
-
