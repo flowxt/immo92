@@ -19,7 +19,7 @@ export default function Hero({
       }`}
     >
       {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
         <motion.div
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}

@@ -149,20 +149,22 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="fr">
+    <html lang="fr" className="overflow-x-hidden">
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <Analytics />
+      <body className={`${inter.variable} ${playfair.variable} antialiased overflow-x-hidden`}>
+        <div className="relative w-full overflow-x-hidden">
+          <Header />
+          <main className="w-full overflow-x-hidden">{children}</main>
+          <Footer />
+          <Analytics />
+        </div>
       </body>
     </html>
   );
