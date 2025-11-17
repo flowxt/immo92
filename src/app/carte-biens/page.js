@@ -139,6 +139,16 @@ export default function CarteBiensPage() {
       lat: 48.872,
       lng: 2.218,
     },
+    {
+      id: 14,
+      title: "Maison familiale Mont Valérien - EXCLUSIVITÉ",
+      location: "Suresnes",
+      price: "748 000 €",
+      image: "/photos/maison/exterieur.jpeg",
+      slug: "maison-suresnes-familiale-exclusivite",
+      lat: 48.8738,
+      lng: 2.2165,
+    },
   ];
 
   const features = [

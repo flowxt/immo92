@@ -260,6 +260,26 @@ const allProperties = [
     rsac: "451 258 438",
     exclusive: false,
   },
+  {
+    id: 14,
+    title: "Maison familiale Mont Valérien - EXCLUSIVITÉ",
+    subtitle: "Charmante maison familiale avec 3 places de parking",
+    location: "Suresnes",
+    surface: "192 m²",
+    terrain: "118 m²",
+    rooms: 6,
+    roomsLabel: "6 pièces - 4 chambres",
+    image: "/photos/maison/exterieur.jpeg",
+    price: "748 000 €",
+    priceValue: 748000,
+    slug: "maison-suresnes-familiale-exclusivite",
+    type: "maison",
+    featured: true,
+    available: true,
+    agent: "Alexandre NAQUIN",
+    rsac: "830744959",
+    exclusive: true,
+  },
 ];
 
 export default function BiensAVendre() {
