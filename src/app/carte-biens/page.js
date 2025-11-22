@@ -149,6 +149,16 @@ export default function CarteBiensPage() {
       lat: 48.8738,
       lng: 2.2165,
     },
+    {
+      id: 15,
+      title: "Maison Familiale Contemporaine",
+      location: "Suresnes",
+      price: "830 000 €",
+      image: "/photos/maison-jardin/exterieur.jpeg",
+      slug: "maison-suresnes-contemporaine-jardin",
+      lat: 48.8686,
+      lng: 2.2208,
+    },
   ];
 
   const features = [

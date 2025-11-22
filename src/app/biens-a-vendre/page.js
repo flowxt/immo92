@@ -280,6 +280,26 @@ const allProperties = [
     rsac: "830744959",
     exclusive: true,
   },
+  {
+    id: 15,
+    title: "Maison Familiale Contemporaine",
+    subtitle: "Alliance parfaite entre modernité, calme et verdure",
+    location: "Suresnes",
+    surface: "120 m²",
+    terrain: "165 m²",
+    rooms: 5,
+    roomsLabel: "5 pièces - 4 chambres",
+    image: "/photos/maison-jardin/exterieur.jpeg",
+    price: "830 000 €",
+    priceValue: 830000,
+    slug: "maison-suresnes-contemporaine-jardin",
+    type: "maison",
+    featured: false,
+    available: true,
+    agent: "Vincent LECLERC",
+    rsac: "451 258 438",
+    exclusive: false,
+  },
 ];
 
 export default function BiensAVendre() {
