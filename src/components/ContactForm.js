@@ -20,7 +20,7 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-
+    
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -38,7 +38,7 @@ export default function ContactForm() {
 
       setStatus('success');
       setFormData({ name: '', email: '', phone: '', message: '' });
-
+      
       // Réinitialiser le message après 5 secondes
       setTimeout(() => setStatus(''), 5000);
     } catch (error) {

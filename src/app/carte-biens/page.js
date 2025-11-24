@@ -53,7 +53,7 @@ export default function CarteBiensPage() {
       id: 5,
       title: "Maison - Mont Valérien - La Boule",
       location: "Rueil-Malmaison",
-      price: "639 000 €",
+      price: "615 000 €",
       image: "/photos/jeff/exterieur.jpeg",
       slug: "maison-rueil-mont-valerien",
       lat: 48.8698,

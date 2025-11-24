@@ -121,6 +121,42 @@ export default function BiensVendus() {
             </StaggerItem>
           ))}
         </StaggerChildren>
+
+        {/* Encart plus de ventes */}
+        <FadeIn delay={0.3}>
+          <div className="mt-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 md:p-10 text-center text-white shadow-lg">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-2xl md:text-3xl font-bold mb-3">
+                  Plus d&apos;une dizaine de biens vendus avec succès
+                </h3>
+                <p className="text-lg text-blue-100">
+                  Les biens présentés ci-dessus ne sont qu&apos;un aperçu de notre
+                  expertise. Nous avons accompagné de nombreux clients dans la
+                  réussite de leur projet immobilier.
+                </p>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
       </Section>
 
       {/* Success Story - Rénovation Énergétique */}

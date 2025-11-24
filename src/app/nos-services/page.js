@@ -4,16 +4,20 @@ import ServicesContent from "./ServicesContent";
 import RenovationSection from "./RenovationSection";
 
 export const metadata = {
-  title: "Nos services | eXp France - Mont-Valérien",
+  title:
+    "Estimation immobilière gratuite Nanterre, Rueil, Suresnes, Puteaux | eXp France",
   description:
-    "Estimation immobilière, rénovation énergétique, division de terrain et mise en valeur : découvrez nos solutions pour valoriser votre bien.",
+    "Estimation immobilière gratuite à Nanterre, Rueil-Malmaison, Suresnes, Puteaux. Expert local du Mont-Valérien. Rénovation énergétique, division de terrain. Réponse en 48h.",
+  keywords:
+    "estimation immobilière, estimation Nanterre, estimation Rueil-Malmaison, estimation Suresnes, estimation Puteaux, agent immobilier 92, rénovation énergétique",
   alternates: {
     canonical: "https://ener-immo92.fr/nos-services",
   },
   openGraph: {
-    title: "Nos services | Agent Immobilier Mont-Valérien",
+    title:
+      "Estimation immobilière gratuite - Nanterre, Rueil, Suresnes, Puteaux",
     description:
-      "Estimation immobilière, rénovation énergétique, division de terrain et mise en valeur : découvrez nos solutions pour valoriser votre bien.",
+      "Estimation gratuite à Nanterre, Rueil-Malmaison, Suresnes, Puteaux. Rénovation énergétique, division de terrain. Expert local Mont-Valérien.",
     url: "https://ener-immo92.fr/nos-services",
     type: "website",
   },

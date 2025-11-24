@@ -106,8 +106,8 @@ export default function Home() {
                   />
                 </svg>
               }
-              title="Estimation précise de votre bien"
-              description="Basée sur une connaissance fine du marché local, nous vous proposons une estimation objective et réaliste pour optimiser la vente de votre propriété."
+              title="Estimation gratuite de votre bien"
+              description="Estimation immobilière gratuite à Nanterre, Rueil-Malmaison, Suresnes, Puteaux. Basée sur une connaissance fine du marché local, nous vous proposons une estimation objective et réaliste pour optimiser la vente de votre propriété."
             />
           </StaggerItem>
           <StaggerItem>

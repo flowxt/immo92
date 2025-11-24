@@ -19,6 +19,19 @@ export default function sitemap() {
     priority: route === "" ? 1 : route === "/biens-a-vendre" ? 0.9 : 0.8,
   }));
 
+  // Pages d'estimation par ville (SEO)
+  const estimationPages = [
+    "/nos-services/estimation-nanterre",
+    "/nos-services/estimation-rueil-malmaison",
+    "/nos-services/estimation-suresnes",
+    "/nos-services/estimation-puteaux",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
   // Biens à vendre
   const properties = [
     "/biens-a-vendre/maison-nanterre-musiciens",
@@ -56,5 +69,5 @@ export default function sitemap() {
         : 0.6,
   }));
 
-  return [...routes, ...properties, ...soldProperties];
+  return [...routes, ...estimationPages, ...properties, ...soldProperties];
 }

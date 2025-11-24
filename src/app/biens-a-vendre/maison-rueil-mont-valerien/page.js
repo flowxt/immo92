@@ -26,7 +26,7 @@ export default function MaisonRueilMontValerien() {
     id: 5,
     title: "Maison - Mont Valérien - La Boule",
     location: "92500, Rueil-Malmaison",
-    price: "639 000 €",
+    price: "615 000 €",
     lat: 48.8698,
     lng: 2.1839,
     slug: "maison-rueil-mont-valerien",
@@ -103,7 +103,7 @@ export default function MaisonRueilMontValerien() {
                 </div>
                 <div className="flex flex-col items-start md:items-end">
                   <div className="text-3xl sm:text-4xl font-bold text-blue-600 whitespace-nowrap">
-                    639 000 €
+                    615 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
                 </div>
@@ -413,8 +413,8 @@ export default function MaisonRueilMontValerien() {
             >
               <p className="text-xs text-gray-600 leading-relaxed">
                 EXP GLOBAL FRANCE - Non-détention de fonds - SIRET
-                89071070000018 - 629 000 € honoraires exclus - Honoraires de
-                1.59%TTC à charge acquéreur - Classe énergie 321 kWhEP/m².an (F)
+                89071070000018 - 605 000 € honoraires exclus - Honoraires de
+                1.65%TTC à charge acquéreur - Classe énergie 321 kWhEP/m².an (F)
                 - Classe climat 70 kg CO2/m².an (F) - Montant estimé des
                 dépenses annuelles d&apos;énergie pour un usage standard, établi
                 à partir des prix de l&apos;énergie de l&apos;année 2021 : 2450€
@@ -486,7 +486,7 @@ export default function MaisonRueilMontValerien() {
                   exit={{ opacity: 0, y: -20 }}
                   className="space-y-4"
                 >
-                  <MortgageCalculator compact={true} propertyPrice={639000} />
+                  <MortgageCalculator compact={true} propertyPrice={615000} />
 
                   {/* Lien vers calculette complète */}
                   <Link
