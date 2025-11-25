@@ -24,7 +24,7 @@ export default function SectionHeading({
           transition={{ duration: 0.5 }}
           className={centered ? 'flex justify-center mb-4' : 'mb-4'}
         >
-          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-sm">
+          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white shadow-sm">
             {label}
           </span>
         </motion.div>
@@ -37,7 +37,7 @@ export default function SectionHeading({
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mx-auto w-20 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mb-6"
+          className="mx-auto w-20 h-1 bg-gradient-to-r from-[#2998a6] to-amber-500 rounded-full mb-6"
         />
       )}
 

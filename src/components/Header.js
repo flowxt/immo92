@@ -72,7 +72,7 @@ export default function Header() {
             <Link
               href={item.href}
               className={`text-sm font-semibold leading-6 transition-colors ${
-                scrolled ? 'text-gray-900 hover:text-blue-600' : 'text-gray-900 hover:text-blue-600'
+                scrolled ? 'text-gray-900 hover:text-[#2998a6]' : 'text-gray-900 hover:text-[#2998a6]'
               }`}
             >
               {item.name}
@@ -84,7 +84,7 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="/contact"
-            className="rounded-md bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors"
+            className="rounded-md bg-[#2998a6] px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0d6c8a] transition-colors"
           >
             Nous contacter
           </Link>
@@ -107,7 +107,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="block rounded-md bg-blue-600 px-3 py-2 text-base font-semibold text-white text-center mt-4"
+              className="block rounded-md bg-[#2998a6] px-3 py-2 text-base font-semibold text-white text-center mt-4"
               onClick={() => setMobileMenuOpen(false)}
             >
               Nous contacter

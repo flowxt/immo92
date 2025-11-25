@@ -72,7 +72,7 @@ export default function EstimationNanterre() {
         cta={
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-[#2998a6] rounded-xl hover:bg-[#0d6c8a] transition-colors shadow-lg hover:shadow-xl"
           >
             Obtenir mon estimation gratuite
           </Link>
@@ -87,7 +87,7 @@ export default function EstimationNanterre() {
             title={
               <>
                 Pourquoi choisir notre{" "}
-                <span className="text-blue-600">expertise à Nanterre</span> ?
+                <span className="text-[#2998a6]">expertise à Nanterre</span> ?
               </>
             }
             subtitle="Une connaissance approfondie du marché immobilier nanterrien"
@@ -96,9 +96,9 @@ export default function EstimationNanterre() {
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#2998a6]/10 rounded-xl flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-blue-600"
+                  className="w-6 h-6 text-[#2998a6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -122,9 +122,9 @@ export default function EstimationNanterre() {
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#2998a6]/10 rounded-xl flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-blue-600"
+                  className="w-6 h-6 text-[#2998a6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -147,9 +147,9 @@ export default function EstimationNanterre() {
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#2998a6]/10 rounded-xl flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-blue-600"
+                  className="w-6 h-6 text-[#2998a6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -182,7 +182,7 @@ export default function EstimationNanterre() {
             title={
               <>
                 Prix immobilier par{" "}
-                <span className="text-blue-600">quartier à Nanterre</span>
+                <span className="text-[#2998a6]">quartier à Nanterre</span>
               </>
             }
             subtitle="Estimation moyenne au m² selon les quartiers de Nanterre (2024)"
@@ -199,7 +199,7 @@ export default function EstimationNanterre() {
                   <h3 className="text-xl font-bold text-gray-900">
                     {quartier.nom}
                   </h3>
-                  <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-lg text-sm font-bold">
+                  <span className="bg-[#2998a6]/10 text-[#0d6c8a] px-3 py-1 rounded-lg text-sm font-bold">
                     {quartier.prixMoyen}
                   </span>
                 </div>
@@ -227,7 +227,7 @@ export default function EstimationNanterre() {
             title={
               <>
                 Comment se déroule{" "}
-                <span className="text-blue-600">l&apos;estimation</span> ?
+                <span className="text-[#2998a6]">l&apos;estimation</span> ?
               </>
             }
             subtitle="Un processus simple et transparent en 3 étapes"
@@ -236,7 +236,7 @@ export default function EstimationNanterre() {
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="relative">
-              <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
+              <div className="bg-[#2998a6] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
                 1
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -250,7 +250,7 @@ export default function EstimationNanterre() {
             </div>
 
             <div className="relative">
-              <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
+              <div className="bg-[#2998a6] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
                 2
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -263,7 +263,7 @@ export default function EstimationNanterre() {
             </div>
 
             <div className="relative">
-              <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
+              <div className="bg-[#2998a6] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
                 3
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -286,7 +286,7 @@ export default function EstimationNanterre() {
             title={
               <>
                 Nos ventes récentes{" "}
-                <span className="text-blue-600">à Nanterre</span>
+                <span className="text-[#2998a6]">à Nanterre</span>
               </>
             }
             subtitle="Découvrez quelques-uns des biens que nous avons vendus à Nanterre"
@@ -296,7 +296,7 @@ export default function EstimationNanterre() {
           <div className="mt-12 text-center">
             <Link
               href="/biens-a-vendre"
-              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold"
+              className="inline-flex items-center gap-2 text-[#2998a6] hover:text-[#0d6c8a] font-semibold"
             >
               Voir tous nos biens à vendre à Nanterre
               <svg
@@ -325,7 +325,7 @@ export default function EstimationNanterre() {
             title={
               <>
                 FAQ - Estimation immobilière{" "}
-                <span className="text-blue-600">à Nanterre</span>
+                <span className="text-[#2998a6]">à Nanterre</span>
               </>
             }
             showLine={true}

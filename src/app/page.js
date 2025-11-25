@@ -44,7 +44,7 @@ export default function Home() {
             label="Notre différence"
             title={
               <>
-                Pourquoi <span className="text-blue-600">nous choisir</span> ?
+                Pourquoi <span className="text-[#2998a6]">nous choisir</span> ?
               </>
             }
             subtitle="Expertise, proximité et outils innovants"
@@ -81,7 +81,7 @@ export default function Home() {
             label="Notre expertise"
             title={
               <>
-                Nos <span className="text-blue-600">services</span>
+                Nos <span className="text-[#2998a6]">services</span>
               </>
             }
             subtitle="Nous vous accompagnons dans tous vos projets"
@@ -132,8 +132,8 @@ export default function Home() {
                 description="Améliorez le classement DPE de votre bien pour le valoriser et attirer davantage d'acheteurs. Nous vous guidons dans toutes les démarches."
               />
               {/* Badge partenaire ENRLUX */}
-              <div className="absolute -top-2 -right-2 bg-gradient-to-r from-green-600 to-green-700 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1">
-                <span>🌿</span>
+              <div className="absolute -top-2 -right-2 bg-gradient-to-r from-[#0d6c8a] to-[#06465c] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1">
+                <span>⚡</span>
                 <span>En partenariat avec ENRLUX</span>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function Home() {
       {/* eXp France Network */}
       <Section
         background="white"
-        className="bg-gradient-to-br from-blue-50 via-white to-amber-50"
+        className="bg-gradient-to-br from-[#2998a6]/5 via-white to-amber-50"
       >
         <FadeIn>
           <div className="text-center mb-12">
@@ -212,9 +212,9 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           <FadeIn delay={0.1}>
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 bg-[#2998a6]/10 rounded-full flex items-center justify-center">
                 <svg
-                  className="w-8 h-8 text-blue-600"
+                  className="w-8 h-8 text-[#2998a6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -262,9 +262,9 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.3}>
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 bg-[#2998a6]/10 rounded-full flex items-center justify-center">
                 <svg
-                  className="w-8 h-8 text-blue-600"
+                  className="w-8 h-8 text-[#2998a6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -297,7 +297,7 @@ export default function Home() {
             href="https://www.expfrance.fr/fr/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold group"
+            className="inline-flex items-center gap-2 text-[#2998a6] hover:text-[#0d6c8a] font-semibold group"
           >
             Découvrir le réseau eXp France
             <svg
@@ -326,7 +326,7 @@ export default function Home() {
                 label="Notre territoire"
                 title={
                   <>
-                    Zone <span className="text-blue-600">d&apos;expertise</span>
+                    Zone <span className="text-[#2998a6]">d&apos;expertise</span>
                   </>
                 }
                 subtitle="Un secteur stratégique entre Paris et La Défense"
@@ -349,7 +349,7 @@ export default function Home() {
                   (city) => (
                     <span
                       key={city}
-                      className="inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800"
+                      className="inline-flex items-center rounded-full bg-[#2998a6]/10 px-4 py-2 text-sm font-medium text-[#06465c]"
                     >
                       {city}
                     </span>

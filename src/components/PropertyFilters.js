@@ -51,9 +51,9 @@ export default function PropertyFilters({ filters, setFilters, counts }) {
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+          <div className="w-10 h-10 bg-[#2998a6]/10 rounded-lg flex items-center justify-center">
             <svg
-              className="w-5 h-5 text-blue-600"
+              className="w-5 h-5 text-[#2998a6]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -81,7 +81,7 @@ export default function PropertyFilters({ filters, setFilters, counts }) {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             onClick={handleReset}
-            className="text-sm text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2 hover:underline"
+            className="text-sm text-[#2998a6] hover:text-[#0d6c8a] font-semibold flex items-center gap-2 hover:underline"
           >
             <svg
               className="w-4 h-4"
@@ -115,7 +115,7 @@ export default function PropertyFilters({ filters, setFilters, counts }) {
               whileTap={{ scale: 0.98 }}
               className={`relative flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all ${
                 filters.type === type.value
-                  ? "border-blue-600 bg-blue-50 text-blue-700"
+                  ? "border-[#2998a6] bg-[#2998a6]/5 text-[#0d6c8a]"
                   : "border-gray-200 hover:border-gray-300 text-gray-600 hover:bg-gray-50"
               }`}
             >
@@ -124,7 +124,7 @@ export default function PropertyFilters({ filters, setFilters, counts }) {
               {filters.type === type.value && (
                 <motion.div
                   layoutId="activeType"
-                  className="absolute inset-0 border-2 border-blue-600 rounded-xl"
+                  className="absolute inset-0 border-2 border-[#2998a6] rounded-xl"
                   initial={false}
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 />
@@ -149,7 +149,7 @@ export default function PropertyFilters({ filters, setFilters, counts }) {
                 whileTap={{ scale: 0.95 }}
                 className={`py-2.5 px-3 rounded-lg border text-sm font-semibold transition-all ${
                   filters.rooms === option.value
-                    ? "border-blue-600 bg-blue-600 text-white shadow-md"
+                    ? "border-[#2998a6] bg-[#2998a6] text-white shadow-md"
                     : "border-gray-200 text-gray-600 hover:border-gray-300 hover:bg-gray-50"
                 }`}
               >
@@ -171,9 +171,9 @@ export default function PropertyFilters({ filters, setFilters, counts }) {
             }
             className={`w-full py-2.5 px-4 rounded-lg border-2 text-sm font-semibold transition-all cursor-pointer ${
               filters.priceRange !== "all"
-                ? "border-blue-600 text-blue-700 bg-blue-50"
+                ? "border-[#2998a6] text-[#0d6c8a] bg-[#2998a6]/5"
                 : "border-gray-200 text-gray-700 bg-white hover:border-gray-300"
-            } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
+            } focus:outline-none focus:ring-2 focus:ring-[#2998a6] focus:border-transparent`}
           >
             {priceRanges.map((range) => (
               <option key={range.value} value={range.value}>

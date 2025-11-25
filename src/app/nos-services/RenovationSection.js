@@ -13,10 +13,10 @@ export default function RenovationSection() {
     <Section background="white">
       <FadeIn>
         <SectionHeading
-          label="🌿 Rénovation énergétique"
+          label="💎 Rénovation énergétique"
           title={
             <>
-              Rénovez, <span className="text-blue-600">valorisez</span>, vendez
+              Rénovez, <span className="text-[#2998a6]">valorisez</span>, vendez
               à sa juste valeur
             </>
           }
@@ -61,7 +61,7 @@ export default function RenovationSection() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-[#2998a6]/0 group-hover:bg-[#2998a6]/10 transition-colors duration-300" />
               </motion.div>
             </FadeIn>
           </div>
@@ -101,7 +101,7 @@ export default function RenovationSection() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-[#2998a6]/0 group-hover:bg-[#2998a6]/10 transition-colors duration-300" />
               </motion.div>
             </FadeIn>
           </div>
@@ -139,7 +139,7 @@ export default function RenovationSection() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-[#2998a6]/0 group-hover:bg-[#2998a6]/10 transition-colors duration-300" />
               </motion.div>
             </FadeIn>
           </div>
@@ -152,7 +152,7 @@ export default function RenovationSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-green-600 via-green-700 to-emerald-800 p-12 shadow-2xl"
+              className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0d6c8a] via-[#06465c] to-[#0c233c] p-12 shadow-2xl"
             >
               {/* Décorations de fond */}
               <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
@@ -161,7 +161,7 @@ export default function RenovationSection() {
               <div className="relative z-10">
                 <div className="flex items-center justify-center mb-6">
                   <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4">
-                    <span className="text-6xl">🌿</span>
+                    <span className="text-6xl">⚡</span>
                   </div>
                 </div>
 
@@ -170,7 +170,7 @@ export default function RenovationSection() {
                   énergétique
                 </h3>
 
-                <p className="text-xl text-green-50 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl text-white/90 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
                   En partenariat avec{" "}
                   <strong className="text-white">ENRLUX France</strong>, nous
                   vous proposons une solution complète : panneaux solaires,
@@ -227,7 +227,7 @@ export default function RenovationSection() {
                     href="https://www.enrlux-france.fr/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-green-700 rounded-xl font-bold text-lg hover:bg-green-50 transition-all shadow-xl hover:shadow-2xl hover:scale-105"
+                    className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#06465c] rounded-xl font-bold text-lg hover:bg-[#2998a6]/5 transition-all shadow-xl hover:shadow-2xl hover:scale-105"
                   >
                     <svg
                       className="w-6 h-6"
@@ -279,7 +279,7 @@ export default function RenovationSection() {
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-white/20 text-center">
-                  <p className="text-green-100 text-sm">
+                  <p className="text-white/80 text-sm">
                     📞 Contact ENRLUX :{" "}
                     <a
                       href="tel:0987376599"
@@ -316,7 +316,7 @@ export default function RenovationSection() {
                   ce qui augmente significativement la valeur de votre maison
                   sur le marché.
                 </p>
-                <p className="text-lg font-semibold text-blue-600 mt-4">
+                <p className="text-lg font-semibold text-[#2998a6] mt-4">
                   Un bien rénové se vend plus vite et à un meilleur prix.
                 </p>
               </div>
@@ -336,7 +336,7 @@ export default function RenovationSection() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-[#2998a6]/0 group-hover:bg-[#2998a6]/10 transition-colors duration-300" />
               </motion.div>
             </FadeIn>
           </div>
@@ -375,7 +375,7 @@ export default function RenovationSection() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-[#2998a6]/0 group-hover:bg-[#2998a6]/10 transition-colors duration-300" />
               </motion.div>
             </FadeIn>
           </div>
@@ -384,7 +384,7 @@ export default function RenovationSection() {
 
       {/* Mission */}
       <FadeIn delay={0.6}>
-        <div className="mt-16 text-center bg-gradient-to-r from-blue-50 to-amber-50 rounded-2xl p-8">
+        <div className="mt-16 text-center bg-gradient-to-r from-[#2998a6]/5 to-amber-50 rounded-2xl p-8">
           <div className="flex items-center justify-center mb-4">
             <span className="text-4xl mr-4">✨</span>
             <h3 className="text-2xl font-bold text-gray-900">

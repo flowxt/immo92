@@ -52,7 +52,7 @@ export default function Modal({ isOpen, onClose, title, children }) {
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}
-              <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-5 flex items-center justify-between">
+              <div className="bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] px-6 py-5 flex items-center justify-between">
                 <h2 className="text-2xl font-bold text-white">{title}</h2>
                 <motion.button
                   onClick={onClose}

@@ -3,8 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-gradient: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  --primary-gradient: linear-gradient(135deg, #2998a6 0%, #0d6c8a 100%);
   --accent-gold: #d4af37;
+  
+  /* Nouvelle charte graphique */
+  --color-turquoise: #2998a6;
+  --color-blue-green: #0d6c8a;
+  --color-petrol: #06465c;
+  --color-dark-blue: #0c233c;
+  --color-night: #1e3771;
 }
 
 @theme inline {
@@ -12,9 +19,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-heading: var(--font-playfair);
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-accent: #d4af37;
+  
+  /* Couleurs principales - Nouvelle charte */
+  --color-primary: #2998a6;        /* Turquoise lumineux */
+  --color-primary-dark: #0d6c8a;   /* Bleu-vert moyen */
+  --color-dark: #0c233c;           /* Bleu très foncé */
+  --color-petrol: #06465c;         /* Bleu pétrole sombre */
+  --color-night: #1e3771;          /* Bleu nuit */
+  --color-accent: #d4af37;         /* Accent or (conservé) */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,7 +54,7 @@ h1 {
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #d4af37 100%);
+  background: linear-gradient(135deg, #2998a6 0%, #0d6c8a 50%, #d4af37 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

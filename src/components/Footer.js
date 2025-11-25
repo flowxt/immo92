@@ -79,7 +79,7 @@ export default function Footer() {
                     className="text-sm text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
                     <svg
-                      className="w-4 h-4 mr-2 text-blue-500 group-hover:translate-x-1 transition-transform"
+                      className="w-4 h-4 mr-2 text-[#2998a6] group-hover:translate-x-1 transition-transform"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -106,10 +106,10 @@ export default function Footer() {
                 href="https://www.enrlux-france.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors text-sm font-semibold group"
+                className="inline-flex items-center gap-2 text-[#2998a6] hover:text-[#2998a6]/30 transition-colors text-sm font-semibold group"
               >
                 <svg
-                  className="w-4 h-4 text-green-500"
+                  className="w-4 h-4 text-white/700"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -153,7 +153,7 @@ export default function Footer() {
                     className="text-sm text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
                     <svg
-                      className="w-4 h-4 mr-2 text-blue-500 group-hover:translate-x-1 transition-transform"
+                      className="w-4 h-4 mr-2 text-[#2998a6] group-hover:translate-x-1 transition-transform"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -178,7 +178,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 mr-3 text-blue-500 flex-shrink-0 mt-0.5"
+                  className="w-5 h-5 mr-3 text-[#2998a6] flex-shrink-0 mt-0.5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -206,7 +206,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="w-5 h-5 mr-3 text-blue-500 flex-shrink-0"
+                  className="w-5 h-5 mr-3 text-[#2998a6] flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -227,7 +227,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="w-5 h-5 mr-3 text-blue-500 flex-shrink-0"
+                  className="w-5 h-5 mr-3 text-[#2998a6] flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -270,7 +270,7 @@ export default function Footer() {
               ].map((ville) => (
                 <span
                   key={ville}
-                  className="inline-block px-4 py-2 bg-gray-800/50 text-gray-300 text-xs font-medium rounded-full border border-gray-700 hover:border-blue-500 hover:text-white transition-colors"
+                  className="inline-block px-4 py-2 bg-gray-800/50 text-gray-300 text-xs font-medium rounded-full border border-gray-700 hover:border-[#2998a6] hover:text-white transition-colors"
                 >
                   {ville}
                 </span>
@@ -294,7 +294,7 @@ export default function Footer() {
                 href="https://www.atypikcode.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 font-semibold transition-colors"
+                className="text-[#2998a6] hover:text-[#2998a6]/80 font-semibold transition-colors"
               >
                 atypikCode
               </a>

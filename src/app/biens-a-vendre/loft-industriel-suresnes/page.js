@@ -30,13 +30,13 @@ export default function LoftIndustrielSuresnes() {
       <div className="bg-white border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-gray-500 hover:text-blue-600">
+            <Link href="/" className="text-gray-500 hover:text-[#2998a6]">
               Accueil
             </Link>
             <span className="text-gray-400">/</span>
             <Link
               href="/biens-a-vendre"
-              className="text-gray-500 hover:text-blue-600"
+              className="text-gray-500 hover:text-[#2998a6]"
             >
               Biens à vendre
             </Link>
@@ -102,7 +102,7 @@ export default function LoftIndustrielSuresnes() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start md:items-end">
-                  <div className="text-3xl sm:text-4xl font-bold text-blue-600 whitespace-nowrap">
+                  <div className="text-3xl sm:text-4xl font-bold text-[#2998a6] whitespace-nowrap">
                     899 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
@@ -143,38 +143,38 @@ export default function LoftIndustrielSuresnes() {
                 
                 <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 my-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-[#2998a6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     Caractéristiques clés
                   </h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Un grand séjour lumineux</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Un Patio</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>3 chambres élégantes</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>1 grand bureau ou chambre</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Cuisine semi-ouverte</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Garage fermé et sécurisé</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span className="font-semibold">Domotique</span> - Contrôle par application (Chauffage et volets roulants)
                     </li>
                   </ul>
@@ -186,7 +186,7 @@ export default function LoftIndustrielSuresnes() {
                   la Boule, écoles, commerces à proximité.
                 </p>
 
-                <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg my-6">
+                <div className="bg-[#2998a6]/5 border-l-4 border-[#2998a6] p-6 rounded-lg my-6">
                   <p className="text-gray-800 italic font-medium">
                     Ce loft est plus qu&apos;un simple lieu de vie, c&apos;est une
                     expérience : un mélange parfait de modernité et de caractère
@@ -199,7 +199,7 @@ export default function LoftIndustrielSuresnes() {
                 <p className="text-lg font-semibold text-gray-900">
                   Ne laissez pas passer cette opportunité unique !
                 </p>
-                <p className="text-xl font-bold text-blue-600 italic">
+                <p className="text-xl font-bold text-[#2998a6] italic">
                   Votre loft, votre style, votre vie.
                 </p>
               </div>
@@ -309,7 +309,7 @@ export default function LoftIndustrielSuresnes() {
                     key={item.name}
                     className={`p-4 rounded-lg border-2 ${
                       item.highlight
-                        ? "bg-blue-50 border-blue-200"
+                        ? "bg-[#2998a6]/5 border-[#2998a6]/20"
                         : "bg-gray-50 border-gray-200"
                     }`}
                   >
@@ -317,7 +317,7 @@ export default function LoftIndustrielSuresnes() {
                       {item.name}
                     </div>
                     <div className={`text-sm font-bold ${
-                      item.highlight ? "text-blue-600" : "text-blue-600"
+                      item.highlight ? "text-[#2998a6]" : "text-[#2998a6]"
                     }`}>
                       {item.surface}
                     </div>
@@ -354,7 +354,7 @@ export default function LoftIndustrielSuresnes() {
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2">
                     <svg
-                      className="w-5 h-5 text-green-500 flex-shrink-0"
+                      className="w-5 h-5 text-white/700 flex-shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -400,7 +400,7 @@ export default function LoftIndustrielSuresnes() {
                     key={item}
                     className="flex items-center gap-2 text-sm text-gray-600"
                   >
-                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                    <div className="w-1.5 h-1.5 bg-[#2998a6] rounded-full"></div>
                     {item}
                   </div>
                 ))}
@@ -425,7 +425,7 @@ export default function LoftIndustrielSuresnes() {
                 climateValue={8}
               />
 
-              <div className="mt-8 p-6 bg-blue-50 rounded-xl">
+              <div className="mt-8 p-6 bg-[#2998a6]/5 rounded-xl">
                 <h3 className="font-bold text-gray-900 mb-2">
                   Estimation des dépenses énergétiques
                 </h3>
@@ -465,7 +465,7 @@ export default function LoftIndustrielSuresnes() {
               className="bg-white rounded-2xl p-8 shadow-sm"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#2998a6] rounded-xl flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -518,7 +518,7 @@ export default function LoftIndustrielSuresnes() {
               <div className="mt-6 grid md:grid-cols-3 gap-4">
                 <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
                   <svg
-                    className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#2998a6] flex-shrink-0 mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -540,7 +540,7 @@ export default function LoftIndustrielSuresnes() {
 
                 <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
                   <svg
-                    className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#2998a6] flex-shrink-0 mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -562,7 +562,7 @@ export default function LoftIndustrielSuresnes() {
 
                 <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
                   <svg
-                    className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#2998a6] flex-shrink-0 mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -629,7 +629,7 @@ export default function LoftIndustrielSuresnes() {
                 {/* Agent */}
                 <div className="mb-6 p-4 bg-gray-50 rounded-xl">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-blue-200">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-[#2998a6]/20">
                       <Image
                         src="/photos/alexandre.jpg"
                         alt="Alexandre NAQUIN"
@@ -654,7 +654,7 @@ export default function LoftIndustrielSuresnes() {
 
                 <Link
                   href="/contact"
-                  className="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-700 transition-colors mb-3"
+                  className="block w-full bg-[#2998a6] text-white text-center py-4 rounded-xl font-bold hover:bg-[#0d6c8a] transition-colors mb-3"
                 >
                   Nous contacter
                 </Link>
@@ -680,7 +680,7 @@ export default function LoftIndustrielSuresnes() {
                   {/* Lien vers calculette complète */}
                   <Link
                     href="/calculateur"
-                    className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all shadow-md hover:shadow-lg"
+                    className="block w-full bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white text-center py-3 rounded-xl font-semibold hover:from-[#0d6c8a] hover:to-[#06465c] transition-all shadow-md hover:shadow-lg"
                   >
                     <span className="flex items-center justify-center gap-2">
                       <svg

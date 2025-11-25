@@ -22,13 +22,13 @@ export default function AppartementNanterreCentreExclusivite() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-6">
         <div className="max-w-7xl mx-auto">
           <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="text-gray-500 hover:text-blue-600">
+            <Link href="/" className="text-gray-500 hover:text-[#2998a6]">
               Accueil
             </Link>
             <span className="text-gray-400">/</span>
             <Link
               href="/biens-vendus"
-              className="text-gray-500 hover:text-blue-600"
+              className="text-gray-500 hover:text-[#2998a6]"
             >
               Biens vendus
             </Link>
@@ -58,7 +58,7 @@ export default function AppartementNanterreCentreExclusivite() {
             >
               {/* Badges */}
               <div className="flex flex-wrap gap-3 mb-6">
-                <div className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg">
+                <div className="inline-flex items-center gap-2 bg-[#0d6c8a] text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -110,7 +110,7 @@ export default function AppartementNanterreCentreExclusivite() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start md:items-end">
-                  <div className="text-3xl sm:text-4xl font-bold text-green-600 whitespace-nowrap">
+                  <div className="text-3xl sm:text-4xl font-bold text-[#0d6c8a] whitespace-nowrap">
                     265 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">
@@ -157,7 +157,7 @@ export default function AppartementNanterreCentreExclusivite() {
                   d&apos;ouverture sur le séjour, une salle de bain, un
                   emplacement de parking sécurisé en sous-sol.
                 </p>
-                <p className="font-semibold text-green-600">
+                <p className="font-semibold text-[#0d6c8a]">
                   Immeuble en excellent état, parties communes intégralement
                   rénovées et ravalement de façade effectué en 2018.
                 </p>
@@ -165,7 +165,7 @@ export default function AppartementNanterreCentreExclusivite() {
                   Quartier résidentiel et très calme avec accès direct A86 et
                   A14, commerces et centre-ville 5 minutes à pied.
                 </p>
-                <p className="font-semibold text-blue-600">
+                <p className="font-semibold text-[#2998a6]">
                   Idéal Primo-accédants et investisseurs.
                 </p>
               </div>
@@ -229,7 +229,7 @@ export default function AppartementNanterreCentreExclusivite() {
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Disponibilité</span>
-                    <span className="font-semibold text-green-600">Libre</span>
+                    <span className="font-semibold text-[#0d6c8a]">Libre</span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Vue</span>
@@ -428,10 +428,10 @@ export default function AppartementNanterreCentreExclusivite() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1 }}
-                className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 border-2 border-green-200"
+                className="bg-gradient-to-br from-[#2998a6]/5 to-[#2998a6]/10 rounded-2xl p-6 border-2 border-[#2998a6]/20"
               >
                 <div className="text-center mb-4">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-green-600 rounded-full mb-4">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-[#0d6c8a] rounded-full mb-4">
                     <svg
                       className="w-8 h-8 text-white"
                       fill="none"
@@ -454,9 +454,9 @@ export default function AppartementNanterreCentreExclusivite() {
                   </p>
                 </div>
 
-                <div className="border-t border-green-200 pt-4 mt-4">
+                <div className="border-t border-[#2998a6]/20 pt-4 mt-4">
                   <div className="text-center mb-4">
-                    <div className="text-sm font-bold text-green-600 uppercase tracking-wider mb-2">
+                    <div className="text-sm font-bold text-[#0d6c8a] uppercase tracking-wider mb-2">
                       Vendu par
                     </div>
                     <div className="flex flex-col items-center gap-3">
@@ -500,7 +500,7 @@ export default function AppartementNanterreCentreExclusivite() {
                 </p>
                 <Link
                   href="/contact"
-                  className="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-700 transition-colors"
+                  className="block w-full bg-[#2998a6] text-white text-center py-4 rounded-xl font-bold hover:bg-[#0d6c8a] transition-colors"
                 >
                   Estimation gratuite
                 </Link>
@@ -514,7 +514,7 @@ export default function AppartementNanterreCentreExclusivite() {
               >
                 <Link
                   href="/biens-vendus"
-                  className="block text-center text-blue-600 hover:text-blue-700 font-semibold text-sm"
+                  className="block text-center text-[#2998a6] hover:text-[#0d6c8a] font-semibold text-sm"
                 >
                   ← Voir tous les biens vendus
                 </Link>

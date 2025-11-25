@@ -63,11 +63,11 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 border border-blue-100"
+        className="bg-gradient-to-br from-[#2998a6]/5 to-white rounded-2xl p-6 border border-[#2998a6]/10"
       >
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-            <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="w-10 h-10 bg-[#2998a6]/10 rounded-lg flex items-center justify-center">
+            <svg className="w-5 h-5 text-[#2998a6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
           </div>
@@ -81,7 +81,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
           <div className="space-y-3">
             <div className="bg-white rounded-lg p-4 border border-gray-100">
               <div className="text-sm text-gray-600 mb-1">Mensualité estimée</div>
-              <div className="text-3xl font-bold text-blue-600">
+              <div className="text-3xl font-bold text-[#2998a6]">
                 {formatNumber(results.monthlyPayment)} €<span className="text-lg text-gray-500">/mois</span>
               </div>
             </div>
@@ -109,7 +109,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
       className="bg-white rounded-2xl shadow-xl overflow-hidden"
     >
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white">
+      <div className="bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] p-6 text-white">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -118,7 +118,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
           </div>
           <div>
             <h3 className="text-2xl font-bold">Calculateur de prêt</h3>
-            <p className="text-blue-100 text-sm">Estimez vos mensualités en temps réel</p>
+            <p className="text-white/70 text-sm">Estimez vos mensualités en temps réel</p>
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
                 type="number"
                 value={price}
                 onChange={(e) => setPrice(Number(e.target.value))}
-                className="w-32 px-3 py-1.5 text-right font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-32 px-3 py-1.5 text-right font-bold text-[#2998a6] bg-[#2998a6]/5 border border-[#2998a6]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2998a6]"
               />
               <span className="text-sm font-semibold text-gray-600">€</span>
             </div>
@@ -145,7 +145,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
             step="10000"
             value={price}
             onChange={(e) => setPrice(Number(e.target.value))}
-            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#2998a6]"
           />
         </div>
 
@@ -184,7 +184,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
           <div>
             <div className="flex items-center justify-between mb-3">
               <label className="text-sm font-semibold text-gray-700">Durée du prêt</label>
-              <div className="px-3 py-1.5 font-bold text-green-600 bg-green-50 border border-green-200 rounded-lg">
+              <div className="px-3 py-1.5 font-bold text-[#0d6c8a] bg-[#2998a6]/5 border border-[#2998a6]/20 rounded-lg">
                 {duration} ans
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
               step="1"
               value={duration}
               onChange={(e) => setDuration(Number(e.target.value))}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-green-600"
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#2998a6]"
             />
             <div className="flex justify-between text-xs text-gray-500 mt-1">
               <span>5 ans</span>
@@ -242,13 +242,13 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
             transition={{ duration: 0.3 }}
           >
             {/* Mensualité principale */}
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-6 text-white mb-6">
+            <div className="bg-gradient-to-br from-[#2998a6] to-[#0d6c8a] rounded-2xl p-6 text-white mb-6">
               <div className="text-center">
-                <div className="text-sm font-semibold text-blue-100 mb-2">Mensualité</div>
+                <div className="text-sm font-semibold text-white/70 mb-2">Mensualité</div>
                 <div className="text-5xl font-bold mb-1">
                   {formatNumber(results.monthlyPayment)} €
                 </div>
-                <div className="text-blue-100">par mois pendant {duration} ans</div>
+                <div className="text-white/70">par mois pendant {duration} ans</div>
               </div>
             </div>
 
@@ -284,7 +284,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
                   initial={{ width: 0 }}
                   animate={{ width: `${results.principalPercentage}%` }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="bg-blue-600 flex items-center justify-center"
+                  className="bg-[#2998a6] flex items-center justify-center"
                 >
                   {results.principalPercentage > 15 && (
                     <span className="text-xs font-semibold text-white">
@@ -309,7 +309,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
               {/* Légende */}
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-blue-600 rounded"></div>
+                  <div className="w-4 h-4 bg-[#2998a6] rounded"></div>
                   <div>
                     <div className="text-gray-600">Capital + frais</div>
                     <div className="font-semibold text-gray-900">

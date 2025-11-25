@@ -16,11 +16,11 @@ export default function Button({
     "inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-bold transition-all duration-300 shadow-lg relative overflow-hidden group";
 
   const variants = {
-    primary: "bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:shadow-2xl hover:shadow-blue-500/50 border-0",
+    primary: "bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white hover:shadow-2xl hover:shadow-[#2998a6]/50 border-0",
     secondary:
-      "bg-white text-blue-600 border-2 border-blue-600 hover:bg-blue-50 hover:border-blue-700 shadow-md",
+      "bg-white text-[#2998a6] border-2 border-[#2998a6] hover:bg-[#2998a6]/5 hover:border-[#0d6c8a] shadow-md",
     outline:
-      "bg-transparent text-white border-2 border-white hover:bg-white hover:text-blue-600 backdrop-blur-sm",
+      "bg-transparent text-white border-2 border-white hover:bg-white hover:text-[#2998a6] backdrop-blur-sm",
     accent: "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:shadow-2xl hover:shadow-amber-500/50 border-0",
   };
 

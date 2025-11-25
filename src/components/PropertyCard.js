@@ -48,12 +48,12 @@ export default function PropertyCard({
                 </span>
               )}
               {featured && (
-                <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-600 text-white shadow-lg">
+                <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-[#2998a6] text-white shadow-lg">
                   💎 Coup de cœur
                 </span>
               )}
               {available && (
-                <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-green-500 text-white shadow-lg">
+                <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-[#2998a6]/50 text-white shadow-lg">
                   Disponible
                 </span>
               )}
@@ -93,7 +93,7 @@ export default function PropertyCard({
           {/* Contenu */}
           <div className="p-6 flex-grow flex flex-col">
             {/* Titre */}
-            <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+            <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#2998a6] transition-colors">
               {title}
             </h3>
 
@@ -117,13 +117,13 @@ export default function PropertyCard({
             {/* Prix et CTA */}
             <div className="flex items-center justify-between pt-4 border-t border-gray-200 mt-auto">
               {price ? (
-                <div className="text-2xl font-bold text-blue-600">{price}</div>
+                <div className="text-2xl font-bold text-[#2998a6]">{price}</div>
               ) : (
                 <div className="text-sm text-gray-500 italic">
                   Prix sur demande
                 </div>
               )}
-              <div className="flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all">
+              <div className="flex items-center gap-2 text-[#2998a6] font-semibold text-sm group-hover:gap-3 transition-all">
                 <span>En savoir plus</span>
                 <svg
                   className="w-5 h-5 group-hover:translate-x-1 transition-transform"

@@ -207,7 +207,7 @@ export default function ServicesContent() {
                 transition={{ delay: idx * 0.1 }}
               >
                 <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
-                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 text-sm font-bold mr-3">
+                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#2998a6]/10 text-[#2998a6] text-sm font-bold mr-3">
                     {idx + 1}
                   </span>
                   {section.title}
@@ -249,7 +249,7 @@ export default function ServicesContent() {
             <FadeIn direction={index % 2 === 0 ? "left" : "right"}>
               <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                 <motion.div
-                  className="inline-flex items-center justify-center rounded-lg bg-blue-600 p-3 text-white mb-6"
+                  className="inline-flex items-center justify-center rounded-lg bg-[#2998a6] p-3 text-white mb-6"
                   whileHover={{
                     scale: 1.1,
                     rotate: 5,
@@ -309,7 +309,7 @@ export default function ServicesContent() {
                   />
                 </motion.div>
                 {/* Overlay au hover */}
-                <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-[#2998a6]/0 group-hover:bg-[#2998a6]/10 transition-colors duration-300" />
               </motion.div>
             </FadeIn>
           </div>
@@ -324,7 +324,7 @@ export default function ServicesContent() {
             title={
               <>
                 Estimation immobilière{" "}
-                <span className="text-blue-600">près de chez vous</span>
+                <span className="text-[#2998a6]">près de chez vous</span>
               </>
             }
             subtitle="Expert du marché local dans les Hauts-de-Seine"
@@ -334,12 +334,12 @@ export default function ServicesContent() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             <Link
               href="/nos-services/estimation-nanterre"
-              className="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-blue-200 transition-all"
+              className="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#2998a6]/20 transition-all"
             >
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-12 h-12 bg-blue-100 group-hover:bg-blue-600 rounded-xl flex items-center justify-center transition-colors">
+                <div className="w-12 h-12 bg-[#2998a6]/10 group-hover:bg-[#2998a6] rounded-xl flex items-center justify-center transition-colors">
                   <svg
-                    className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors"
+                    className="w-6 h-6 text-[#2998a6] group-hover:text-white transition-colors"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -358,7 +358,7 @@ export default function ServicesContent() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#2998a6] transition-colors">
                   Nanterre
                 </h3>
               </div>
@@ -366,7 +366,7 @@ export default function ServicesContent() {
                 Estimation gratuite à Nanterre : Mont-Valérien, Centre-Ville,
                 Quartier des Musiciens.
               </p>
-              <div className="flex items-center text-blue-600 font-semibold text-sm">
+              <div className="flex items-center text-[#2998a6] font-semibold text-sm">
                 En savoir plus
                 <svg
                   className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
@@ -386,12 +386,12 @@ export default function ServicesContent() {
 
             <Link
               href="/nos-services/estimation-rueil-malmaison"
-              className="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-blue-200 transition-all"
+              className="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#2998a6]/20 transition-all"
             >
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-12 h-12 bg-blue-100 group-hover:bg-blue-600 rounded-xl flex items-center justify-center transition-colors">
+                <div className="w-12 h-12 bg-[#2998a6]/10 group-hover:bg-[#2998a6] rounded-xl flex items-center justify-center transition-colors">
                   <svg
-                    className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors"
+                    className="w-6 h-6 text-[#2998a6] group-hover:text-white transition-colors"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -410,7 +410,7 @@ export default function ServicesContent() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#2998a6] transition-colors">
                   Rueil-Malmaison
                 </h3>
               </div>
@@ -418,7 +418,7 @@ export default function ServicesContent() {
                 Estimation gratuite à Rueil-Malmaison : Mont-Valérien,
                 Centre-Ville, Plateau, Buzenval.
               </p>
-              <div className="flex items-center text-blue-600 font-semibold text-sm">
+              <div className="flex items-center text-[#2998a6] font-semibold text-sm">
                 En savoir plus
                 <svg
                   className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
@@ -438,12 +438,12 @@ export default function ServicesContent() {
 
             <Link
               href="/nos-services/estimation-suresnes"
-              className="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-blue-200 transition-all"
+              className="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#2998a6]/20 transition-all"
             >
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-12 h-12 bg-blue-100 group-hover:bg-blue-600 rounded-xl flex items-center justify-center transition-colors">
+                <div className="w-12 h-12 bg-[#2998a6]/10 group-hover:bg-[#2998a6] rounded-xl flex items-center justify-center transition-colors">
                   <svg
-                    className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors"
+                    className="w-6 h-6 text-[#2998a6] group-hover:text-white transition-colors"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -462,7 +462,7 @@ export default function ServicesContent() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#2998a6] transition-colors">
                   Suresnes
                 </h3>
               </div>
@@ -470,7 +470,7 @@ export default function ServicesContent() {
                 Estimation gratuite à Suresnes : Mont-Valérien, Centre-Ville,
                 Cité-Jardins UNESCO, Longchamp.
               </p>
-              <div className="flex items-center text-blue-600 font-semibold text-sm">
+              <div className="flex items-center text-[#2998a6] font-semibold text-sm">
                 En savoir plus
                 <svg
                   className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
@@ -490,12 +490,12 @@ export default function ServicesContent() {
 
             <Link
               href="/nos-services/estimation-puteaux"
-              className="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-blue-200 transition-all"
+              className="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#2998a6]/20 transition-all"
             >
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-12 h-12 bg-blue-100 group-hover:bg-blue-600 rounded-xl flex items-center justify-center transition-colors">
+                <div className="w-12 h-12 bg-[#2998a6]/10 group-hover:bg-[#2998a6] rounded-xl flex items-center justify-center transition-colors">
                   <svg
-                    className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors"
+                    className="w-6 h-6 text-[#2998a6] group-hover:text-white transition-colors"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -514,7 +514,7 @@ export default function ServicesContent() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#2998a6] transition-colors">
                   Puteaux
                 </h3>
               </div>
@@ -522,7 +522,7 @@ export default function ServicesContent() {
                 Estimation gratuite à Puteaux : Centre-Ville, Bas de Puteaux,
                 secteur La Défense, République.
               </p>
-              <div className="flex items-center text-blue-600 font-semibold text-sm">
+              <div className="flex items-center text-[#2998a6] font-semibold text-sm">
                 En savoir plus
                 <svg
                   className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
@@ -547,7 +547,7 @@ export default function ServicesContent() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-[#2998a6] rounded-xl hover:bg-[#0d6c8a] transition-colors shadow-lg hover:shadow-xl"
             >
               Demander mon estimation gratuite
             </Link>

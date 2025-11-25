@@ -12,7 +12,7 @@ export default function ServiceCard({ icon, title, description }) {
       }}
     >
       {icon && (
-        <div className="mb-6 inline-flex items-center justify-center rounded-lg bg-blue-600 p-3 text-white">
+        <div className="mb-6 inline-flex items-center justify-center rounded-lg bg-[#2998a6] p-3 text-white">
           {icon}
         </div>
       )}

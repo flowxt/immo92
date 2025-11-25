@@ -30,13 +30,13 @@ export default function AppartementSurnesnesPlateauTerrasses() {
       <div className="bg-white border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-gray-500 hover:text-blue-600">
+            <Link href="/" className="text-gray-500 hover:text-[#2998a6]">
               Accueil
             </Link>
             <span className="text-gray-400">/</span>
             <Link
               href="/biens-a-vendre"
-              className="text-gray-500 hover:text-blue-600"
+              className="text-gray-500 hover:text-[#2998a6]"
             >
               Biens à vendre
             </Link>
@@ -66,7 +66,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                 <div className="flex-1">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full text-sm font-bold mb-3">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white rounded-full text-sm font-bold mb-3">
                     <svg
                       className="w-4 h-4"
                       fill="currentColor"
@@ -109,7 +109,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start md:items-end">
-                  <div className="text-3xl sm:text-4xl font-bold text-blue-600 whitespace-nowrap">
+                  <div className="text-3xl sm:text-4xl font-bold text-[#2998a6] whitespace-nowrap">
                     459 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
@@ -154,10 +154,10 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                   de la future gare du métro 15 Mont Valérien.
                 </p>
 
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 my-6">
+                <div className="bg-gradient-to-br from-[#2998a6]/5 to-[#2998a6]/10 rounded-xl p-6 my-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <svg
-                      className="w-6 h-6 text-blue-600"
+                      className="w-6 h-6 text-[#2998a6]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -173,34 +173,34 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                   </h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Appartement traversant et lumineux</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Deux terrasses totalisant 34 m²</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>
                         Pièce de vie de plus de 31 m² avec cuisine ouverte
                         équipée
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Cave et parking en sous-sol</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Résidence récente (2011) et sécurisée</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Quartier agréable et verdoyant</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-blue-600 font-bold">•</span>
+                      <span className="text-[#2998a6] font-bold">•</span>
                       <span>Proche future gare métro 15 Mont Valérien</span>
                     </li>
                   </ul>
@@ -220,7 +220,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                   complètent ce bien.
                 </p>
 
-                <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg my-6">
+                <div className="bg-[#2998a6]/5 border-l-4 border-[#2998a6] p-6 rounded-lg my-6">
                   <p className="text-gray-800 italic font-medium">
                     Un bien rare avec deux terrasses dans un quartier très
                     recherché, idéal pour une famille souhaitant profiter
@@ -359,24 +359,24 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                     key={item.name}
                     className={`p-4 rounded-lg border-2 ${
                       item.highlight
-                        ? "bg-blue-50 border-blue-200"
+                        ? "bg-[#2998a6]/5 border-[#2998a6]/20"
                         : "bg-gray-50 border-gray-200"
                     }`}
                   >
                     <div className="font-semibold text-gray-900 mb-1">
                       {item.name}
                     </div>
-                    <div className="text-sm font-bold text-blue-600">
+                    <div className="text-sm font-bold text-[#2998a6]">
                       {item.surface}
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-6 p-6 bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl">
+              <div className="mt-6 p-6 bg-gradient-to-br from-[#2998a6]/5 to-[#2998a6]/10 border-2 border-[#2998a6]/20 rounded-xl">
                 <div className="flex items-center gap-3 mb-2">
                   <svg
-                    className="w-6 h-6 text-green-600"
+                    className="w-6 h-6 text-[#0d6c8a]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -393,7 +393,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                   </h3>
                 </div>
                 <div className="grid grid-cols-2 gap-4 mt-4">
-                  <div className="p-4 bg-white rounded-lg border border-green-200">
+                  <div className="p-4 bg-white rounded-lg border border-[#2998a6]/20">
                     <div className="font-semibold text-gray-900">
                       Terrasse Ouest
                     </div>
@@ -401,14 +401,14 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                       Depuis le séjour
                     </div>
                   </div>
-                  <div className="p-4 bg-white rounded-lg border border-green-200">
+                  <div className="p-4 bg-white rounded-lg border border-[#2998a6]/20">
                     <div className="font-semibold text-gray-900">Terrasse</div>
                     <div className="text-sm text-gray-600 mt-1">
                       Depuis la partie nuit
                     </div>
                   </div>
                 </div>
-                <div className="mt-3 text-sm text-green-800 font-medium">
+                <div className="mt-3 text-sm text-[#0c233c] font-medium">
                   Total des terrasses : 34 m²
                 </div>
               </div>
@@ -438,7 +438,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2">
                     <svg
-                      className="w-5 h-5 text-green-500 flex-shrink-0"
+                      className="w-5 h-5 text-white/700 flex-shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -485,7 +485,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                     key={item}
                     className="flex items-center gap-2 text-sm text-gray-600"
                   >
-                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                    <div className="w-1.5 h-1.5 bg-[#2998a6] rounded-full"></div>
                     {item}
                   </div>
                 ))}
@@ -510,7 +510,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                 climateValue={5}
               />
 
-              <div className="mt-8 p-6 bg-blue-50 rounded-xl">
+              <div className="mt-8 p-6 bg-[#2998a6]/5 rounded-xl">
                 <h3 className="font-bold text-gray-900 mb-2">
                   Estimation des dépenses énergétiques
                 </h3>
@@ -545,7 +545,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
               className="bg-white rounded-2xl p-8 shadow-sm"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#2998a6] rounded-xl flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -599,7 +599,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
               <div className="mt-6 grid md:grid-cols-3 gap-4">
                 <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
                   <svg
-                    className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#2998a6] flex-shrink-0 mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -623,7 +623,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
 
                 <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
                   <svg
-                    className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#2998a6] flex-shrink-0 mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -647,7 +647,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
 
                 <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
                   <svg
-                    className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#2998a6] flex-shrink-0 mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -711,7 +711,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                 {/* Agent */}
                 <div className="mb-6 p-4 bg-gray-50 rounded-xl">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-blue-200">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-[#2998a6]/20">
                       <Image
                         src="/photos/vincent.jpg"
                         alt="Vincent LECLERC"
@@ -736,7 +736,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
 
                 <Link
                   href="/contact"
-                  className="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-700 transition-colors mb-3"
+                  className="block w-full bg-[#2998a6] text-white text-center py-4 rounded-xl font-bold hover:bg-[#0d6c8a] transition-colors mb-3"
                 >
                   Nous contacter
                 </Link>
@@ -762,7 +762,7 @@ export default function AppartementSurnesnesPlateauTerrasses() {
                   {/* Lien vers calculette complète */}
                   <Link
                     href="/calculateur"
-                    className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all shadow-md hover:shadow-lg"
+                    className="block w-full bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white text-center py-3 rounded-xl font-semibold hover:from-[#0d6c8a] hover:to-[#06465c] transition-all shadow-md hover:shadow-lg"
                   >
                     <span className="flex items-center justify-center gap-2">
                       <svg

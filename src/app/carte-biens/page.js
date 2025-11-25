@@ -228,19 +228,19 @@ export default function CarteBiensPage() {
                   className="bg-white rounded-xl p-4 hover:shadow-lg transition-shadow group"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors">
+                    <div className="w-12 h-12 bg-[#2998a6]/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#2998a6] transition-colors">
                       <span className="text-2xl group-hover:scale-110 transition-transform">
                         📍
                       </span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
+                      <h4 className="font-bold text-gray-900 mb-1 group-hover:text-[#2998a6] transition-colors">
                         {property.title}
                       </h4>
                       <p className="text-sm text-gray-600 mb-2">
                         {property.location}
                       </p>
-                      <p className="text-sm font-semibold text-blue-600">
+                      <p className="text-sm font-semibold text-[#2998a6]">
                         {property.price}
                       </p>
                     </div>
@@ -288,12 +288,12 @@ export default function CarteBiensPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg"
+          className="mt-12 bg-[#2998a6]/5 border-l-4 border-[#2998a6] p-6 rounded-lg"
         >
           <div className="flex gap-4">
             <div className="flex-shrink-0">
               <svg
-                className="w-6 h-6 text-blue-600"
+                className="w-6 h-6 text-[#2998a6]"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -305,8 +305,8 @@ export default function CarteBiensPage() {
               </svg>
             </div>
             <div>
-              <h3 className="font-bold text-blue-900 mb-2">💡 Astuce</h3>
-              <p className="text-blue-800 text-sm">
+              <h3 className="font-bold text-[#0c233c] mb-2">💡 Astuce</h3>
+              <p className="text-[#06465c] text-sm">
                 Sur la carte, vous pouvez zoomer avec la molette de la souris ou
                 les boutons + / -, et déplacer la vue en glissant. Cliquez sur
                 un marker bleu pour voir la fiche complète du bien avec photo et
@@ -323,19 +323,19 @@ export default function CarteBiensPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center text-white"
+          className="bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-12 text-center text-white"
         >
           <h2 className="text-3xl font-bold mb-4">
             Besoin d&apos;aide pour trouver le bien idéal ?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
             Notre équipe connaît parfaitement le secteur et peut vous
             accompagner dans votre recherche
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/biens-a-vendre"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-600 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#2998a6] rounded-lg font-bold hover:bg-[#2998a6]/5 transition-colors"
             >
               Voir tous les biens
               <svg
@@ -354,7 +354,7 @@ export default function CarteBiensPage() {
             </a>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-500 text-white rounded-lg font-bold hover:bg-blue-400 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2998a6] text-white rounded-lg font-bold hover:bg-[#2998a6]/40 transition-colors"
             >
               Contactez-nous
             </a>

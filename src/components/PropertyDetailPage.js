@@ -64,13 +64,13 @@ export default function PropertyDetailPage({ property }) {
       <div className="bg-white border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-gray-500 hover:text-blue-600">
+            <Link href="/" className="text-gray-500 hover:text-[#2998a6]">
               Accueil
             </Link>
             <span className="text-gray-400">/</span>
             <Link
               href="/biens-a-vendre"
-              className="text-gray-500 hover:text-blue-600"
+              className="text-gray-500 hover:text-[#2998a6]"
             >
               Biens à vendre
             </Link>
@@ -129,7 +129,7 @@ export default function PropertyDetailPage({ property }) {
                   </div>
                 </div>
                 <div className="flex flex-col items-start md:items-end">
-                  <div className="text-3xl sm:text-4xl font-bold text-blue-600 whitespace-nowrap">
+                  <div className="text-3xl sm:text-4xl font-bold text-[#2998a6] whitespace-nowrap">
                     {priceDisplay || `${price.toLocaleString("fr-FR")} €`}
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
@@ -240,7 +240,7 @@ export default function PropertyDetailPage({ property }) {
                   {prestations.map((item) => (
                     <div key={item} className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-green-500 flex-shrink-0"
+                        className="w-5 h-5 text-white/700 flex-shrink-0"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -276,7 +276,7 @@ export default function PropertyDetailPage({ property }) {
                       key={item}
                       className="flex items-center gap-2 text-sm text-gray-600"
                     >
-                      <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                      <div className="w-1.5 h-1.5 bg-[#2998a6] rounded-full"></div>
                       {item}
                     </div>
                   ))}
@@ -304,7 +304,7 @@ export default function PropertyDetailPage({ property }) {
                 />
 
                 {(dpe.estimatedCostMin || dpe.finalConsumption) && (
-                  <div className="mt-8 p-6 bg-blue-50 rounded-xl">
+                  <div className="mt-8 p-6 bg-[#2998a6]/5 rounded-xl">
                     <h3 className="font-bold text-gray-900 mb-2">
                       Estimation des dépenses énergétiques
                     </h3>
@@ -360,7 +360,7 @@ export default function PropertyDetailPage({ property }) {
                 className="bg-white rounded-2xl p-8 shadow-sm"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#2998a6] rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -419,7 +419,7 @@ export default function PropertyDetailPage({ property }) {
                         className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg"
                       >
                         <svg
-                          className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-[#2998a6] flex-shrink-0 mt-0.5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -476,7 +476,7 @@ export default function PropertyDetailPage({ property }) {
                 {agent && (
                   <div className="mb-6 p-4 bg-gray-50 rounded-xl">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-blue-200">
+                      <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-[#2998a6]/20">
                         <Image
                           src={agent.photo}
                           alt={agent.name}
@@ -502,7 +502,7 @@ export default function PropertyDetailPage({ property }) {
 
                 <Link
                   href="/contact"
-                  className="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-700 transition-colors mb-3"
+                  className="block w-full bg-[#2998a6] text-white text-center py-4 rounded-xl font-bold hover:bg-[#0d6c8a] transition-colors mb-3"
                 >
                   Nous contacter
                 </Link>
@@ -528,7 +528,7 @@ export default function PropertyDetailPage({ property }) {
                   {/* Lien vers calculette complète */}
                   <Link
                     href="/calculateur"
-                    className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all shadow-md hover:shadow-lg"
+                    className="block w-full bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white text-center py-3 rounded-xl font-semibold hover:from-[#0d6c8a] hover:to-[#06465c] transition-all shadow-md hover:shadow-lg"
                   >
                     <span className="flex items-center justify-center gap-2">
                       <svg

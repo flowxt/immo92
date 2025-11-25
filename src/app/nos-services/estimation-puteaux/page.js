@@ -70,7 +70,7 @@ export default function EstimationPuteaux() {
         cta={
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-[#2998a6] rounded-xl hover:bg-[#0d6c8a] transition-colors shadow-lg hover:shadow-xl"
           >
             Obtenir mon estimation gratuite
           </Link>
@@ -84,7 +84,7 @@ export default function EstimationPuteaux() {
             title={
               <>
                 Expert immobilier{" "}
-                <span className="text-blue-600">à Puteaux</span>
+                <span className="text-[#2998a6]">à Puteaux</span>
               </>
             }
             subtitle="Une expertise reconnue du marché putéolien"
@@ -93,9 +93,9 @@ export default function EstimationPuteaux() {
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#2998a6]/10 rounded-xl flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-blue-600"
+                  className="w-6 h-6 text-[#2998a6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -119,9 +119,9 @@ export default function EstimationPuteaux() {
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#2998a6]/10 rounded-xl flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-blue-600"
+                  className="w-6 h-6 text-[#2998a6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -144,9 +144,9 @@ export default function EstimationPuteaux() {
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#2998a6]/10 rounded-xl flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-blue-600"
+                  className="w-6 h-6 text-[#2998a6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -178,7 +178,7 @@ export default function EstimationPuteaux() {
             title={
               <>
                 Prix immobilier par quartier{" "}
-                <span className="text-blue-600">à Puteaux</span>
+                <span className="text-[#2998a6]">à Puteaux</span>
               </>
             }
             subtitle="Estimation moyenne au m² selon les quartiers (2024)"
@@ -195,7 +195,7 @@ export default function EstimationPuteaux() {
                   <h3 className="text-xl font-bold text-gray-900">
                     {quartier.nom}
                   </h3>
-                  <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-lg text-sm font-bold">
+                  <span className="bg-[#2998a6]/10 text-[#0d6c8a] px-3 py-1 rounded-lg text-sm font-bold">
                     {quartier.prixMoyen}
                   </span>
                 </div>
@@ -222,7 +222,7 @@ export default function EstimationPuteaux() {
             title={
               <>
                 Pourquoi Puteaux est{" "}
-                <span className="text-blue-600">si attractive</span> ?
+                <span className="text-[#2998a6]">si attractive</span> ?
               </>
             }
             showLine={true}
@@ -276,7 +276,7 @@ export default function EstimationPuteaux() {
             title={
               <>
                 FAQ - Estimation{" "}
-                <span className="text-blue-600">à Puteaux</span>
+                <span className="text-[#2998a6]">à Puteaux</span>
               </>
             }
             showLine={true}

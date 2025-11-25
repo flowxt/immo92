@@ -77,7 +77,7 @@ export default function DPE({ energyClass, energyValue, climateClass, climateVal
                       animate={{ scale: 1 }}
                       className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full shadow-lg flex items-center justify-center"
                     >
-                      <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
+                      <div className="w-3 h-3 bg-[#2998a6] rounded-full"></div>
                     </motion.div>
                   )}
                 </div>

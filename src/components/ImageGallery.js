@@ -119,7 +119,7 @@ export default function ImageGallery({ images }) {
         {/* Badge "Voir toutes les photos" si plus de 5 images */}
         {images.length > 5 && (
           <motion.div
-            className="col-span-2 md:col-span-1 relative h-32 md:h-auto overflow-hidden rounded-xl cursor-pointer bg-gradient-to-br from-blue-600 to-blue-700"
+            className="col-span-2 md:col-span-1 relative h-32 md:h-auto overflow-hidden rounded-xl cursor-pointer bg-gradient-to-br from-[#2998a6] to-[#0d6c8a]"
             onClick={() => setSelectedIndex(5)}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}

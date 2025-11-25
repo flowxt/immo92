@@ -43,13 +43,13 @@ export default function MaisonSuresnesMontValerien() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-6">
         <div className="max-w-7xl mx-auto">
           <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="text-gray-500 hover:text-blue-600">
+            <Link href="/" className="text-gray-500 hover:text-[#2998a6]">
               Accueil
             </Link>
             <span className="text-gray-400">/</span>
             <Link
               href="/biens-a-vendre"
-              className="text-gray-500 hover:text-blue-600"
+              className="text-gray-500 hover:text-[#2998a6]"
             >
               Biens à vendre
             </Link>
@@ -108,7 +108,7 @@ export default function MaisonSuresnesMontValerien() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start md:items-end">
-                  <div className="text-3xl sm:text-4xl font-bold text-blue-600 whitespace-nowrap">
+                  <div className="text-3xl sm:text-4xl font-bold text-[#2998a6] whitespace-nowrap">
                     549 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
@@ -159,7 +159,7 @@ export default function MaisonSuresnesMontValerien() {
                   bureau et une véranda qui peut faire office de chambre.
                 </p>
                 <p>Au deuxième étage une grande chambre sous comble.</p>
-                <p className="font-semibold text-green-600">
+                <p className="font-semibold text-[#0d6c8a]">
                   ✨ Aucuns travaux à prévoir... à visiter sans tarder !
                 </p>
               </div>
@@ -438,7 +438,7 @@ export default function MaisonSuresnesMontValerien() {
                 className="bg-white rounded-2xl p-6 shadow-lg"
               >
                 <div className="text-center mb-6">
-                  <div className="text-sm font-bold text-blue-600 uppercase tracking-wider mb-2">
+                  <div className="text-sm font-bold text-[#2998a6] uppercase tracking-wider mb-2">
                     Votre Contact
                   </div>
                   <div className="flex flex-col items-center gap-3">
@@ -465,7 +465,7 @@ export default function MaisonSuresnesMontValerien() {
 
                 <Link
                   href="/contact"
-                  className="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-700 transition-colors mb-3"
+                  className="block w-full bg-[#2998a6] text-white text-center py-4 rounded-xl font-bold hover:bg-[#0d6c8a] transition-colors mb-3"
                 >
                   Nous contacter
                 </Link>
@@ -491,7 +491,7 @@ export default function MaisonSuresnesMontValerien() {
                   {/* Lien vers calculette complète */}
                   <Link
                     href="/calculateur"
-                    className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all shadow-md hover:shadow-lg"
+                    className="block w-full bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white text-center py-3 rounded-xl font-semibold hover:from-[#0d6c8a] hover:to-[#06465c] transition-all shadow-md hover:shadow-lg"
                   >
                     <span className="flex items-center justify-center gap-2">
                       <svg

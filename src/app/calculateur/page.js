@@ -169,19 +169,19 @@ export default function CalculateurPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center text-white"
+          className="bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-12 text-center text-white"
         >
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-white">
             Besoin d&apos;aide pour votre financement ?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Notre équipe vous accompagne dans votre recherche de financement 
             et négocie pour vous les meilleures conditions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-600 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#2998a6] rounded-lg font-bold hover:bg-[#2998a6]/10 hover:text-[#06465c] transition-colors"
             >
               Demander un rendez-vous
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -190,7 +190,7 @@ export default function CalculateurPage() {
             </a>
             <a
               href="tel:+33662155757"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-500 text-white rounded-lg font-bold hover:bg-blue-400 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2998a6] text-white rounded-lg font-bold hover:bg-[#2998a6]/40 transition-colors"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />

@@ -28,7 +28,7 @@ export default function Contact() {
                 title={
                   <>
                     Envoyez-nous un{" "}
-                    <span className="text-blue-600">message</span>
+                    <span className="text-[#2998a6]">message</span>
                   </>
                 }
                 subtitle="Nous vous répondons rapidement"
@@ -46,7 +46,7 @@ export default function Contact() {
                 title={
                   <>
                     Contactez-nous{" "}
-                    <span className="text-blue-600">directement</span>
+                    <span className="text-[#2998a6]">directement</span>
                   </>
                 }
                 subtitle="Nous sommes à votre écoute"
@@ -58,7 +58,7 @@ export default function Contact() {
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
                     <motion.div
-                      className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600 text-white"
+                      className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#2998a6] text-white"
                       whileHover={{
                         scale: 1.1,
                         rotate: 5,
@@ -95,7 +95,7 @@ export default function Contact() {
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
                     <motion.div
-                      className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600 text-white"
+                      className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#2998a6] text-white"
                       whileHover={{
                         scale: 1.1,
                         rotate: 5,
@@ -130,7 +130,7 @@ export default function Contact() {
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
                     <motion.div
-                      className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600 text-white"
+                      className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#2998a6] text-white"
                       whileHover={{
                         scale: 1.1,
                         rotate: 5,

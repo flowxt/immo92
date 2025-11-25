@@ -105,7 +105,7 @@ export default function BiensVendus() {
             label="Notre expérience"
             title={
               <>
-                Nos <span className="text-blue-600">réussites</span>
+                Nos <span className="text-[#2998a6]">réussites</span>
               </>
             }
             subtitle="Des projets menés avec succès"
@@ -124,7 +124,7 @@ export default function BiensVendus() {
 
         {/* Encart plus de ventes */}
         <FadeIn delay={0.3}>
-          <div className="mt-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 md:p-10 text-center text-white shadow-lg">
+          <div className="mt-12 bg-gradient-to-br from-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-10 text-center text-white shadow-lg">
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
@@ -145,10 +145,10 @@ export default function BiensVendus() {
               </div>
 
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold mb-3">
+                <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white">
                   Plus d&apos;une dizaine de biens vendus avec succès
                 </h3>
-                <p className="text-lg text-blue-100">
+                <p className="text-lg text-white/90">
                   Les biens présentés ci-dessus ne sont qu&apos;un aperçu de notre
                   expertise. Nous avons accompagné de nombreux clients dans la
                   réussite de leur projet immobilier.
@@ -160,14 +160,14 @@ export default function BiensVendus() {
       </Section>
 
       {/* Success Story - Rénovation Énergétique */}
-      <div className="bg-gradient-to-br from-green-50 via-blue-50 to-green-50 py-20">
+      <div className="bg-gradient-to-br from-[#2998a6]/5 via-white to-[#2998a6]/5 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative">
             <FadeIn>
               <div className="text-center mb-12">
                 <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-lg mb-6">
-                  <span className="text-3xl">🌿</span>
-                  <span className="font-bold text-xl text-green-800">
+                  <span className="text-3xl">⚡</span>
+                  <span className="font-bold text-xl text-[#0c233c]">
                     Success Story
                   </span>
                 </div>
@@ -176,7 +176,7 @@ export default function BiensVendus() {
                   title={
                     <>
                       De passoire énergétique à{" "}
-                      <span className="text-green-600">
+                      <span className="text-[#0d6c8a]">
                         maison éco-performante
                       </span>
                     </>
@@ -196,7 +196,7 @@ export default function BiensVendus() {
                 >
                   {/* Badges en haut */}
                   <div className="absolute top-6 left-6 z-10 flex flex-wrap gap-3">
-                    <div className="bg-green-600 text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl flex items-center gap-2">
+                    <div className="bg-[#0d6c8a] text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl flex items-center gap-2">
                       <svg
                         className="w-6 h-6"
                         fill="none"
@@ -212,7 +212,7 @@ export default function BiensVendus() {
                       </svg>
                       VENDU
                     </div>
-                    <div className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl">
+                    <div className="bg-gradient-to-r from-[#2998a6]/50 to-[#2998a6]/50 text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl">
                       🏆 SUCCESS STORY
                     </div>
                   </div>
@@ -238,7 +238,7 @@ export default function BiensVendus() {
                         </div>
                         <div className="text-3xl">→</div>
                         <div className="text-center">
-                          <div className="text-green-600 font-bold text-2xl">
+                          <div className="text-[#0d6c8a] font-bold text-2xl">
                             DPE C
                           </div>
                           <div className="text-xs text-gray-600">Après</div>
@@ -263,16 +263,16 @@ export default function BiensVendus() {
 
                     {/* Points clés */}
                     <div className="grid md:grid-cols-4 gap-6 mb-6">
-                      <div className="text-center p-4 bg-green-50 rounded-xl">
-                        <div className="text-3xl font-bold text-green-600">
+                      <div className="text-center p-4 bg-[#2998a6]/5 rounded-xl">
+                        <div className="text-3xl font-bold text-[#0d6c8a]">
                           92 m²
                         </div>
                         <div className="text-sm text-gray-600 mt-1">
                           Surface
                         </div>
                       </div>
-                      <div className="text-center p-4 bg-blue-50 rounded-xl">
-                        <div className="text-3xl font-bold text-blue-600">
+                      <div className="text-center p-4 bg-[#2998a6]/5 rounded-xl">
+                        <div className="text-3xl font-bold text-[#2998a6]">
                           525 m²
                         </div>
                         <div className="text-sm text-gray-600 mt-1">
@@ -294,24 +294,35 @@ export default function BiensVendus() {
                     </div>
 
                     {/* Notre accompagnement */}
-                    <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-6 mb-6">
+                    <div className="bg-gradient-to-br from-[#2998a6]/5 to-[#2998a6]/10 rounded-2xl p-6 mb-6">
                       <h4 className="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
                         <span className="text-2xl">🤝</span>
                         Notre Accompagnement 100%
                       </h4>
                       <div className="grid md:grid-cols-2 gap-3">
                         {[
-                          "✅ Diagnostic énergétique complet",
-                          "✅ Plan de rénovation personnalisé",
-                          "✅ Accès aux subventions & aides",
-                          "✅ Suivi des travaux avec artisans RGE",
-                          "✅ Amélioration DPE (G → C)",
-                          "✅ Valorisation & vente au meilleur prix",
+                          "Diagnostic énergétique complet",
+                          "Plan de rénovation personnalisé",
+                          "Accès aux subventions & aides",
+                          "Suivi des travaux avec artisans RGE",
+                          "Amélioration DPE (G → C)",
+                          "Valorisation & vente au meilleur prix",
                         ].map((item, index) => (
                           <div
                             key={index}
                             className="flex items-center gap-2 text-gray-700"
                           >
+                            <svg
+                              className="w-5 h-5 text-[#2998a6] flex-shrink-0"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
                             <span className="text-sm">{item}</span>
                           </div>
                         ))}
@@ -338,7 +349,7 @@ export default function BiensVendus() {
                           <span>Accompagné par Vincent LECLERC</span>
                         </div>
                       </div>
-                      <div className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition-colors">
+                      <div className="inline-flex items-center gap-2 bg-[#0d6c8a] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#06465c] transition-colors">
                         <span>Découvrir l&apos;histoire complète</span>
                         <svg
                           className="w-5 h-5"
@@ -410,8 +421,8 @@ export default function BiensVendus() {
       <Section background="white">
         {/* CTA pour vendeurs */}
         <FadeIn delay={0.4}>
-          <div className="text-center bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-6">
+          <div className="text-center bg-gradient-to-br from-[#2998a6]/5 to-[#2998a6]/10 rounded-2xl p-12">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#2998a6] rounded-full mb-6">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -457,7 +468,7 @@ export default function BiensVendus() {
               label="Nos atouts"
               title={
                 <>
-                  Pourquoi <span className="text-blue-600">nous choisir</span> ?
+                  Pourquoi <span className="text-[#2998a6]">nous choisir</span> ?
                 </>
               }
               subtitle="Une expertise qui fait la différence"
@@ -476,7 +487,7 @@ export default function BiensVendus() {
                 }}
               >
                 <motion.div
-                  className="text-5xl font-bold text-blue-600 mb-2"
+                  className="text-5xl font-bold text-[#2998a6] mb-2"
                   whileHover={{
                     scale: 1.1,
                     transition: { duration: 0.2 },
@@ -503,7 +514,7 @@ export default function BiensVendus() {
                 }}
               >
                 <motion.div
-                  className="text-5xl font-bold text-blue-600 mb-2"
+                  className="text-5xl font-bold text-[#2998a6] mb-2"
                   whileHover={{
                     scale: 1.1,
                     transition: { duration: 0.2 },
@@ -530,7 +541,7 @@ export default function BiensVendus() {
                 }}
               >
                 <motion.div
-                  className="text-5xl font-bold text-blue-600 mb-2"
+                  className="text-5xl font-bold text-[#2998a6] mb-2"
                   whileHover={{
                     scale: 1.1,
                     transition: { duration: 0.2 },

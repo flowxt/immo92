@@ -370,7 +370,7 @@ export default function BiensAVendre() {
             label="Nos annonces"
             title={
               <>
-                Nos biens <span className="text-blue-600">disponibles</span>
+                Nos biens <span className="text-[#2998a6]">disponibles</span>
               </>
             }
             subtitle="Sélection de propriétés d'exception"
@@ -442,7 +442,7 @@ export default function BiensAVendre() {
               onClick={() =>
                 setFilters({ type: "all", rooms: "all", priceRange: "all" })
               }
-              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#2998a6] text-white rounded-lg hover:bg-[#0d6c8a] transition-colors font-semibold"
             >
               <svg
                 className="w-5 h-5"
@@ -467,7 +467,7 @@ export default function BiensAVendre() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-10 text-white overflow-hidden relative"
+          className="mt-12 bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-10 text-white overflow-hidden relative"
         >
           {/* Décorations */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
@@ -495,10 +495,10 @@ export default function BiensAVendre() {
 
             {/* Contenu */}
             <div className="flex-1 text-center md:text-left">
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">
+              <h3 className="text-2xl md:text-3xl font-bold mb-2 text-white">
                 Visualisez tous les biens sur une carte
               </h3>
-              <p className="text-blue-100 text-lg">
+              <p className="text-white/90 text-lg">
                 Découvrez l&apos;emplacement exact de chaque bien et explorez le
                 secteur en un coup d&apos;œil
               </p>
@@ -508,7 +508,7 @@ export default function BiensAVendre() {
             <div className="flex-shrink-0">
               <a
                 href="/carte-biens"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition-all hover:scale-105 shadow-xl"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-[#2998a6] rounded-xl font-bold hover:bg-[#2998a6]/5 transition-all hover:scale-105 shadow-xl"
               >
                 <svg
                   className="w-6 h-6"
@@ -547,15 +547,15 @@ export default function BiensAVendre() {
               <div className="text-3xl font-bold mb-1">
                 {filteredProperties.length}
               </div>
-              <div className="text-blue-100 text-sm">Biens disponibles</div>
+              <div className="text-white/70 text-sm">Biens disponibles</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-1">4</div>
-              <div className="text-blue-100 text-sm">Communes</div>
+              <div className="text-white/70 text-sm">Communes</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-1">100%</div>
-              <div className="text-blue-100 text-sm">Géolocalisés</div>
+              <div className="text-white/70 text-sm">Géolocalisés</div>
             </div>
           </div>
         </motion.div>
@@ -569,7 +569,7 @@ export default function BiensAVendre() {
             title={
               <>
                 Nos secteurs{" "}
-                <span className="text-blue-600">d&apos;intervention</span>
+                <span className="text-[#2998a6]">d&apos;intervention</span>
               </>
             }
             subtitle="Des communes dynamiques et recherchées"

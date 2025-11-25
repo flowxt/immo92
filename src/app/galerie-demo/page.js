@@ -116,17 +116,17 @@ export default function GalerieDemoPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg"
+          className="mt-12 bg-[#2998a6]/5 border-l-4 border-[#2998a6] p-6 rounded-lg"
         >
           <div className="flex gap-4">
             <div className="flex-shrink-0">
-              <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-6 h-6 text-[#2998a6]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
             </div>
             <div>
-              <h3 className="font-bold text-blue-900 mb-2">💡 Astuce</h3>
-              <p className="text-blue-800 text-sm">
+              <h3 className="font-bold text-[#0c233c] mb-2">💡 Astuce</h3>
+              <p className="text-[#06465c] text-sm">
                 Dans la lightbox, utilisez les flèches du clavier pour naviguer entre les photos,
                 le bouton de zoom pour voir les détails, et Echap pour fermer. Sur mobile,
                 swipez pour naviguer entre les images.
@@ -141,18 +141,18 @@ export default function GalerieDemoPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center text-white"
+          className="bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-12 text-center text-white"
         >
           <h2 className="text-3xl font-bold mb-4">
             Prêt à mettre en valeur vos biens ?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
             Cette galerie sera automatiquement utilisée pour toutes vos futures annonces
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/biens-a-vendre/loft-industriel"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-600 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#2998a6] rounded-lg font-bold hover:bg-[#2998a6]/5 transition-colors"
             >
               Voir un exemple
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -161,7 +161,7 @@ export default function GalerieDemoPage() {
             </a>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-500 text-white rounded-lg font-bold hover:bg-blue-400 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2998a6] text-white rounded-lg font-bold hover:bg-[#2998a6]/40 transition-colors"
             >
               Contactez-nous
             </a>

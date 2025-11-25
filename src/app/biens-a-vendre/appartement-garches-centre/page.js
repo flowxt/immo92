@@ -41,13 +41,13 @@ export default function AppartementGarchesCentre() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-6">
         <div className="max-w-7xl mx-auto">
           <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="text-gray-500 hover:text-blue-600">
+            <Link href="/" className="text-gray-500 hover:text-[#2998a6]">
               Accueil
             </Link>
             <span className="text-gray-400">/</span>
             <Link
               href="/biens-a-vendre"
-              className="text-gray-500 hover:text-blue-600"
+              className="text-gray-500 hover:text-[#2998a6]"
             >
               Biens à vendre
             </Link>
@@ -104,7 +104,7 @@ export default function AppartementGarchesCentre() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start md:items-end">
-                  <div className="text-3xl sm:text-4xl font-bold text-blue-600 whitespace-nowrap">
+                  <div className="text-3xl sm:text-4xl font-bold text-[#2998a6] whitespace-nowrap">
                     450 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
@@ -149,7 +149,7 @@ export default function AppartementGarchesCentre() {
                   Il se compose d&apos;un séjour lumineux avec balcon, de trois
                   chambres, d&apos;une salle de bains et d&apos;une cave.
                 </p>
-                <p className="font-semibold text-blue-600">
+                <p className="font-semibold text-[#2998a6]">
                   Situé dans un environnement résidentiel et verdoyant, ce bien
                   offre un cadre de vie recherché, alliant confort, proximité
                   des commodités et accès rapide à Paris et La Défense.
@@ -203,7 +203,7 @@ export default function AppartementGarchesCentre() {
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-gray-600">Disponibilité</span>
-                    <span className="font-semibold text-green-600">Libre</span>
+                    <span className="font-semibold text-[#0d6c8a]">Libre</span>
                   </div>
                 </div>
                 <div className="space-y-4">
@@ -422,7 +422,7 @@ export default function AppartementGarchesCentre() {
                   
                   <div className="space-y-2">
                     {[
-                      { letter: 'A', range: '≤ 6', color: 'bg-green-500', active: false },
+                      { letter: 'A', range: '≤ 6', color: 'bg-[#2998a6]/50', active: false },
                       { letter: 'B', range: '7 - 11', color: 'bg-lime-400', active: false },
                       { letter: 'C', range: '12 - 30', color: 'bg-yellow-300', active: false },
                       { letter: 'D', range: '31 - 50', color: 'bg-yellow-400', active: false },
@@ -440,7 +440,7 @@ export default function AppartementGarchesCentre() {
                           className={`${item.color} ${
                             item.active ? 'w-full' : 'w-3/4'
                           } h-10 flex items-center justify-between px-4 rounded-r-lg transition-all ${
-                            item.active ? 'ring-4 ring-blue-500 ring-offset-2' : ''
+                            item.active ? 'ring-4 ring-[#2998a6] ring-offset-2' : ''
                           }`}
                         >
                           <span className="font-bold text-white text-lg">
@@ -455,7 +455,7 @@ export default function AppartementGarchesCentre() {
                   </div>
                 </div>
 
-                <div className="bg-blue-50 rounded-lg p-4 mt-6">
+                <div className="bg-[#2998a6]/5 rounded-lg p-4 mt-6">
                   <p className="text-sm text-gray-700">
                     💰 <strong>Coût énergétique estimé</strong> : 1910€ ~ 2620€ par an
                   </p>
@@ -521,7 +521,7 @@ export default function AppartementGarchesCentre() {
                 className="bg-white rounded-2xl p-6 shadow-lg"
               >
                 <div className="text-center mb-6">
-                  <div className="text-sm font-bold text-blue-600 uppercase tracking-wider mb-2">
+                  <div className="text-sm font-bold text-[#2998a6] uppercase tracking-wider mb-2">
                     Votre Contact
                   </div>
                   <div className="flex flex-col items-center gap-3">
@@ -549,7 +549,7 @@ export default function AppartementGarchesCentre() {
 
                 <Link
                   href="/contact"
-                  className="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-700 transition-colors mb-3"
+                  className="block w-full bg-[#2998a6] text-white text-center py-4 rounded-xl font-bold hover:bg-[#0d6c8a] transition-colors mb-3"
                 >
                   Nous contacter
                 </Link>
@@ -574,7 +574,7 @@ export default function AppartementGarchesCentre() {
 
                   <Link
                     href="/calculateur"
-                    className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all shadow-md hover:shadow-lg"
+                    className="block w-full bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white text-center py-3 rounded-xl font-semibold hover:from-[#0d6c8a] hover:to-[#06465c] transition-all shadow-md hover:shadow-lg"
                   >
                     <span className="flex items-center justify-center gap-2">
                       <svg

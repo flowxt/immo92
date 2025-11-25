@@ -46,13 +46,13 @@ export default function MaisonSuresnesFamilialeExclusivite() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-6">
         <div className="max-w-7xl mx-auto">
           <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="text-gray-500 hover:text-blue-600">
+            <Link href="/" className="text-gray-500 hover:text-[#2998a6]">
               Accueil
             </Link>
             <span className="text-gray-400">/</span>
             <Link
               href="/biens-a-vendre"
-              className="text-gray-500 hover:text-blue-600"
+              className="text-gray-500 hover:text-[#2998a6]"
             >
               Biens à vendre
             </Link>
@@ -86,7 +86,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                     <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-lg shadow-amber-500/30">
                       ⭐ EXCLUSIVITÉ
                     </span>
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#2998a6]/10 text-[#06465c]">
                       Maison
                     </span>
                   </div>
@@ -95,7 +95,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                   </h1>
                   <p className="text-lg text-gray-600 flex items-center gap-2">
                     <svg
-                      className="w-5 h-5 text-blue-600"
+                      className="w-5 h-5 text-[#2998a6]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -120,7 +120,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                   </p>
                 </div>
                 <div className="text-left md:text-right">
-                  <div className="text-4xl font-bold text-blue-600 mb-1">
+                  <div className="text-4xl font-bold text-[#2998a6] mb-1">
                     748 000 €
                   </div>
                   <div className="text-sm text-gray-500">
@@ -180,11 +180,11 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                   , venez découvrir cette charmante maison familiale :
                 </p>
 
-                <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-6">
-                  <p className="font-semibold text-blue-900 mb-2">
+                <div className="bg-[#2998a6]/5 border-l-4 border-[#2998a6] p-4 my-6">
+                  <p className="font-semibold text-[#0c233c] mb-2">
                     📍 Emplacement privilégié avec bonus exceptionnel
                   </p>
-                  <p className="text-blue-800">
+                  <p className="text-[#06465c]">
                     Ce bien est accompagné d&apos;une agréable surprise :{" "}
                     <strong>3 emplacements de stationnement</strong> attenant à
                     la maison.
@@ -197,7 +197,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
 
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">✓</span>
+                    <span className="text-[#2998a6] mr-2">✓</span>
                     <span>
                       <strong>Rez-de-chaussée :</strong> Double séjour, cuisine
                       ouverte, salle à manger exposée sud-ouest donnant sur
@@ -205,20 +205,20 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">✓</span>
+                    <span className="text-[#2998a6] mr-2">✓</span>
                     <span>
                       <strong>1er étage :</strong> 3 chambres, une salle de
                       bain
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">✓</span>
+                    <span className="text-[#2998a6] mr-2">✓</span>
                     <span>
                       <strong>2ème étage :</strong> Une chambre et un bureau
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">✓</span>
+                    <span className="text-[#2998a6] mr-2">✓</span>
                     <span>
                       <strong>Sous-sol :</strong> Un garage, un atelier, un
                       grand bureau aménagé
@@ -232,20 +232,20 @@ export default function MaisonSuresnesFamilialeExclusivite() {
 
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <span className="text-green-600 mr-2">🏫</span>
+                    <span className="text-[#0d6c8a] mr-2">🏫</span>
                     <span>
                       <strong>Carte scolaire :</strong> Jules Ferry, Moulin des
                       Gibets
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-green-600 mr-2">🚌</span>
+                    <span className="text-[#0d6c8a] mr-2">🚌</span>
                     <span>
                       <strong>Transports :</strong> Bus 141 & 160
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-green-600 mr-2">🏢</span>
+                    <span className="text-[#0d6c8a] mr-2">🏢</span>
                     <span>
                       <strong>Accès La Défense :</strong> 15 minutes en voiture
                     </span>
@@ -406,7 +406,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                       className="flex items-center gap-2 text-gray-700"
                     >
                       <svg
-                        className="w-5 h-5 text-green-600 flex-shrink-0"
+                        className="w-5 h-5 text-[#0d6c8a] flex-shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -581,7 +581,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                 className="bg-white rounded-2xl p-6 shadow-lg"
               >
                 <div className="text-center mb-6">
-                  <div className="text-sm font-bold text-blue-600 uppercase tracking-wider mb-2">
+                  <div className="text-sm font-bold text-[#2998a6] uppercase tracking-wider mb-2">
                     Votre Contact
                   </div>
                   <div className="flex flex-col items-center gap-3">
@@ -608,7 +608,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
 
                 <Link
                   href="/contact"
-                  className="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-700 transition-colors mb-3"
+                  className="block w-full bg-[#2998a6] text-white text-center py-4 rounded-xl font-bold hover:bg-[#0d6c8a] transition-colors mb-3"
                 >
                   Nous contacter
                 </Link>

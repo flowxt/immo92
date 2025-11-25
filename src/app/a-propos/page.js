@@ -132,7 +132,7 @@ export default function APropos() {
             label="Qui sommes-nous"
             title={
               <>
-                Notre <span className="text-blue-600">histoire</span>
+                Notre <span className="text-[#2998a6]">histoire</span>
               </>
             }
             subtitle="Une expertise au service de votre projet"
@@ -166,7 +166,7 @@ export default function APropos() {
             label="Les experts"
             title={
               <>
-                Notre <span className="text-blue-600">équipe</span>
+                Notre <span className="text-[#2998a6]">équipe</span>
               </>
             }
             subtitle="Des professionnels à votre écoute"
@@ -184,7 +184,7 @@ export default function APropos() {
                 }}
               >
                 {/* Photo circulaire avec effet zoom au hover */}
-                <div className="relative w-40 h-40 mb-6 overflow-hidden rounded-full ring-4 ring-blue-100">
+                <div className="relative w-40 h-40 mb-6 overflow-hidden rounded-full ring-4 ring-[#2998a6]/10">
                   <motion.div
                     className="w-full h-full"
                     whileHover={{
@@ -208,7 +208,7 @@ export default function APropos() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 font-semibold mb-4">
+                  <p className="text-[#2998a6] font-semibold mb-4">
                     {member.role}
                   </p>
                   
@@ -234,7 +234,7 @@ export default function APropos() {
                 </div>
 
                 {/* Décoration */}
-                <div className="mt-6 w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full"></div>
+                <div className="mt-6 w-16 h-1 bg-gradient-to-r from-[#2998a6] to-[#2998a6] rounded-full"></div>
               </motion.div>
             </StaggerItem>
           ))}
@@ -243,10 +243,10 @@ export default function APropos() {
         {/* Message d'équipe */}
         <FadeIn delay={0.4}>
           <div className="mt-16 max-w-3xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 md:p-10 border border-blue-100">
+            <div className="bg-gradient-to-br from-[#2998a6]/5 to-white rounded-2xl p-8 md:p-10 border border-[#2998a6]/10">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#2998a6] rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -288,7 +288,7 @@ export default function APropos() {
               label="Notre engagement"
               title={
                 <>
-                  Notre <span className="text-blue-600">mission</span>
+                  Notre <span className="text-[#2998a6]">mission</span>
                 </>
               }
               showLine={true}
@@ -298,7 +298,7 @@ export default function APropos() {
               étape de son projet : estimation, conseil, mise en valeur,
               accompagnement technique et suivi administratif.
             </p>
-            <p className="mt-6 text-xl font-semibold text-blue-600">
+            <p className="mt-6 text-xl font-semibold text-[#2998a6]">
               Notre objectif : valoriser votre bien et vous aider à vendre dans
               les meilleures conditions.
             </p>
@@ -313,7 +313,7 @@ export default function APropos() {
             label="Nos engagements"
             title={
               <>
-                Nos <span className="text-blue-600">valeurs</span>
+                Nos <span className="text-[#2998a6]">valeurs</span>
               </>
             }
             subtitle="Ce qui guide notre action au quotidien"
@@ -325,7 +325,7 @@ export default function APropos() {
             <StaggerItem key={value.name}>
               <div className="text-center">
                 <motion.div
-                  className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 text-white mb-4"
+                  className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#2998a6] text-white mb-4"
                   whileHover={{
                     scale: 1.15,
                     rotate: 10,
