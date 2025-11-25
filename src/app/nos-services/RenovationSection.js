@@ -152,7 +152,7 @@ export default function RenovationSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0d6c8a] via-[#06465c] to-[#0c233c] p-12 shadow-2xl"
+              className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1e3771] via-[#0d6c8a] to-[#06465c] p-12 shadow-2xl"
             >
               {/* Décorations de fond */}
               <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>

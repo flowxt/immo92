@@ -35,7 +35,9 @@ export default function Hero({
             quality={90}
           />
         </motion.div>
-        {overlay && <div className="absolute inset-0 bg-gray-900/70" />}
+        {overlay && (
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0c233c]/85 via-[#1e3771]/75 to-[#2998a6]/60" />
+        )}
       </div>
 
       {/* Content */}

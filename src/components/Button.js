@@ -16,7 +16,7 @@ export default function Button({
     "inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-bold transition-all duration-300 shadow-lg relative overflow-hidden group";
 
   const variants = {
-    primary: "bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white hover:shadow-2xl hover:shadow-[#2998a6]/50 border-0",
+    primary: "bg-gradient-to-r from-[#2998a6] via-[#0d6c8a] to-[#06465c] text-white hover:shadow-2xl hover:shadow-[#2998a6]/50 border-0 hover:from-[#0d6c8a] hover:via-[#2998a6] hover:to-[#2998a6]",
     secondary:
       "bg-white text-[#2998a6] border-2 border-[#2998a6] hover:bg-[#2998a6]/5 hover:border-[#0d6c8a] shadow-md",
     outline:

@@ -169,7 +169,7 @@ export default function CalculateurPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-12 text-center text-white"
+          className="bg-gradient-to-br from-[#1e3771] via-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-12 text-center text-white shadow-2xl"
         >
           <h2 className="text-3xl font-bold mb-4 text-white">
             Besoin d&apos;aide pour votre financement ?

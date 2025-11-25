@@ -467,7 +467,7 @@ export default function BiensAVendre() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-10 text-white overflow-hidden relative"
+          className="mt-12 bg-gradient-to-br from-[#1e3771] via-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-10 text-white overflow-hidden relative shadow-2xl"
         >
           {/* Décorations */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>

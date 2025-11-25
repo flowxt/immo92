@@ -242,7 +242,7 @@ export default function MortgageCalculator({ propertyPrice = 500000, compact = f
             transition={{ duration: 0.3 }}
           >
             {/* Mensualité principale */}
-            <div className="bg-gradient-to-br from-[#2998a6] to-[#0d6c8a] rounded-2xl p-6 text-white mb-6">
+            <div className="bg-gradient-to-br from-[#1e3771] via-[#2998a6] to-[#0d6c8a] rounded-2xl p-6 text-white mb-6 shadow-lg">
               <div className="text-center">
                 <div className="text-sm font-semibold text-white/70 mb-2">Mensualité</div>
                 <div className="text-5xl font-bold mb-1">

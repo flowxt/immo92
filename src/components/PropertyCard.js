@@ -38,7 +38,7 @@ export default function PropertyCard({
             </motion.div>
 
             {/* Overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0c233c]/80 via-[#0d6c8a]/20 to-transparent" />
 
             {/* Badges */}
             <div className="absolute top-4 left-4 flex gap-2">
@@ -48,7 +48,7 @@ export default function PropertyCard({
                 </span>
               )}
               {featured && (
-                <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-[#2998a6] text-white shadow-lg">
+                <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white shadow-lg">
                   💎 Coup de cœur
                 </span>
               )}

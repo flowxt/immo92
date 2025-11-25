@@ -16,7 +16,7 @@ export default function SoldPropertyCard({ property }) {
       >
         {/* Badges */}
         <div className="absolute top-4 left-4 z-10 flex gap-2">
-          <div className="bg-[#0d6c8a] text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+          <div className="bg-gradient-to-r from-[#0d6c8a] to-[#06465c] text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
             ✓ VENDU
           </div>
           {property.exclusive && (

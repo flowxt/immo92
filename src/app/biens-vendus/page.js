@@ -124,7 +124,7 @@ export default function BiensVendus() {
 
         {/* Encart plus de ventes */}
         <FadeIn delay={0.3}>
-          <div className="mt-12 bg-gradient-to-br from-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-10 text-center text-white shadow-lg">
+          <div className="mt-12 bg-gradient-to-br from-[#1e3771] via-[#2998a6] to-[#0d6c8a] rounded-2xl p-8 md:p-10 text-center text-white shadow-2xl">
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
@@ -212,7 +212,7 @@ export default function BiensVendus() {
                       </svg>
                       VENDU
                     </div>
-                    <div className="bg-gradient-to-r from-[#2998a6]/50 to-[#2998a6]/50 text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl">
+                    <div className="bg-gradient-to-r from-[#1e3771] via-[#0d6c8a] to-[#2998a6] text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl">
                       🏆 SUCCESS STORY
                     </div>
                   </div>
