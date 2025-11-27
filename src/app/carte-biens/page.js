@@ -159,6 +159,16 @@ export default function CarteBiensPage() {
       lat: 48.8686,
       lng: 2.2208,
     },
+    {
+      id: 16,
+      title: "Maison à fort potentiel - Mont-Valérien",
+      location: "Suresnes",
+      price: "849 000 €",
+      image: "/photos/maison-849/ext.jpeg",
+      slug: "maison-suresnes-mont-valerien-potentiel",
+      lat: 48.8750,
+      lng: 2.2180,
+    },
   ];
 
   const features = [

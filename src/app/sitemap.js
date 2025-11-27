@@ -46,6 +46,10 @@ export default function sitemap() {
     "/biens-a-vendre/appartement-chatou-3-pieces",
     "/biens-a-vendre/maison-nanterre-mont-valerien-jardin",
     "/biens-a-vendre/appartement-garches-centre",
+    "/biens-a-vendre/appartement-suresnes-plateau-terrasses",
+    "/biens-a-vendre/maison-suresnes-familiale-exclusivite",
+    "/biens-a-vendre/maison-suresnes-contemporaine-jardin",
+    "/biens-a-vendre/maison-suresnes-mont-valerien-potentiel",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

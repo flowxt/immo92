@@ -300,6 +300,26 @@ const allProperties = [
     rsac: "451 258 438",
     exclusive: false,
   },
+  {
+    id: 16,
+    title: "Maison à fort potentiel - Mont-Valérien",
+    subtitle: "Maison de charme sur 446 m² de terrain avec vue dégagée",
+    location: "Suresnes",
+    surface: "110 m²",
+    terrain: "446 m²",
+    rooms: 4,
+    roomsLabel: "4 pièces - 3 chambres",
+    image: "/photos/maison-849/ext.jpeg",
+    price: "849 000 €",
+    priceValue: 849000,
+    slug: "maison-suresnes-mont-valerien-potentiel",
+    type: "maison",
+    featured: false,
+    available: true,
+    agent: "Vincent LECLERC",
+    rsac: "451 258 438",
+    exclusive: false,
+  },
 ];
 
 export default function BiensAVendre() {
@@ -309,9 +329,9 @@ export default function BiensAVendre() {
     priceRange: "all",
   });
 
-  // Filtrer les propriétés
+  // Filtrer et trier les propriétés
   const filteredProperties = useMemo(() => {
-    return allProperties.filter((property) => {
+    const filtered = allProperties.filter((property) => {
       // Filtre par type
       if (filters.type !== "all" && property.type !== filters.type) {
         return false;
@@ -352,6 +372,9 @@ export default function BiensAVendre() {
 
       return true;
     });
+
+    // Tri par prix croissant
+    return filtered.sort((a, b) => a.priceValue - b.priceValue);
   }, [filters]);
 
   return (
