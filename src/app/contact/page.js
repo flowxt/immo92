@@ -84,9 +84,14 @@ export default function Contact() {
                     <p className="text-lg font-semibold text-gray-900">
                       Téléphone
                     </p>
-                    <p className="mt-2 text-base text-gray-600">À venir</p>
+                    <a
+                      href="tel:+33662155757"
+                      className="mt-2 text-base text-gray-600 hover:text-[#2998a6] transition-colors"
+                    >
+                      06 62 15 57 57
+                    </a>
                     <p className="text-sm text-gray-500">
-                      Disponible du lundi au vendredi, 9h-19h
+                      Disponible du lundi au dimanche, 9h-19h
                     </p>
                   </div>
                 </div>
@@ -119,9 +124,12 @@ export default function Contact() {
                   </div>
                   <div className="ml-4">
                     <p className="text-lg font-semibold text-gray-900">Email</p>
-                    <p className="mt-2 text-base text-gray-600">
-                      contact@exp-mont-valerien.fr
-                    </p>
+                    <a
+                      href="mailto:contact@ener-immo92.fr"
+                      className="mt-2 text-base text-gray-600 hover:text-[#2998a6] transition-colors"
+                    >
+                      contact@ener-immo92.fr
+                    </a>
                     <p className="text-sm text-gray-500">Réponse sous 24h</p>
                   </div>
                 </div>

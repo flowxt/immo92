@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function Header() {
@@ -10,6 +11,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
   const headerOpacity = useTransform(scrollY, [0, 100], [0.95, 1]);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,18 +69,32 @@ export default function Header() {
 
         {/* Desktop navigation */}
         <div className="hidden lg:flex lg:gap-x-8">
-          {navigation.map((item) => (
-          <motion.div key={item.name} whileHover={{ scale: 1.05 }}>
-            <Link
-              href={item.href}
-              className={`text-sm font-semibold leading-6 transition-colors ${
-                scrolled ? 'text-gray-900 hover:text-[#2998a6]' : 'text-gray-900 hover:text-[#2998a6]'
-              }`}
-            >
-              {item.name}
-            </Link>
-          </motion.div>
-          ))}
+          {navigation.map((item) => {
+            const isActive = pathname === item.href || 
+              (item.href !== '/' && pathname.startsWith(item.href));
+            return (
+              <motion.div key={item.name} whileHover={{ scale: 1.05 }}>
+                <Link
+                  href={item.href}
+                  className={`text-sm font-semibold leading-6 transition-colors relative ${
+                    isActive 
+                      ? 'text-[#2998a6]' 
+                      : 'text-gray-900 hover:text-[#2998a6]'
+                  }`}
+                >
+                  {item.name}
+                  {isActive && (
+                    <motion.span
+                      layoutId="activeIndicator"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#2998a6] rounded-full"
+                      initial={false}
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </Link>
+              </motion.div>
+            );
+          })}
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -95,19 +111,31 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="lg:hidden">
           <div className="space-y-1 px-4 pb-3 pt-2">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const isActive = pathname === item.href || 
+                (item.href !== '/' && pathname.startsWith(item.href));
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`block rounded-md px-3 py-2 text-base font-medium ${
+                    isActive 
+                      ? 'bg-[#2998a6]/10 text-[#2998a6] border-l-4 border-[#2998a6]' 
+                      : 'text-gray-900 hover:bg-gray-50'
+                  }`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
             <Link
               href="/contact"
-              className="block rounded-md bg-[#2998a6] px-3 py-2 text-base font-semibold text-white text-center mt-4"
+              className={`block rounded-md px-3 py-2 text-base font-semibold text-center mt-4 ${
+                pathname === '/contact'
+                  ? 'bg-[#0d6c8a] text-white'
+                  : 'bg-[#2998a6] text-white'
+              }`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Nous contacter
