@@ -50,6 +50,7 @@ export default function sitemap() {
     "/biens-a-vendre/maison-suresnes-familiale-exclusivite",
     "/biens-a-vendre/maison-suresnes-contemporaine-jardin",
     "/biens-a-vendre/maison-suresnes-mont-valerien-potentiel",
+    "/biens-a-vendre/maison-nanterre-mont-valerien-a-renover",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

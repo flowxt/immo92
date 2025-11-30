@@ -37,9 +37,6 @@ export default function PropertyCard({
               <Image src={image} alt={title} fill className="object-cover" />
             </motion.div>
 
-            {/* Overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0c233c]/80 via-[#0d6c8a]/20 to-transparent" />
-
             {/* Badges */}
             <div className="absolute top-4 left-4 flex gap-2">
               {exclusive && (

@@ -320,6 +320,26 @@ const allProperties = [
     rsac: "451 258 438",
     exclusive: false,
   },
+  {
+    id: 17,
+    title: "Maison à fort potentiel - Nanterre Mont Valérien",
+    subtitle: "Terrain généreux de 429 m² dans un secteur recherché",
+    location: "Nanterre, Mont-Valérien",
+    surface: "93.47 m²",
+    terrain: "429 m²",
+    rooms: 4,
+    roomsLabel: "4 pièces - 3 chambres",
+    image: "/photos/bonniec/ext.jpeg",
+    price: "449 000 €",
+    priceValue: 449000,
+    slug: "maison-nanterre-mont-valerien-a-renover",
+    type: "maison",
+    featured: false,
+    available: true,
+    agent: "Vincent LECLERC",
+    rsac: "451 258 438",
+    exclusive: false,
+  },
 ];
 
 export default function BiensAVendre() {
