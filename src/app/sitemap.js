@@ -1,6 +1,10 @@
 export default function sitemap() {
   const baseUrl = "https://ener-immo92.fr";
 
+  // Dates fixes pour éviter que Google pense que tout change constamment
+  const staticDate = new Date('2025-11-01').toISOString();
+  const propertiesDate = new Date('2025-12-08').toISOString();
+
   // Routes statiques
   const routes = [
     "",
@@ -13,23 +17,24 @@ export default function sitemap() {
     "/carte-biens",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: staticDate,
     changeFrequency:
       route === "" || route === "/biens-a-vendre" ? "daily" : "weekly",
     priority: route === "" ? 1 : route === "/biens-a-vendre" ? 0.9 : 0.8,
   }));
 
-  // Pages d'estimation par ville (SEO)
-  const estimationPages = [
+  // Pages de services (SEO)
+  const servicePages = [
+    "/nos-services/accompagnement-personnalise",
     "/nos-services/estimation-nanterre",
     "/nos-services/estimation-rueil-malmaison",
     "/nos-services/estimation-suresnes",
     "/nos-services/estimation-puteaux",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: propertiesDate,
     changeFrequency: "weekly",
-    priority: 0.85,
+    priority: route === "/nos-services/accompagnement-personnalise" ? 0.9 : 0.85,
   }));
 
   // Biens à vendre
@@ -53,26 +58,13 @@ export default function sitemap() {
     "/biens-a-vendre/maison-nanterre-mont-valerien-a-renover",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: propertiesDate,
     changeFrequency: "daily",
     priority: 0.8,
   }));
 
-  // Biens vendus
-  const soldProperties = [
-    "/biens-vendus/maison-bezons-proche-t2",
-    "/biens-vendus/appartement-nanterre-centre-exclusivite",
-    "/biens-vendus/appartement-colombes-centre",
-    "/biens-vendus/maison-nanterre-renovation-energetique",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority:
-      route === "/biens-vendus/maison-nanterre-renovation-energetique"
-        ? 0.8
-        : 0.6,
-  }));
+  // Les biens vendus n'ont plus de pages individuelles (carrousel uniquement)
+  // Suppression des anciennes URLs pour éviter les erreurs 404
 
-  return [...routes, ...estimationPages, ...properties, ...soldProperties];
+  return [...routes, ...servicePages, ...properties];
 }

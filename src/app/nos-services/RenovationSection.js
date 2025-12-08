@@ -382,6 +382,32 @@ export default function RenovationSection() {
         </StaggerItem>
       </StaggerChildren>
 
+      {/* Success Story CTA */}
+      <FadeIn delay={0.5}>
+        <div className="mt-16 bg-gradient-to-br from-[#2998a6]/10 via-white to-amber-50 rounded-3xl p-8 md:p-10 border border-[#2998a6]/20 shadow-lg">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0">
+              <div className="w-24 h-24 bg-gradient-to-br from-[#2998a6] to-[#0d6c8a] rounded-2xl flex items-center justify-center shadow-xl">
+                <span className="text-5xl">🏆</span>
+              </div>
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-sm font-semibold text-[#2998a6] mb-2">SUCCESS STORY</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                Découvrez notre accompagnement en action : DPE G → C
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Une maison à Nanterre transformée grâce à notre accompagnement personnalisé. 
+                Rénovation énergétique complète, subventions obtenues, et vente réussie à 459 000 €.
+              </p>
+              <Button href="/nos-services/accompagnement-personnalise" variant="primary">
+                Voir la success story complète
+              </Button>
+            </div>
+          </div>
+        </div>
+      </FadeIn>
+
       {/* Mission */}
       <FadeIn delay={0.6}>
         <div className="mt-16 text-center bg-gradient-to-r from-[#2998a6]/5 to-amber-50 rounded-2xl p-8">
