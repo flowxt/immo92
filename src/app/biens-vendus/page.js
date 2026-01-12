@@ -47,6 +47,13 @@ const soldProperties = [
     city: "92500 Rueil-Malmaison",
     price: "249 000 €",
   },
+  {
+    id: 6,
+    image: "/photos/jardin/jardin.jpeg",
+    address: "Maison 4 pièces - Mont-Valérien",
+    city: "92000 Nanterre",
+    price: "690 000 €",
+  },
 ];
 
 // Carte CTA
