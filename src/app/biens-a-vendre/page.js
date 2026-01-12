@@ -321,6 +321,26 @@ const allProperties = [
     rsac: "451 258 438",
     exclusive: false,
   },
+  {
+    id: 18,
+    title: "Maison idéale profession libérale ou investissement",
+    subtitle: "Terrain 409 m² - Deux accès indépendants - Fort potentiel",
+    location: "Rueil-Malmaison",
+    surface: "90.86 m²",
+    terrain: "409 m²",
+    rooms: 4,
+    roomsLabel: "4 pièces - 3 chambres",
+    image: "/photos/vm38106/presentation.jpeg",
+    price: "589 000 €",
+    priceValue: 589000,
+    slug: "maison-rueil-profession-liberale",
+    type: "maison",
+    featured: false,
+    available: true,
+    agent: "Vincent LECLERC",
+    rsac: "451 258 438",
+    exclusive: false,
+  },
 ];
 
 export default function BiensAVendre() {

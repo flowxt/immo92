@@ -93,9 +93,9 @@ export default function Header() {
           {navigation.slice(0, 2).map((item) => {
             const isActive = pathname === item.href;
             return (
-              <motion.div key={item.name} whileHover={{ scale: 1.05 }}>
-                <Link
-                  href={item.href}
+          <motion.div key={item.name} whileHover={{ scale: 1.05 }}>
+            <Link
+              href={item.href}
                   className={`text-sm font-semibold leading-6 transition-colors relative ${
                     isActive ? 'text-[#2998a6]' : 'text-gray-900 hover:text-[#2998a6]'
                   }`}
@@ -189,9 +189,9 @@ export default function Header() {
                   href={item.href}
                   className={`text-sm font-semibold leading-6 transition-colors relative ${
                     isActive ? 'text-[#2998a6]' : 'text-gray-900 hover:text-[#2998a6]'
-                  }`}
-                >
-                  {item.name}
+              }`}
+            >
+              {item.name}
                   {isActive && (
                     <motion.span
                       layoutId="activeIndicator"
@@ -200,8 +200,8 @@ export default function Header() {
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
-                </Link>
-              </motion.div>
+            </Link>
+          </motion.div>
             );
           })}
         </div>
@@ -223,17 +223,17 @@ export default function Header() {
             {navigation.slice(0, 2).map((item) => {
               const isActive = pathname === item.href;
               return (
-                <Link
-                  key={item.name}
-                  href={item.href}
+              <Link
+                key={item.name}
+                href={item.href}
                   className={`block rounded-lg px-3 py-3 text-base font-medium ${
                     isActive 
                       ? 'bg-[#2998a6]/10 text-[#2998a6] border-l-4 border-[#2998a6]' 
                       : 'text-gray-900 hover:bg-gray-50'
                   }`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
                 </Link>
               );
             })}
@@ -276,8 +276,8 @@ export default function Header() {
                     >
                       <span>{item.icon}</span>
                       <span>{item.name}</span>
-                    </Link>
-                  ))}
+              </Link>
+            ))}
                 </div>
               )}
             </div>
