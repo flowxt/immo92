@@ -49,7 +49,6 @@ export default function sitemap() {
     "/biens-a-vendre/appartement-boulogne-centre",
     "/biens-a-vendre/studio-carrieres-sur-seine",
     "/biens-a-vendre/appartement-chatou-3-pieces",
-    "/biens-a-vendre/maison-nanterre-mont-valerien-jardin",
     "/biens-a-vendre/appartement-garches-centre",
     "/biens-a-vendre/appartement-suresnes-plateau-terrasses",
     "/biens-a-vendre/maison-suresnes-familiale-exclusivite",
