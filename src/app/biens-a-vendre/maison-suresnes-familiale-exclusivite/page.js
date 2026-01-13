@@ -33,7 +33,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
     id: 15,
     title: "Maison familiale Mont Valérien - EXCLUSIVITÉ",
     location: "92150, Suresnes",
-    price: "748 000 €",
+    price: "699 000 €",
     lat: 48.8738,
     lng: 2.2165,
     slug: "maison-suresnes-familiale-exclusivite",
@@ -121,7 +121,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                 </div>
                 <div className="text-left md:text-right">
                   <div className="text-4xl font-bold text-[#2998a6] mb-1">
-                    748 000 €
+                    699 000 €
                   </div>
                   <div className="text-sm text-gray-500">
                     HAI - Honoraires inclus
@@ -629,7 +629,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                   exit={{ opacity: 0, y: -20 }}
                   className="space-y-4"
                 >
-                  <MortgageCalculator compact={true} propertyPrice={748000} />
+                  <MortgageCalculator compact={true} propertyPrice={699000} />
                 </motion.div>
               )}
             </div>
