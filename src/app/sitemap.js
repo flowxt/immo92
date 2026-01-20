@@ -56,6 +56,7 @@ export default function sitemap() {
     "/biens-a-vendre/maison-suresnes-mont-valerien-potentiel",
     "/biens-a-vendre/maison-nanterre-mont-valerien-a-renover",
     "/biens-a-vendre/maison-rueil-profession-liberale",
+    "/biens-a-vendre/maison-nanterre-mont-valerien-jardin",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: propertiesDate,
