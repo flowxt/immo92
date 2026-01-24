@@ -12,6 +12,7 @@ export default function sitemap() {
     "/nos-services",
     "/biens-a-vendre",
     "/biens-vendus",
+    "/avis",
     "/contact",
     "/calculateur",
     "/carte-biens",

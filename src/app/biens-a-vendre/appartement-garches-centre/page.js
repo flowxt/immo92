@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import ImageGallery from "@/components/ImageGallery";
 import MortgageCalculator from "@/components/MortgageCalculator";
 import DPE from "@/components/DPE";
+import FeesSchedule from "@/components/FeesSchedule";
 import InteractiveMap from "@/components/InteractiveMap";
 
 export default function AppartementGarchesCentre() {
@@ -485,11 +486,14 @@ export default function AppartementGarchesCentre() {
               </p>
             </motion.div>
 
+            {/* Barème d'honoraires */}
+            <FeesSchedule delay={0.8} />
+
             {/* Mentions légales */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
+              transition={{ delay: 0.9 }}
               className="bg-gray-50 rounded-2xl p-6"
             >
               <p className="text-xs text-gray-600 leading-relaxed">

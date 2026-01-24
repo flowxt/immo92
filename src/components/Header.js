@@ -42,6 +42,7 @@ export default function Header() {
     { name: 'Notre histoire', href: '/a-propos' },
     { name: 'Biens à vendre', href: '/biens-a-vendre' },
     { name: 'Biens vendus', href: '/biens-vendus' },
+    { name: 'Avis clients', href: '/avis' },
     { name: 'Calculateur', href: '/calculateur' },
   ];
 

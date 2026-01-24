@@ -7,6 +7,7 @@ import Image from "next/image";
 import ImageGallery from "@/components/ImageGallery";
 import MortgageCalculator from "@/components/MortgageCalculator";
 import DPE from "@/components/DPE";
+import FeesSchedule from "@/components/FeesSchedule";
 import dynamic from "next/dynamic";
 
 const InteractiveMap = dynamic(() => import("@/components/InteractiveMap"), {
@@ -546,11 +547,14 @@ export default function MaisonSuresnesFamilialeExclusivite() {
               </div>
             </motion.div>
 
+            {/* Barème d'honoraires */}
+            <FeesSchedule delay={0.5} />
+
             {/* Mentions légales */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
+              transition={{ delay: 0.6 }}
               className="bg-gray-50 rounded-xl p-6 text-xs text-gray-600 leading-relaxed"
             >
               <p>

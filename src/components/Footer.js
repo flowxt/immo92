@@ -15,6 +15,7 @@ export default function Footer() {
       { name: "Carte des biens", href: "/carte-biens" },
       { name: "Calculateur de prêt", href: "/calculateur" },
       { name: "Biens vendus", href: "/biens-vendus" },
+      { name: "Avis clients", href: "/avis" },
       { name: "Contact", href: "/contact" },
     ],
   };
