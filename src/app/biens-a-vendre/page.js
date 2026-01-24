@@ -361,6 +361,26 @@ const allProperties = [
     rsac: "451 258 438",
     exclusive: false,
   },
+  {
+    id: 20,
+    title: "Maison de ville Familiale",
+    subtitle: "Maison contemporaine d'exception - Proche La Défense",
+    location: "Puteaux",
+    surface: "136 m²",
+    terrain: "271 m²",
+    rooms: 5,
+    roomsLabel: "5 pièces - 3 chambres",
+    image: "/photos/puteaux/salon_1er.jpeg",
+    price: "949 000 €",
+    priceValue: 949000,
+    slug: "maison-puteaux-bergere",
+    type: "maison",
+    featured: false,
+    available: true,
+    agent: "Vincent LECLERC",
+    rsac: "451 258 438",
+    exclusive: false,
+  },
 ];
 
 export default function BiensAVendre() {

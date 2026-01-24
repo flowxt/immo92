@@ -15,7 +15,7 @@ const soldProperties = [
   {
     id: 1,
     image: "/photos/vente-690000.jpeg",
-    address: "Rue des ombraies",
+    address: "Rue des Ombraies",
     city: "92000 Nanterre",
     price: "690 000 €",
   },

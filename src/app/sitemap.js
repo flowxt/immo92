@@ -57,6 +57,7 @@ export default function sitemap() {
     "/biens-a-vendre/maison-nanterre-mont-valerien-a-renover",
     "/biens-a-vendre/maison-rueil-profession-liberale",
     "/biens-a-vendre/maison-nanterre-mont-valerien-jardin",
+    "/biens-a-vendre/maison-puteaux-bergere",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: propertiesDate,

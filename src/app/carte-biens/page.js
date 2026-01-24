@@ -199,6 +199,16 @@ export default function CarteBiensPage() {
       lat: 48.8892,
       lng: 2.2095,
     },
+    {
+      id: 20,
+      title: "Maison de ville Familiale",
+      location: "Puteaux",
+      price: "949 000 €",
+      image: "/photos/puteaux/salon_1er.jpeg",
+      slug: "maison-puteaux-bergere",
+      lat: 48.8847,
+      lng: 2.2397,
+    },
   ];
 
   const features = [
