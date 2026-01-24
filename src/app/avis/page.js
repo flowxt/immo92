@@ -348,9 +348,9 @@ export default function AvisClientsPage() {
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-[#2998a6] mb-2">15+</div>
-            <div className="text-gray-600 font-semibold">Ans d'Expérience</div>
+            <div className="text-gray-600 font-semibold">Ans d&apos;Expérience</div>
             <div className="text-sm text-gray-500 mt-1">
-              Expertise de l'ouest parisien
+              Expertise de l&apos;ouest parisien
             </div>
           </div>
         </motion.div>
@@ -366,7 +366,7 @@ export default function AvisClientsPage() {
             Vous aussi, confiez-nous votre projet
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Rejoignez nos clients satisfaits et bénéficiez d'un accompagnement
+            Rejoignez nos clients satisfaits et bénéficiez d&apos;un accompagnement
             personnalisé pour votre projet immobilier
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
