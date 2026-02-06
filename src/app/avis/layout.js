@@ -11,6 +11,14 @@ export const metadata = {
       "100% de clients satisfaits ! Consultez nos avis Google 5 étoiles. Accompagnement personnalisé pour vos projets immobiliers dans l'ouest parisien.",
     url: "https://ener-immo92.fr/avis",
     type: "website",
+    images: [
+      {
+        url: "/photos/mont-valerien.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Avis clients Ener Immo 92 - 5 étoiles Google",
+      },
+    ],
   },
   keywords: [
     "avis clients immobilier",

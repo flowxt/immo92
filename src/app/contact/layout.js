@@ -11,6 +11,14 @@ export const metadata = {
       "Contactez votre agent immobilier expert du Mont-Valérien. Estimation gratuite, accompagnement personnalisé.",
     url: "https://ener-immo92.fr/contact",
     type: "website",
+    images: [
+      {
+        url: "/photos/mont-valerien.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact Ener Immo 92 - Agent Immobilier Mont-Valérien",
+      },
+    ],
   },
 };
 

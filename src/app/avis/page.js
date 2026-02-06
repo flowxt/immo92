@@ -3,8 +3,69 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 
 export default function AvisClientsPage() {
+  // Schema.org JSON-LD pour les avis (rich snippets Google)
+  const reviewJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    name: "Ener Immo 92 - eXp France",
+    image: "https://ener-immo92.fr/photos/mont-valerien.jpg",
+    url: "https://ener-immo92.fr",
+    telephone: "+33662155757",
+    address: {
+      "@type": "PostalAddress",
+      addressRegion: "Hauts-de-Seine",
+      addressCountry: "FR",
+      postalCode: "92000",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: "10",
+      reviewCount: "10",
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Charlajian Serge" },
+        datePublished: "2026-01-10",
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Je tiens à remercier chaleureusement monsieur Leclerc pour son professionnalisme et sa vision. Après plusieurs difficultés à vendre ma maison, il a su trouver une solution intelligente en proposant la division du terrain.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "LEROUX Jean Claude" },
+        datePublished: "2026-01-10",
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Alexandre m'a très bien accompagné à distance pour vendre ma maison de Suresnes. Personne efficace, réactive, à l'écoute, de bons conseils, honnête, la vente a été réglée rapidement.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Grégoire PIQUET" },
+        datePublished: "2026-01-10",
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Une très bonne expérience, EXP a été très réactif et sûrement les plus actifs dans la recherche d'acquéreurs.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Michèle Azoulay" },
+        datePublished: "2026-01-10",
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Personnes très professionnelles, tout est mis en oeuvre pour la réalisation du projet, diagnostic, photos, personnes très courtoises.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Guillaume Rabasté" },
+        datePublished: "2026-01-10",
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Monsieur Naquin a une très solide expertise sur le marché de l'ouest parisien. Ses conseils et sa vision nous ont été très précieux.",
+      },
+    ],
+  };
   const reviews = [
     {
       id: 1,
@@ -149,6 +210,13 @@ export default function AvisClientsPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      {/* Schema.org JSON-LD pour rich snippets Google */}
+      <Script
+        id="reviews-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
+      />
+
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#2998a6] to-[#0d6c8a] text-white pt-24 pb-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

@@ -11,6 +11,14 @@ export const metadata = {
       "Découvrez nos biens vendus et nos réussites commerciales. Témoignage de notre expertise immobilière dans les Hauts-de-Seine.",
     url: "https://ener-immo92.fr/biens-vendus",
     type: "website",
+    images: [
+      {
+        url: "/photos/mont-valerien.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Biens vendus - Ener Immo 92",
+      },
+    ],
   },
 };
 

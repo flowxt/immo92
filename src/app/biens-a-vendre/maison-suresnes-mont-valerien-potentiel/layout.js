@@ -8,7 +8,8 @@ export const metadata = {
     title: "Maison 4 pièces Mont-Valérien - Suresnes 849 000€",
     description:
       "Maison de charme sur 446 m² de terrain au Mont-Valérien. Vue dégagée, terrasse, fort potentiel d'agrandissement. 3 chambres, à rafraîchir.",
-    url: "https://www.ener-immo92.fr/biens-a-vendre/maison-suresnes-mont-valerien-potentiel",
+    url: "https://ener-immo92.fr/biens-a-vendre/maison-suresnes-mont-valerien-potentiel",
+    type: "website",
     images: [
       {
         url: "/photos/maison-849/ext.jpeg",
@@ -19,7 +20,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "/biens-a-vendre/maison-suresnes-mont-valerien-potentiel",
+    canonical: "https://ener-immo92.fr/biens-a-vendre/maison-suresnes-mont-valerien-potentiel",
   },
 };
 

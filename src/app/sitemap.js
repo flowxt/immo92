@@ -2,8 +2,8 @@ export default function sitemap() {
   const baseUrl = "https://ener-immo92.fr";
 
   // Dates fixes pour éviter que Google pense que tout change constamment
-  const staticDate = new Date('2025-11-01').toISOString();
-  const propertiesDate = new Date('2025-12-08').toISOString();
+  const staticDate = new Date('2026-01-24').toISOString();
+  const propertiesDate = new Date('2026-01-24').toISOString();
 
   // Routes statiques
   const routes = [

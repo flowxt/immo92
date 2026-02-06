@@ -11,6 +11,14 @@ export const metadata = {
       "Visualisez tous nos biens à vendre sur une carte interactive. Découvrez l'emplacement exact de nos propriétés.",
     url: "https://ener-immo92.fr/carte-biens",
     type: "website",
+    images: [
+      {
+        url: "/photos/mont-valerien.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Carte interactive des biens immobiliers - Ener Immo 92",
+      },
+    ],
   },
 };
 
