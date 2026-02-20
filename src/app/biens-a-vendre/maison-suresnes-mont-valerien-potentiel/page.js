@@ -130,7 +130,7 @@ export default function MaisonSuresnesMontValerienPotentielPage() {
     // Agent
     agent: {
       name: "Vincent LECLERC",
-      photo: "/photos/vincent.jpg",
+      photo: "/photos/vincent2.jpg",
       rsac: "451 258 438",
       rsacCity: "VERSAILLES",
     },

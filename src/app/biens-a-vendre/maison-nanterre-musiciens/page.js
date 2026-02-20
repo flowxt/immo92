@@ -542,7 +542,7 @@ export default function MaisonNanterreMusiciens() {
                   <div className="flex items-center gap-3 mb-2">
                     <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-[#2998a6]/20">
                       <Image
-                        src="/photos/alexandre.jpg"
+                        src="/photos/alexandre2.jpg"
                         alt="Alexandre NAQUIN"
                         fill
                         className="object-cover"

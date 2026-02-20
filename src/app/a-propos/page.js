@@ -13,19 +13,19 @@ export default function APropos() {
     {
       name: "Mhamed El Mamlouk",
       rsac: "805 060 431 RSAC Nanterre",
-      image: "/photos/Mhamed.jpg",
+      image: "/photos/Mhamed2.jpg",
       role: "Conseiller Immobilier",
     },
     {
       name: "Vincent Leclerc",
       rsac: "451 258 438 RSAC Versailles",
-      image: "/photos/vincent.jpg",
+      image: "/photos/vincent2.jpg",
       role: "Conseiller Immobilier",
     },
     {
       name: "Alexandre Naquin",
       rsac: "830 744 959 RSAC Nanterre",
-      image: "/photos/alexandre.jpg",
+      image: "/photos/alexandre2.jpg",
       role: "Conseiller Immobilier",
     },
   ];

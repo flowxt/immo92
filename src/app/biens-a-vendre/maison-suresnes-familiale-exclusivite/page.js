@@ -590,7 +590,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                   </div>
                   <div className="flex flex-col items-center gap-3">
                     <Image
-                      src="/photos/alexandre.jpg"
+                      src="/photos/alexandre2.jpg"
                       alt="Alexandre NAQUIN"
                       width={80}
                       height={80}

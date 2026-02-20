@@ -508,7 +508,7 @@ export default function MaisonNanterreMontValerienJardin() {
                   </div>
                   <div className="flex flex-col items-center gap-3">
                     <Image
-                      src="/photos/vincent.jpg"
+                      src="/photos/vincent2.jpg"
                       alt="Vincent LECLERC"
                       width={80}
                       height={80}

@@ -460,7 +460,7 @@ export default function AppartementBoulogneCentre() {
                   </div>
                   <div className="flex flex-col items-center gap-3">
                     <Image
-                      src="/photos/Mhamed.jpg"
+                      src="/photos/Mhamed2.jpg"
                       alt="Mhamed EL MAMLOUK"
                       width={80}
                       height={80}
