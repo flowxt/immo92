@@ -93,7 +93,7 @@ export default function MaisonNanterreMusiciens() {
                 </div>
                 <div className="flex flex-col items-start md:items-end">
                   <div className="text-3xl sm:text-4xl font-bold text-[#2998a6] whitespace-nowrap">
-                    699 000 €
+                    649 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
                 </div>
@@ -412,7 +412,7 @@ export default function MaisonNanterreMusiciens() {
                       id: 1,
                       title: "Maison - Quartier des Musiciens",
                       location: "Nanterre",
-                      price: "699 000 €",
+                      price: "649 000 €",
                       image: "/photos/maison_DEBAYE/exterieur.jpg",
                       slug: "maison-nanterre-musiciens",
                       lat: 48.892,
@@ -586,7 +586,7 @@ export default function MaisonNanterreMusiciens() {
                   exit={{ opacity: 0, y: -20 }}
                   className="space-y-4"
                 >
-                  <MortgageCalculator compact={true} propertyPrice={699000} />
+                  <MortgageCalculator compact={true} propertyPrice={649000} />
 
                   {/* Lien vers calculette complète */}
                   <Link

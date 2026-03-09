@@ -30,7 +30,7 @@ export default function MaisonRueilProfessionLiberale() {
     id: 18,
     title: "Maison idéale profession libérale ou investissement",
     location: "92500, Rueil-Malmaison",
-    price: "589 000 €",
+    price: "559 000 €",
     lat: 48.8698,
     lng: 2.1889,
     slug: "maison-rueil-profession-liberale",
@@ -107,7 +107,7 @@ export default function MaisonRueilProfessionLiberale() {
                 </div>
                 <div className="flex flex-col items-start md:items-end">
                   <div className="text-3xl sm:text-4xl font-bold text-[#2998a6] whitespace-nowrap">
-                    589 000 €
+                    559 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
                 </div>
@@ -367,7 +367,7 @@ export default function MaisonRueilProfessionLiberale() {
             >
               <p className="text-xs text-gray-600 leading-relaxed">
                 EXP GLOBAL FRANCE - Non-détention de fonds - SIRET
-                89071070000018 - 589 000 € honoraires inclus - Classe énergie D (199 kWhEP/m².an) - Classe climat D (43 kg CO2/m².an) - Montant estimé des
+                89071070000018 - 559 000 € honoraires inclus - Classe énergie D (199 kWhEP/m².an) - Classe climat D (43 kg CO2/m².an) - Montant estimé des
                 dépenses annuelles d&apos;énergie pour un usage standard : 1640€ ~ 2250€ (abonnements compris) - Les informations sur les risques auxquels ce bien est exposé
                 sont disponibles sur le site Géorisques : www.georisques.gouv.fr
                 - Vincent LECLERC - Agent commercial - EI - RSAC Versailles
@@ -455,7 +455,7 @@ export default function MaisonRueilProfessionLiberale() {
                   exit={{ opacity: 0, y: -20 }}
                   className="space-y-4"
                 >
-                  <MortgageCalculator compact={true} propertyPrice={589000} />
+                  <MortgageCalculator compact={true} propertyPrice={559000} />
 
                   {/* Lien vers calculette complète */}
                   <Link

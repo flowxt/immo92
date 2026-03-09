@@ -104,7 +104,7 @@ export default function LoftIndustrielSuresnes() {
                 </div>
                 <div className="flex flex-col items-start md:items-end">
                   <div className="text-3xl sm:text-4xl font-bold text-[#2998a6] whitespace-nowrap">
-                    850 000 €
+                    750 000 €
                   </div>
                   <div className="text-sm text-gray-500 mt-1">HAI</div>
                 </div>
@@ -504,7 +504,7 @@ export default function LoftIndustrielSuresnes() {
                       id: 4,
                       title: "Loft Industriel - Mont Valérien",
                       location: "Suresnes",
-                      price: "850 000 €",
+                      price: "750 000 €",
                       image: "/photos/loft/sejour.jpeg",
                       slug: "loft-industriel-suresnes",
                       lat: 48.8700,
@@ -679,7 +679,7 @@ export default function LoftIndustrielSuresnes() {
                   exit={{ opacity: 0, y: -20 }}
                   className="space-y-4"
                 >
-                  <MortgageCalculator compact={true} propertyPrice={850000} />
+                  <MortgageCalculator compact={true} propertyPrice={750000} />
 
                   {/* Lien vers calculette complète */}
                   <Link
