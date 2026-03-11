@@ -381,6 +381,26 @@ const allProperties = [
     rsac: "451 258 438",
     exclusive: false,
   },
+  {
+    id: 21,
+    title: "Maison spacieuse - Mont-Valérien",
+    subtitle: "Maison 137 m² avec garage et cave, limite Rueil",
+    location: "Nanterre",
+    surface: "137 m²",
+    terrain: "",
+    rooms: 5,
+    roomsLabel: "5 pièces - 3 chambres",
+    image: "/photos/nanterre-ombraies/exterieur.jpg",
+    price: "729 000 €",
+    priceValue: 729000,
+    slug: "maison-nanterre-ombraies",
+    type: "maison",
+    featured: false,
+    available: true,
+    agent: "Vincent LECLERC",
+    rsac: "451 258 438",
+    exclusive: false,
+  },
 ];
 
 export default function BiensAVendre() {

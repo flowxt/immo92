@@ -209,6 +209,16 @@ export default function CarteBiensPage() {
       lat: 48.8847,
       lng: 2.2397,
     },
+    {
+      id: 21,
+      title: "Maison spacieuse - Mont-Valérien",
+      location: "Nanterre",
+      price: "729 000 €",
+      image: "/photos/nanterre-ombraies/exterieur.jpg",
+      slug: "maison-nanterre-ombraies",
+      lat: 48.8870,
+      lng: 2.2130,
+    },
   ];
 
   const features = [
