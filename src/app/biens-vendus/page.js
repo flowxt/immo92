@@ -54,6 +54,34 @@ const soldProperties = [
     city: "92000 Nanterre",
     price: "242 000 €",
   },
+  {
+    id: 7,
+    image: "/photos/bien-vendu-1.jpeg",
+    address: "80 rue Chateaubriand",
+    city: "92500 Rueil-Malmaison",
+    price: "549 000 €",
+  },
+  {
+    id: 8,
+    image: "/photos/bien-vendu2.jpeg",
+    address: "24 rue des Fleurs",
+    city: "92150 Suresnes",
+    price: "340 000 €",
+  },
+  {
+    id: 9,
+    image: "/photos/bien-vendu3.jpeg",
+    address: "127 rue Filliette Nicolas Philibert",
+    city: "92500 Rueil-Malmaison",
+    price: "820 000 €",
+  },
+  {
+    id: 10,
+    image: "/photos/bien-vendu4.jpeg",
+    address: "80 rue Chateaubriand",
+    city: "92500 Rueil-Malmaison",
+    price: "Vendu",
+  },
 ];
 
 // Carte CTA

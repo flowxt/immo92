@@ -34,7 +34,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
     id: 15,
     title: "Maison familiale Mont Valérien - EXCLUSIVITÉ",
     location: "92150, Suresnes",
-    price: "650 000 €",
+    price: "620 000 €",
     lat: 48.8738,
     lng: 2.2165,
     slug: "maison-suresnes-familiale-exclusivite",
@@ -122,13 +122,13 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                 </div>
                 <div className="text-left md:text-right">
                   <div className="text-4xl font-bold text-[#2998a6] mb-1">
-                    650 000 €
+                    620 000 €
                   </div>
                   <div className="text-sm text-gray-500">
                     HAI - Honoraires inclus
                   </div>
                   <div className="text-xs text-gray-400 mt-1">
-                    720 000 € hors honoraires
+                    600 000 € hors honoraires
                   </div>
                 </div>
               </div>
@@ -381,7 +381,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                     <li className="flex justify-between py-2 border-b border-gray-100">
                       <span>Honoraires</span>
                       <span className="font-semibold text-gray-900">
-                        3.89% TTC acquéreur
+                        3.33% TTC acquéreur
                       </span>
                     </li>
                   </ul>
@@ -559,8 +559,8 @@ export default function MaisonSuresnesFamilialeExclusivite() {
             >
               <p>
                 EXP GLOBAL FRANCE - Non-détention de fonds - SIRET
-                89071070000018 - 720 000 € honoraires exclus - Honoraires de
-                3.89% TTC à charge acquéreur - Montant moyen de la quote-part
+                89071070000018 - 600 000 € honoraires exclus - Honoraires de
+                3.33% TTC à charge acquéreur - Montant moyen de la quote-part
                 de charges courantes 95 €/an - Aucune procédure en cours
                 (articles 29-1A/29-1 loi 65-557, L.615-6 du CCH) - Classe
                 énergie 209 kWhEP/m².an (D) - Classe climat 6 kg CO2/m².an (B)
@@ -633,7 +633,7 @@ export default function MaisonSuresnesFamilialeExclusivite() {
                   exit={{ opacity: 0, y: -20 }}
                   className="space-y-4"
                 >
-                  <MortgageCalculator compact={true} propertyPrice={650000} />
+                  <MortgageCalculator compact={true} propertyPrice={620000} />
                 </motion.div>
               )}
             </div>
