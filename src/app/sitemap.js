@@ -60,6 +60,7 @@ export default function sitemap() {
     "/biens-a-vendre/maison-nanterre-mont-valerien-jardin",
     "/biens-a-vendre/maison-puteaux-bergere",
     "/biens-a-vendre/maison-nanterre-ombraies",
+    "/biens-a-vendre/maison-nanterre-plain-pied",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: propertiesDate,

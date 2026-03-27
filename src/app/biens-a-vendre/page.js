@@ -401,6 +401,26 @@ const allProperties = [
     rsac: "451 258 438",
     exclusive: false,
   },
+  {
+    id: 22,
+    title: "Maison plain-pied - Proche Rueil & futur Paris",
+    subtitle: "Terrain 311 m², surélévation possible, fort potentiel",
+    location: "Nanterre",
+    surface: "105 m²",
+    terrain: "311 m²",
+    rooms: 5,
+    roomsLabel: "5 pièces - 3 chambres",
+    image: "/photos/maison-mars26/exterieur.jpg",
+    price: "577 000 €",
+    priceValue: 577000,
+    slug: "maison-nanterre-plain-pied",
+    type: "maison",
+    featured: false,
+    available: true,
+    agent: "Vincent LECLERC",
+    rsac: "451 258 438",
+    exclusive: false,
+  },
 ];
 
 export default function BiensAVendre() {
