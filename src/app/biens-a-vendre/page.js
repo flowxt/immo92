@@ -410,7 +410,7 @@ const allProperties = [
     terrain: "311 m²",
     rooms: 5,
     roomsLabel: "5 pièces - 3 chambres",
-    image: "/photos/maison-mars26/exterieur.jpg",
+    image: "/photos/maison-mars26/photo-2.jpg",
     price: "577 000 €",
     priceValue: 577000,
     slug: "maison-nanterre-plain-pied",

@@ -17,9 +17,9 @@ const InteractiveMap = dynamic(() => import("@/components/InteractiveMap"), {
 export default function MaisonNanterrePlainPied() {
   const [showCalculator, setShowCalculator] = useState(false);
   const propertyImages = [
+    "/photos/maison-mars26/photo-2.jpg",
     "/photos/maison-mars26/exterieur.jpg",
     "/photos/maison-mars26/terrasse.jpg",
-    "/photos/maison-mars26/photo-2.jpg",
     "/photos/maison-mars26/photo-3.jpg",
     "/photos/maison-mars26/sdb.jpg",
     "/photos/maison-mars26/garage.jpg",
@@ -40,7 +40,7 @@ export default function MaisonNanterrePlainPied() {
     lat: 48.8830,
     lng: 2.2100,
     slug: "maison-nanterre-plain-pied",
-    image: "/photos/maison-mars26/exterieur.jpg",
+    image: "/photos/maison-mars26/photo-2.jpg",
   };
 
   return (

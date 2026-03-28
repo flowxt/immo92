@@ -224,7 +224,7 @@ export default function CarteBiensPage() {
       title: "Maison plain-pied - Proche Rueil & futur Paris",
       location: "Nanterre",
       price: "577 000 €",
-      image: "/photos/maison-mars26/exterieur.jpg",
+      image: "/photos/maison-mars26/photo-2.jpg",
       slug: "maison-nanterre-plain-pied",
       lat: 48.8830,
       lng: 2.2100,
